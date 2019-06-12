@@ -1,0 +1,46 @@
+title:       Button block level
+label:       Block
+status:      wip
+collated:    true
+default:     primary
+variants:
+  - name:    primary
+    context:
+      class: btn-primary btn-block btn-lg
+      text:  Primary large block level
+      desc:  Used for primary actions.
+  - name:    primary-medium
+    context:
+      class: btn-primary btn-block
+      text:  Primary medium block level
+      desc:  
+  - name:    secondary
+    context:
+      class: btn-secondary btn-block btn-lg
+      text:  Secondary large block level
+      desc:  Used for secondary actions.
+  - name:    secondary-medium
+    context:
+      class: btn-secondary btn-block
+      text:  Secondary medium block level
+      desc:  
+  - name:    primary-outline
+    context:
+      class: btn-outline-primary btn-block btn-lg
+      text:  Primary large block level
+      desc:  Used for primary actions.
+  - name:    primary-medium-outline
+    context:
+      class: btn-outline-primary btn-block
+      text:  Primary medium block level
+      desc:  
+  - name:    secondary-outline
+    context:
+      class: btn-outline-secondary btn-block btn-lg
+      text:  Secondary large block level
+      desc:  Used for secondary actions.
+  - name:    secondary-medium-outline
+    context:
+      class: btn-outline-secondary btn-block
+      text:  Secondary medium block level
+      desc:  

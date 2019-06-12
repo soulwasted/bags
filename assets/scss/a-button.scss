@@ -1,0 +1,28 @@
+.btn {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    
+    span.icon-placeholder {
+        font-size: 24px;
+        height: 24px;
+        margin-top: -16px;
+        margin-right: 8px;
+    }
+    &.btn-lg {
+        span.icon-placeholder {
+            font-size: 30px;
+            height: 30px;
+            margin-top: -24px;
+            margin-right: 12px;
+        }
+    }
+    &.btn-sm {
+        span.icon-placeholder {
+            font-size: 20px;
+            height: 20px;
+            margin-top: -8px;
+            margin-right: 4px;
+        }
+    }
+}

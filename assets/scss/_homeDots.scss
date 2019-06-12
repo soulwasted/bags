@@ -1,0 +1,294 @@
+// breakpoints
+$S: 320px;
+$M: 768px;
+$L: 1170px; // media queries
+@mixin MQ($canvas) {
+     @if $canvas == S{
+        @media only screen and (min-width: $S) {
+             @content;
+        }
+    }
+    @else if $canvas == M {
+         @media only screen and (min-width: $M){
+            @content;
+        }
+    }
+    @else if $canvas == L {
+         @media only screen and (min-width: $L){
+            @content;
+        }
+    }
+}
+// rem fallback - credits: http://zerosixthree.se/
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+// border radius
+@mixin border-radius($radius:.25em) {
+    border-radius: $radius;
+}
+/* --------------------------------
+
+Main components
+
+-------------------------------- */
+.cd-img-replace { /* replace text with a background-image */
+	display: inline-block;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+.cd-scroll-down {
+    position: absolute;
+    @include center(x);
+    bottom: 20px;
+    width: 38px;
+    height: 44px;
+    background: url('../img/svg/cd-arrow-bottom.svg') no-repeat center center;
+}
+/* No Touch devices */
+.cd-nav-trigger {
+    display: none;
+}
+
+#cd-vertical-nav {
+	display: none;
+	&.show {
+		display: block;
+	}
+}
+
+.no-touch #cd-vertical-nav {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    // margin-top: 100px;
+    // padding: 15px;
+    // @include center(y); // see partials > _mixins.scss
+    z-index: 20;
+	transition: transform 0.2s, background-color 0.5s;
+	transition: box-shadow 0.2s linear;
+	background-color: transparent;
+    border-radius: 8px 0 0 8px;
+
+    ul {
+        list-style-type: none !important;
+		margin-bottom: 0;
+    }
+
+    li {
+        text-align: right;
+		height: 34px;
+    }
+
+    &:hover {
+		background-color: white;
+		box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+		.cd-label {
+        	opacity: 1;
+		}
+		.cd-dot-wrapper {
+			border: none;
+		}
+		.cd-dot-wrapper.first {
+			border-top: 1px solid white;
+		}
+    }
+
+    a {
+        display: inline-block;
+        @include clearfix;
+        /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
+        @include backface-visibility(hidden);
+
+        span {
+            float: right;
+            display: inline-block;
+            // @include transform(scale(.9));
+        }
+
+        &:hover span.cd-dot,
+        &:hover span.cd-label {
+            @include transform(scale(1.2));
+        }
+
+        &:hover .cd-label {
+            opacity: 1;
+        }
+
+        &.is-selected .cd-dot {
+            background-color: white;
+			border: 2px solid $brand-secondary
+        }
+        &.is-selected .cd-label {
+			@include transform(scale(1.2));
+        }
+
+    }
+
+    .cd-dot-wrapper {
+        background: white;
+        padding: 10px;
+		// box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+		border-left: 1px solid $gray-lighter;
+		&.first {
+			border-top: 1px solid $gray-lighter;
+            border-radius: 8px 0 0 0;
+		}
+		&.last {
+			border-bottom: 1px solid $gray-lighter;
+            border-radius: 0 0 0 8px;
+		}
+    }
+
+    .cd-dot {
+        position: relative;
+        /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+        // top: 6px;
+        height: 14px;
+        width: 14px;
+        border-radius: 50%;
+        background-color: $brand-secondary;
+        -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+        -moz-transition: -moz-transform 0.2s, background-color 0.5s;
+        transition: transform 0.2s, background-color 0.5s;
+        @include transform-origin(50% 50%);
+    }
+
+    .cd-label {
+        position: relative;
+        // margin-right: 10px;
+        padding: 0.8em 0.5em;
+        color: $brand-secondary;
+        @include font-size(18px);
+        -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+        -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+        transition: transform 0.2s, opacity 0.2s;
+        opacity: 0;
+        @include transform-origin(100% 50%);
+    }
+}
+/* Touch devices */
+.touch .cd-nav-trigger {
+    display: block;
+    z-index: 21;
+    position: fixed;
+    bottom: 6px;
+    left: 15px;
+    height: 44px;
+    width: 44px;
+    @include border-radius;
+    background: rgba($brand-secondary, .9);
+
+    span {
+        position: absolute;
+        height: 4px;
+        width: 4px;
+        background-color: white;
+        border-radius: 50%;
+        @include center;
+
+        &::after,
+        &::before {
+            content: '';
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            background-color: inherit;
+            border-radius: inherit;
+        }
+
+        &::before {
+            top: -9px;
+        }
+
+        &::after {
+            bottom: -9px;
+        }
+    }
+}
+
+.touch #cd-vertical-nav {
+    position: fixed;
+    z-index: 20;
+    left: 15px;
+    bottom: 6px;
+    width: 90%;
+    max-width: 400px;
+    max-height: 90%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    @include transform-origin(left bottom);
+    @include transform(scale(0));
+    @include transition-property(transform);
+    @include transition-duration(.2s);
+    @include border-radius;
+    background-color: rgba($brand-secondary, .9);
+
+	ul {
+	    list-style-type: none !important;
+	}
+
+    a {
+        display: block;
+        padding: 1em;
+        border-bottom: 1px solid rgba(white, .1);
+		color: white;
+
+        span:first-child {
+            display: none;
+        }
+
+        &.is-selected span:last-child {
+            font-weight: bold;
+        }
+    }
+
+    &.open {
+        @include transform(scale(1));
+    }
+
+    &.open + .cd-nav-trigger {
+        background-color: transparent;
+
+        span {
+            background-color: rgba(white, 0);
+        }
+
+        span::after,
+        span::before {
+            background-color: rgba(white, 1);
+            height: 3px;
+            width: 20px;
+            border-radius: 0;
+            left: -8px;
+        }
+
+        span::before {
+            @include transform(rotate(45deg));
+            top: 1px;
+        }
+
+        span::after {
+            @include transform(rotate(135deg));
+            bottom: 0;
+        }
+    }
+
+    li:last-child a {
+        border-bottom: none;
+    }
+}
+@include MQ(M) {
+    .touch #cd-vertical-nav,
+    .touch .cd-nav-trigger {
+        bottom: 40px;
+    }
+}

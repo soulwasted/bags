@@ -1,0 +1,96 @@
+title:       Icons
+label:       Icons
+status:      ready
+collated:    true
+default:     search
+variants:
+  - name:    badge
+    context:
+      image: badge
+  - name:    bags
+    context:
+      image: bags
+  - name:    bomb
+    context:
+      image: bomb
+  - name:    cart
+    context:
+      image: cart
+  - name:    check
+    context:
+      image: check
+  - name:    check2
+    context:
+      image: check2
+  - name:    check4
+    context:
+      image: check4
+  - name:    checked
+    context:
+      image: checked
+  - name:    clock
+    context:
+      image: clock
+  - name:    euro
+    context:
+      image: euro
+  - name:    form-checked
+    context:
+      image: form-checked
+  - name:    form-empty
+    context:
+      image: form-empty
+  - name:    gift
+    context:
+      image: gift
+  - name:    heart
+    context:
+      image: heart
+  - name:    microfilter
+    context:
+      image: microfilter
+  - name:    pic-clock
+    context:
+      image: pic-clock
+  - name:    pic-closing
+    context:
+      image: pic-closing
+  - name:    pic-filter
+    context:
+      image: pic-filter
+  - name:    pic-join
+    context:
+      image: pic-join
+  - name:    pic-magnify
+    context:
+      image: pic-magnify
+  - name:    pic-space
+    context:
+      image: pic-space
+  - name:    piggy
+    context:
+      image: piggy
+  - name:    plus
+    context:
+      image: plus
+  - name:    save-hand
+    context:
+      image: save-hand
+  - name:    search
+    context:
+      image: search
+  - name:    star
+    context:
+      image: star
+  - name:    stopwatch-48h
+    context:
+      image: stopwatch-48h
+  - name:    thumbs_up
+    context:
+      image: thumbs_up
+  - name:    transport
+    context:
+      image: transport
+  - name:    user
+    context:
+      image: user

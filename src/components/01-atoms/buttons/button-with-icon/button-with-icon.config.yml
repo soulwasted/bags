@@ -1,0 +1,37 @@
+title:         All buttons
+label:         With icon
+status:        wip
+collated:      true
+default:       primary
+icon-before:   true
+variants:
+  - name:      primary
+    context:
+      class:   btn-primary
+      text:    Primary
+      icon:
+        image: piggy
+  - name:      primary-large
+    context:
+      class:   btn-primary btn-lg
+      text:    Primary large
+      icon:
+        image: piggy
+  - name:      primary-small
+    context:
+      class:   btn-primary btn-sm
+      text:    Primary small
+      icon:
+        image: piggy
+#   - name:    secondary
+#     context:
+#       class: secondary
+#       text:  Secondary
+#   - name:    success
+#     context:
+#       class: success
+#       text:  Success
+#   - name:    with icon
+#     context:
+#       class: success
+#       text:  Success

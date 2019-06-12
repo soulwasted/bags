@@ -1,0 +1,42 @@
+body > .main.vacs {
+	.stripe-inverse {
+		padding-bottom: 20px;
+	}
+	.container {
+		border-bottom: 0;
+	}
+	.container.center {
+		.row:first-child {
+			margin: 2em 0;
+		}
+	}
+	@import "bagWrapper";
+	.container {
+		i {
+			margin: 0 auto;
+			font-size: 8em;
+			max-width: 100%;
+			color: $gray-light;
+			@media screen and (max-width: $screen-md) {
+				font-size: 6em;
+			}
+		}
+	}
+	.grayed {
+		background-color: $gray-lightest;
+	}
+	.container {
+		.container {
+			margin: 20px 0;
+		}
+	}
+	.container.advices {
+		.row {
+			margin: 20px 0;
+		}
+	}
+ 	a strong {
+		color: $brand-secondary;
+	}
+	
+}

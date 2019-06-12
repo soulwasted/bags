@@ -1,0 +1,71 @@
+.big_search {}
+
+	.big_search__input {
+		width: 100%;
+		height: 60px;
+		font-size: $font-size-sm;
+		border: 2px solid theme-color("secondary");
+		@include media-breakpoint-up(xs) {
+		}
+		@include media-breakpoint-up(sm) {
+			font-size: $font-size-md;
+			padding-left: 50px;
+		}
+		@include media-breakpoint-up(md) {
+			font-size: $font-size-lg;
+			padding-left: 60px;
+			height: 80px;
+		}
+	}
+
+	.big_search__btn {
+		float: right;
+		margin-top: -55px;
+		width: 50px;
+		height: 50px;
+		margin-right: 5px;
+		position: relative;
+		z-index: 1000;
+		font-size: $font-size-md;
+		@include media-breakpoint-up(sm) {
+			width: 120px;
+		}
+		@include media-breakpoint-up(md) {
+			font-size: $font-size-lg;
+			width: 167px;
+			// width: 60px;
+			margin-right: 15px;
+			margin-top: -65px;
+		}
+		span {
+			display: none;
+			@include media-breakpoint-up(sm) {
+				display: block;
+			}
+		}
+		span.icon-placeholder {
+			display: block;
+			margin-left: -8px;
+			@include media-breakpoint-up(sm) {
+				margin-left: 0;
+				display: none;
+			}
+		}
+	}
+
+	.big_search__icon {
+		float: left;
+		position: relative;
+		margin-left: 10px;
+		margin-top: -57px;
+		font-size: 32px;
+		color: rgba(0, 0, 0, 0.2);
+		display: none;
+		@include media-breakpoint-up(sm) {
+			display: block;
+		}
+		@include media-breakpoint-up(md) {
+			margin-left: 20px;
+			margin-top: -67px;
+		}
+}

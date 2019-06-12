@@ -1,0 +1,337 @@
+.stripe {
+	padding-bottom: $stripes-padding;
+	h2 {
+		margin-top: 80px;
+		margin-bottom: 60px;
+		@media (max-width: $screen-xs-max) {
+			margin-top: 40px;
+			margin-bottom: 30px;
+		}
+	}
+	a.btn {
+		margin-top: 30px;
+	}
+	a.btn,
+	button {
+		&:hover {
+			background: $brand-secondary;
+			color: white;
+		}
+	}
+}
+.stripe-inverse {
+	color: white;
+	background: $brand-secondary;
+	h2 {
+		color: white;
+	}
+	a {
+		color: white;
+		&.btn {
+			border-color: white;
+			&:hover {
+				background: white;
+				color: $brand-secondary;
+			}
+		}
+	}
+	b,
+	strong {
+		color: white;
+	}
+}
+.stripe-benefits {
+	@extend .stripe;
+	text-align: center;
+	.row {
+		// display: flex;
+		// flex-wrap: wrap;
+	}
+	.benefit {
+		// width: 33%;
+		// @media screen and (max-width: $screen-sm-max) {
+		// 	width: 50%;
+		// }
+		min-height: 200px;
+	}
+	.icon {
+		i {
+			color: $brand-secondary;
+			font-size: 70px;
+			line-height: 1em;
+		}
+	}
+	@media screen and (max-width: $screen-sm-max) and (min-width: $screen-sm-min) {
+		.row > div:nth-child(4) {
+			clear: both;
+		}
+	}
+	@media screen and (max-width: $screen-xs-max) {
+		.row > div:nth-child(3),
+		.row > div:nth-child(5) {
+			clear: both;
+		}
+	}
+}
+.badge-100 {
+	letter-spacing: 200;
+	background: url('../img/bg-badge-100.png') center bottom no-repeat;
+	padding-top: 20px;
+	padding-bottom: 12px;
+	margin-bottom: 40px;
+	line-height: 30px;
+	span {
+		font-size: 40px;
+		letter-spacing: 0;
+		font-weight: 700;
+		display: block;
+	}
+}
+.stripe-guarantee {
+	@extend .stripe;
+	@extend .stripe-inverse;
+	text-align: center;
+	background: url('../img/bg-stripe-guarantee.jpg') center center / cover no-repeat;
+	// background-color: $brand-primary;
+	// background-blend-mode: multiply;
+	h2 {
+		margin-bottom: 30px;
+	}
+	.star-divider {
+		margin: 15px 0;
+		span:nth-child(1),
+		span:nth-child(5) {
+			opacity: 0.3;
+		}
+		span:nth-child(2),
+		span:nth-child(4) {
+			opacity: 0.7;
+		}
+	}
+}
+@keyframes pulse {
+	0% {
+		// box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+		opacity: 0.4;
+	}
+	70% {
+		// box-shadow: 0 0 0 20px rgba(204,169,44, 0);
+		opacity: 1.0;
+	}
+	100% {
+		// box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+		opacity: 0.0;
+	}
+}
+img.vacs-stripe {
+	max-width: 520px;
+	width: 100%;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+.stripe-bag {
+	text-align: center;
+	h2 {
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+	@extend .stripe;
+	@import "bagWrapper";
+	#accordion {
+		text-align: left;
+		margin-top: 40px;
+		.panel-default:last-child {
+			border-bottom: 1px solid $gray-lighter;
+		}
+		h5.panel-title {
+			padding-top: 10px;
+			border-top: 1px solid $gray-lighter;
+			a {
+				display: block;
+			}
+		}
+	}
+}
+.stripe-contact {
+	@extend .stripe;
+	@extend .stripe-inverse;
+	text-align: center;
+	background: url('../img/bg-stripe-contact.jpg') center center / cover no-repeat;
+	p {
+		font-size: 18px;
+	}
+}
+.stripe-additional {
+	@extend .stripe;
+	// background: $gray-lighter;
+	text-align: center;
+	p {
+		// font-size: 18px;
+	}
+	.pic {
+		// width: 100%;
+		// display: inline-block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 210px;
+		img {
+			border-radius: 50%;
+			border: 3px solid $brand-secondary;
+			width: 200px;
+			z-index: 10;
+			// position: relative;
+			// display: inline-block;
+			// vertical-align: top;
+
+			&::after {
+			}
+		}
+		.text {
+			// display: inline-block;
+			text-align: left;
+			background: $brand-secondary;
+			padding: 20px 30px 20px 80px;
+			position: relative;
+			left: -30px;
+			// top: 20px;
+			max-width: 540px;
+			h4 {
+				display: inline-block;
+				color: white !important;
+				text-transform: uppercase;
+				color: white;
+				font-weight: 700;
+				font-size: 18px;
+			}
+			p {
+				color: white;
+			}
+			a {
+				color: white;
+				text-decoration: underline;
+			}
+
+		}
+		&.pic-02,
+		&.pic-04 {
+			img {
+				order: 2;
+			}
+			.text {
+				left: 30px;
+				padding: 20px 80px 20px 30px;
+				// order: 0;
+			}
+		}
+		&.pic-03 {
+			// margin-left: 100px;
+		}
+
+		&.pic-02, 
+		&.pic-03,
+		&.pic-04 {
+			img {
+				width: 130px;
+			}
+			span {
+			}
+		}
+
+		&:hover {
+			cursor: pointer;
+			img {
+				border-color: #006e8e;;
+			}
+			.text {
+				background-color: #006e8e;;
+			}
+		}
+	}
+	@media screen and (max-width: $screen-xs-max) {
+		.pic {
+			margin-top: 10px;
+			display: block;
+			margin-left: 0 !important;
+			img {
+				position: relative;
+				// z-index: 10;
+			}
+			.text {
+				text-align: center;
+				max-width: 100%;
+				left: 0 !important;
+				right: 0;
+				top: -20px;
+				display: block;
+				padding: 20px 30px !important;
+			}
+		}
+	}
+
+}
+.stripe-order {
+	@extend .stripe;
+	text-align: center;
+	h2 {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	@media (min-width: $screen-sm-min) {
+		.form-inline {
+			.btn,
+			.input-group {
+				margin-right: 20px;
+				min-width: 230px;
+			}
+			// text-align: left;
+		}
+	}
+}
+
+.stripe-testimonials {
+	background: lighten($brand-secondary,60) url("../img/testimonials-bg.jpg") center center no-repeat;
+	background-size: cover;
+	// margin: 32px 0;
+	.testimonial__card {
+		padding: 16px;
+		background: white;
+		box-shadow: $shadow;
+		border-radius: $border-radius-base;
+		margin-bottom: 15px;
+	}
+}
+.stars {
+	margin-top: 8px;
+	span {
+		font-size: 16px;
+		color: #FFC000;
+		margin-right: 2px;
+	}
+}
+.brands {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	.brand {
+		width: calc(100% / 6);
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 20px;
+		// @extend .text--secondary;
+		@media screen and (max-width: $screen-md) {
+			width: calc(100% / 4);
+		}
+		@media screen and (max-width: $screen-sm) {
+			width: calc(100% / 3);
+		}
+		img {
+			max-width: 120px;
+			height: auto;
+			@media screen and (max-width: $screen-sm) {
+				max-width: calc(100% - 10px);
+			}
+		}
+	}
+}

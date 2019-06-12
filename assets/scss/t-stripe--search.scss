@@ -1,0 +1,30 @@
+.stripe--search {
+	background: white url("/img/search-bg-800.jpg") center center no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	min-height: 50vh;
+	@media screen and (orientation:portrait) {
+		min-height: 50vh;
+	}
+	@media screen and (min-width: $screen-md) {
+		background: white url("/img/search-bg-1600.jpg") center center no-repeat;
+		background-size: cover;
+	}
+	@media (max-width: $screen-xs-max) {
+		// padding: 40px 0 20px;
+	}
+	
+	h1 {
+		@include font-size($display4-size);
+	}
+	
+
+	.container:first-child {
+		display: flex;
+		flex-grow: 1;
+		flex-flow: column;
+		justify-content: center;
+	}
+}

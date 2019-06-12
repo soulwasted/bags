@@ -1,0 +1,40 @@
+title:       Button
+label:       Outline
+status:      wip
+collated:    true
+default:     primary
+variants:
+  - name:    primary
+    context:
+      class: btn-outline-primary
+      text:  Primary
+      desc:  Used for primary actions.
+  - name:    secondary
+    context:
+      class: btn-outline-secondary
+      text:  Secondary
+      desc:  Used for secondary actions.
+  # - name:  success
+  #   context:
+  #     class: success
+  #     text: Success
+  # - name:  danger
+  #   context:
+  #     class: danger
+  #     text: danger
+  # - name:  warning
+  #   context:
+  #     class: warning
+  #     text: warning
+  # - name:  info
+  #   context:
+  #     class: info
+  #     text: info
+  # - name:  light
+  #   context:
+  #     class: light
+  #     text: light
+  # - name:  dark
+  #   context:
+  #     class: dark
+  #     text: dark

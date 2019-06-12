@@ -1,0 +1,20 @@
+.links {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    a {
+        display: inline-block;
+        text-decoration: underline;
+        @include text-sm;
+        &:hover {
+            text-decoration: none;
+        }
+        margin: 0 spacer("sm") spacer("sm") 0;
+        @include media-breakpoint-up(sm) {
+            margin: 0 spacer("md") spacer("md") 0;
+        }
+    }
+    @include media-breakpoint-up(sm) {
+        flex-direction: row;
+    }
+}

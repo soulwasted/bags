@@ -1,0 +1,13 @@
+$motion: ();
+$motion: map-merge(
+  (
+    "on":  all 0.3s,
+    "out": all 0.6s
+  ),
+  $motion
+);
+
+$motion-on: 0.3s;
+$motion-out: 0.6s;
+
+

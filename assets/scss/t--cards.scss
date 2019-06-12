@@ -1,0 +1,18 @@
+.cards {
+    
+}
+
+.cards--3 {
+    display: flex;
+    flex-direction: column;
+    
+    .card {
+        // FIXME: responsive paddings
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        @include media-breakpoint-up(sm) {
+            width: 33%;
+        }
+    }
+}

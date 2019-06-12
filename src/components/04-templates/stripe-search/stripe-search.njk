@@ -1,0 +1,63 @@
+<div id="section-01" class="container-fluid stripe--search cd-section">
+	<div class="container">
+		<div class="row intro">
+			<div class="col-lg-8 col-md-12 pb-lg-4 pb-md-3 pb-sm-2 pb-1">
+				<h1>Sáčky pro více než 19&nbsp;000 modelů vysavačů</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div id="search-fulltext" class="col-lg-8 col-md">
+				<form id="frm-goodsSearchForm" action="/" method="post">
+					<input id="suggestid" type="hidden" name="suggestid">
+					{# 
+						FIXME: typeahead 
+					#}
+					{# <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input id="search-input" class="typeahead tt-input" type="text" placeholder="Napište značku a/nebo model vysavače" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"> #}
+						<pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: raleway, arial, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
+						<div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
+							<div class="content">
+								<div class="top">
+									<div class="tt-dataset tt-dataset-top-brands"></div>
+									<div class="tt-dataset tt-dataset-top-bags"></div>
+								</div>
+								<div class="tt-dataset tt-dataset-all-firms"></div>
+								<div class="tt-dataset searching" style="display: none;">
+									<h5>
+										<span>Vyhledávám modely</span></h5>
+									<img class="img img-responsive center-block" src="/images/loader-gears.gif" alt="HLEDAM">
+								</div>
+								<div class="tt-dataset tt-dataset-all-models"></div>
+							</div>
+						</div>
+					</span>
+					<input
+						id="goodssearch"
+						type="hidden"
+						name="goodssearch"
+						placeholder="Napište značku a/nebo model vysavače"
+						onfocus="this.value = ''; this.onfocus = null"
+						data-nette-suggestlink="?do=signalSuggest"
+						data-nette-suggestinput-options="{componentName:'Public:Homepage',lang:'cs',itemsPerPage:10000,onSelect:'frm-goodsSearchForm',idField:'frm-goodsSearchForm-suggestid'}"
+						class="suggestInput"
+						autocomplete="off">
+					{% render '@big_search' %}
+					<input type="hidden" name="_do" value="goodsSearchForm-submit">
+				</form>
+			</div>
+		</div>
+		<div class="row links pt-3">
+			<div class="col-lg-8 col-md-12">
+				<a href="#" data-toggle="modal" data-target="#myModal--advices">Jak hledat?</a>
+				<a href="#" data-toggle="modal" data-target="#myModal">Jak zjistit model vysavače?</a>
+				<a href="doplnkove-zbozi">Hepa filtry, motorové filtry, kartáče, vůně…</a>
+			</div>
+		</div>
+	</div>
+	<div class="container pb-lg-4 pb-md-3 pb-sm-2 pb-1">
+		<div class="row">
+			<div class="col-lg-11 col-md-12">
+				{% render '@benefits-home' %}
+			</div>
+		</div>
+	</div>
+</div>

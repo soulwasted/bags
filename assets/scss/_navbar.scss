@@ -1,0 +1,112 @@
+.navbar {
+	background: white;
+	background: rgba(255,255,255,0.5);
+	border-bottom: none;
+	transition: all 0.3s linear;
+	&.fixed {
+		box-shadow: 0 0 30px 0 rgba(0,0,0,0.3);
+		background: white;
+		transition: background 0.6s linear;
+		transition: box-shadow 0.8s linear;
+	}
+	.navbar-brand {
+		color: $brand-primary;
+		font-size: 16px;
+		font-weight: 700;
+		// text-transform: uppercase;
+		letter-spacing: 0.1em;
+	}
+	.navbar-nav {
+		li {
+			a {
+				font-size: $font-size-nav;
+				color: $gray-base;
+				i {
+					font-size: 16px;
+				}
+				&.cart {
+					font-weight: 700;
+					i {
+						margin: 0 3px;
+					}
+				}
+				.badge {
+					margin-left: 3px;
+				}
+			}
+			&:hover {
+				// color: white !important;
+				background: $gray-lighter;
+			}
+			&.active {
+				a {
+					background: $brand-secondary;
+					color: white;
+				}
+			}
+		}
+	}
+	.cart {
+		li {
+			@media (max-width: $screen-xs-max) {
+				margin-right: 20px;
+			}
+			a {
+				@media (max-width: $screen-xs-max) {
+					padding-top: 7px;
+				}
+				@media (max-width: 320px) {
+					padding-right: 2px;
+					padding-left: 0;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+	.navbar-collapse {
+		// text-align: center;
+		background-color: white;
+	}
+}
+.navbar-fixed-top {
+	// top: 40px;
+}
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+	.navbar .navbar-nav li a {
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 12px !important;
+	}
+}
+
+.fast-contact {
+	// position: fixed;
+	// top: 0;
+	// left: 0;
+	// right: 0;
+	// z-index: 100;
+	background: $brand-secondary;
+	height: 25px;
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+	text-align: center;
+	color: white;
+	a {
+		color: white;
+		margin-right: 20px;
+	}
+	// height: 30px;
+    // margin-bottom: 30px;
+	@media (max-width: $screen-sm-max) {
+		padding-top: 5px !important;
+		font-size: 12px;
+	}
+}
+
+
+body {
+	padding-top: 65px;
+	.main.home {
+		margin-top: -50px;
+	}
+}

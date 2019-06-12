@@ -1,0 +1,22 @@
+title:       Button sizes
+label:       Sizes
+status:      wip
+collated:    true
+default:     large
+variants:
+  - name:    large
+    context:
+      class: btn-primary btn-lg
+      text:  Large button
+  - name:    normal
+    context:
+      class: btn-primary
+      text:  Normal button
+  - name:    small
+    context:
+      class: btn-primary btn-sm
+      text:  Small button
+  - name:    large-block
+    context:
+      class: btn-primary btn-lg btn-block
+      text:  Large block level button

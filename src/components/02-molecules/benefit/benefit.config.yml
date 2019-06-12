@@ -1,0 +1,41 @@
+title:          Benefit
+label:          Benefit
+status:         ready
+# collated:     true
+default:        piggy
+variants:
+  - name:       piggy
+    context:
+      title:    Množstevní slevy
+      tt_title: Čím více sáčků si koupíte, tím <strong>nižší cenu za jeden sáček</strong> získáte
+      icon:
+        image:  'piggy'
+        class:  'benefit__icon'
+  - name:       bags
+    context:
+      title:    Největší výběr
+      tt_title: Zajistíme sáčky pro <strong>jakýkoliv model vysavače</strong>
+      icon:
+        image:  bags
+        class:  benefit__icon
+  - name:       transport
+    context:
+      title:    Doprava zdarma a expresní expedice
+      tt_title: U vybraných balení <strong>doprava zdarma</strong>
+      icon:
+        image:  transport
+        class:  benefit__icon
+  - name:       gift
+    context:
+      title:    Dárek k nákupu
+      tt_title: U vybraných balení <strong>sáčky do vysavače zdarma</strong>
+      icon:
+        image:  gift
+        class:  benefit__icon
+  - name:       badge
+    context:
+      title:    Nadstandardní garance
+      tt_title: <strong>100% záruka</strong> na vrácení zboží
+      icon:
+        image:  badge
+        class:  benefit__icon

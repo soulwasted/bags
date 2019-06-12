@@ -1,0 +1,57 @@
+.stripe--brands {
+	
+}
+
+// FIXME: naming convention? .brands > .brand
+.brands {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	.brand {
+		// width: calc(100% / 2);
+		width: 100%;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		// opacity: 0.5;
+		padding: 8px 10px;
+		@include media-breakpoint-up(xxxs) {
+			width: calc(100% / 2);
+		}
+		@include media-breakpoint-up(xs) {
+			width: calc(100% / 3);
+			padding: 8px 16px;
+		}
+		@include media-breakpoint-up(sm) {
+			width: calc(100% / 4);
+			// padding: 10px 24px;
+		}
+		@include media-breakpoint-up(md) {
+			width: calc(100% / 6);
+			// padding: 14px 32px;
+		}
+		@include media-breakpoint-up(lg) {
+			padding: 14px 32px;
+		}
+		img {
+			height: auto;
+			max-width: 100%;
+			// filter: grayscale(100%);
+			// opacity: 0.7;
+			// filter: brightness(140);
+			// max-width: 120px;
+			// width: 100%;
+			// max-width: calc(100% - 20px);
+			// @include media-breakpoint-up(sm) {
+			// 	max-width: 120px;
+			// }
+			&:hover {
+				// filter: none;
+				// opacity: 1;
+			}
+		}
+		&.brand--more {
+			flex: 1;
+		}
+	}
+}

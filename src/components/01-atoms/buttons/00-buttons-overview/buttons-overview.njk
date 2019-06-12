@@ -1,0 +1,28 @@
+<h4>Basic buttons</h4>
+{% render '@button' %}
+{% render '@button--secondary' %}
+{% render '@button--link' %}
+
+<hr>
+
+<h4>Outline buttons</h4>
+{% render '@button-outline--primary' %}
+{% render '@button-outline--secondary' %}
+
+<hr>
+
+<h4>Button sizes</h4>
+{% render '@button-size--large' %}
+{% render '@button-size--normal' %}
+{% render '@button-size--small' %}
+<br><br>
+{% render '@button', {modifier:'btn-outline-secondary btn-lg', text:'Large outline button'} %}
+{% render '@button', {modifier:'btn-outline-secondary', text:'Medium outline button'} %}
+{% render '@button', {modifier:'btn-outline-secondary btn-sm', text:'Small outline button'} %}
+
+<hr>
+
+<h4>Button block level</h4>
+{% render '@button-size--large-block' %}
+<br>
+{% render '@button', {modifier:'btn-outline-secondary btn-block', text:'Medium secondary outline button'} %}

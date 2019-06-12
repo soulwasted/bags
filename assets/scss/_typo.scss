@@ -1,0 +1,211 @@
+.special {
+	font-family: $font-family-special;
+}
+h1.special {
+	font-size: 54px;
+	color: $black;
+	margin-bottom: 0;
+	@media (max-width: $screen-sm-max) {
+		font-size: 40px;
+	}
+	@media (max-width: $screen-xs-max) {
+		font-size: 30px;
+	}
+}
+.h1,
+h1 {
+	margin: 30px 0 20px;
+	font-weight: 800;
+	@media screen and (max-width: $screen-xs-max) {
+		font-size: 30px;
+		line-height: 40px;
+	}
+}
+.h2,
+h2 {
+	margin: 20px 0 15px;
+	font-weight: 800;
+}
+h3 {}
+h5 {
+	text-transform: uppercase;
+}
+h5 span.icon {
+	position: relative;
+	font-size: 30px;
+	top: -4px;
+}
+h3,
+h4 {
+	// color: $brand-secondary !important;
+	// margin: 0;
+	// text-transform: uppercase;
+	font-weight: 800;
+}
+h3 > label {
+	font-weight: 800 !important;
+}
+h4 {
+	@media screen and (max-width: $screen-xs-max) {
+		margin-top: 20px;
+	}
+}
+h4.hand {
+	font-family: 'hand_of_seanregular';
+	color: $brand-secondary;
+	text-transform: none;
+	// transform: rotate(-5deg);
+	opacity: 0.4;
+	font-size: 14px;
+}
+h6 {
+	font-weight: 500;
+	font-size: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $black;
+	img {
+		margin-left: 10px;
+	}
+}
+
+
+
+h4.hand {
+	span {
+		display: inline-block;
+	}
+
+	&.bags, &.arrow01 {
+		span {
+			margin-left: 20px;
+			transform: rotate(-5deg);
+			@media screen and (max-width: $screen-xs) {
+				margin-left: -70px;
+				margin-top: -30px;
+				margin-bottom: 10px;
+			}
+			&:after {
+				content: url("../img/arrows/arrow01.svg");
+				top: 14px;
+				left: 5px;
+				position: relative;
+			}
+		}
+	}
+	&.arrow02 {
+		margin-top: 0;
+		span {
+			margin-left: 20px;
+			transform: rotate(-5deg);
+			@media screen and (max-width: $screen-sm) {
+				transform: rotate(0deg);
+				// margin-left: -70px;
+				margin-top: -30px;
+				margin-bottom: 10px;
+			}
+			&:before {
+				content: url("../img/arrows/arrow02.svg");
+				top: 30px;
+				position: relative;
+			}
+			// @media screen and (max-width: $screen-sm) {
+			@media screen and (max-width: 768px) {
+				// margin-top: -50px;
+				&:before {
+					content: url("../img/arrows/arrow04.svg");
+					left: -20px;
+					top: 20px;
+				}
+			}
+		}
+	}
+	&.arrow03 {
+		span {
+			margin-left: 20px;
+			transform: rotate(-5deg);
+			@media screen and (max-width: $screen-xs) {
+				margin-left: -70px;
+				margin-top: -30px;
+				margin-bottom: 10px;
+			}
+			&:before {
+				content: url("../img/arrows/arrow03.svg");
+				top: 30px;
+				position: relative;
+			}
+		}
+	}
+	&.summary {
+		width: 150px;
+		margin: 0 auto;
+		margin-top: 20px;
+		text-align: left;
+		@media screen and (max-width: $screen-xs) {
+			margin-top: -5px;
+		}
+		span {
+			text-align: left;
+			transform: rotate(-15deg);
+			// margin-left: -90px;
+		}
+	}
+}
+
+
+.main.text {
+	h3, h4, h5 {
+		text-transform: none;
+		color: $text-color !important;
+	}
+	a {
+		h3, h4, h5 {
+			color: $brand-secondary !important;
+		}
+	}
+}
+.main.detail {
+	h1 {
+		// font-size:
+	}
+}
+
+p {
+	b,
+	strong {
+		color: $gray-dark;
+	}
+	&.info {
+		font-size: 86%; // 12px
+		color: $gray-dark;
+	}
+	&.bigger {
+		font-size: 120%;
+	}
+}
+strong {
+	&.info {
+		text-transform: uppercase;
+		font-size: 86%; // 12px
+		color: $gray-dark;
+	}
+}
+.text-c-primary {
+	color: $brand-primary;
+}
+.text-c-secondary {
+	color: $brand-secondary;
+}
+.text--caption {
+	font-size: 12px;
+}
+.text--secondary {
+	opacity: 0.5;
+}
+small {
+	@extend .text--caption;
+}
+.center {
+	text-align: center;
+}

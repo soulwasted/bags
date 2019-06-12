@@ -1,0 +1,48 @@
+.text-size-lg {
+	font-size: $font-size-lg;
+}
+.text-size-md {
+	font-size: $font-size-md;
+}
+.text-size-sm {
+	font-size: $font-size-sm;
+}
+.text-size-xs {
+	font-size: $font-size-xs;
+}
+.text-size-xxs {
+	font-size: $font-size-xxs;
+}
+@mixin text-lg {
+	font-size: $font-size-lg;
+	margin-bottom: $font-size-lg;
+}
+@mixin text-md {
+	font-size: $font-size-md;
+	margin-bottom: $font-size-md;
+}
+@mixin text-sm {
+	font-size: $font-size-sm;
+	margin-bottom: $font-size-sm;
+}
+@mixin text-xs {
+	font-size: $font-size-xs;
+	margin-bottom: $font-size-xs;
+}
+@mixin text-xxs {
+	font-size: $font-size-xxs;
+	margin-bottom: $font-size-xxs;
+}
+
+.text-lg { @include text-lg; }
+.text-md { @include text-md; }
+.text-sm { @include text-sm; }
+.text-xs { @include text-xs; }
+.text-xxs { @include text-xxs; }
+
+p {@include text-sm; }
+
+.text-secondary {
+	// color: theme-color("gray");
+	// color: red;
+}
