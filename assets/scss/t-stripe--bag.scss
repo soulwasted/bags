@@ -8,160 +8,155 @@
 			max-width: 360px;
 		}
 	}
-
-	.bag {
-		// overflow: hidden;
-
-		.bag__text {
-			order: 2;
-			@include media-breakpoint-up(md) {
-				order: -1;
-			}
-
-			#accordion {
-				z-index: 10;
-				position: relative;
-				margin-top: -50px;
-				@include media-breakpoint-up(md) {
-					margin-top: 0;
-				}
-
-				h6 {
-					a {
-						display: block;
-						cursor: pointer;
-						// color: theme-color("dark");
-						padding-top: spacer(1);
-						padding-bottom: spacer(1);
-
-						&.collapsed {
-							color: theme-color("secondary");
-						}
-					}
-				}
-
-				p {
-					@include text-xs;
-					@include media-breakpoint-up(lg) {
-						@include text-md;
-					}
-				}
-			}
+	
+	.bag__text {
+		order: 2;
+		@include media-breakpoint-up(md) {
+			order: -1;
 		}
-
-		.bag__image {
-			// order: 2;
-			background: url("/img/vacs-bag.jpg") center center no-repeat;
-			background-size: contain;
-			background-position: center center;
+		
+		#accordion {
+			z-index: 10;
+			position: relative;
 			margin-top: -50px;
-			margin-bottom: spacer(3);
-			padding: 0;
-			max-height: 400px;
-			text-align: center;
-
 			@include media-breakpoint-up(md) {
-				position: relative;
-				background-position: center 70%;
-				padding: 50px 4em 30px;
-				margin-top: -100px;
-				text-align: center;
-			}
-			@include media-breakpoint-up(md) {}
-			@include media-breakpoint-up(lg) {
 				margin-top: 0;
 			}
-		}
-
-		.bag__image__pois {
-			padding: 150px 0 50px;
-			width: 100%;
-			height: auto;
-
-			@include media-breakpoint-up(lg) {
-				width: 30em;
-				height: 30em;
-				padding: 2.8em;
-				/*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
-				border-radius: 50%;
-				margin: -90px auto 0;
-				border: 1px solid theme-color("secondary");
-			}
-
-			a.poi {
-				display: inline-block;
-				width: 4.5em;
-				height: 4.5em;
-				margin: 10px;
-				/*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
-				border: 1px solid theme-color("secondary");
-				border-radius: 50%;
-				background: rgba(255,255,255,0.9);
-				margin: 0 auto;
-				text-align: center;
-
-				i {
-					font-size: 50px;
-					line-height: 60px;
-
-					&.icon-pic-clock {
-						font-size: 45px;
-					}
-					@include media-breakpoint-up(lg) {
-						font-size: 70px;
-						line-height: 80px;
-						
-						&.icon-pic-clock {
-							font-size: 65px;
-						}
+			
+			h6 {
+				a {
+					display: block;
+					cursor: pointer;
+					// color: theme-color("dark");
+					padding-top: spacer(1);
+					padding-bottom: spacer(1);
+					
+					&.collapsed {
+						color: theme-color("secondary");
 					}
 				}
-
-				&.active,
-				&:hover {
-					background: theme-color("secondary");
-
-					i {
-						color: white;
-					}
+			}
+			
+			p {
+				@include text-xs;
+				@include media-breakpoint-up(lg) {
+					@include text-md;
+				}
+			}
+		}
+	}
+	
+	.bag__image {
+		// order: 2;
+		background: url("/img/vacs-bag.jpg") center center no-repeat;
+		background-size: contain;
+		background-position: center center;
+		margin-top: -50px;
+		margin-bottom: spacer(3);
+		padding: 0;
+		max-height: 400px;
+		text-align: center;
+		
+		@include media-breakpoint-up(md) {
+			position: relative;
+			background-position: center 70%;
+			padding: 50px 4em 30px;
+			margin-top: -100px;
+			text-align: center;
+		}
+		@include media-breakpoint-up(md) {}
+		@include media-breakpoint-up(lg) {
+			margin-top: 0;
+		}
+	}
+	
+	.bag__image__pois {
+		padding: 150px 0 50px;
+		width: 100%;
+		height: auto;
+		
+		@include media-breakpoint-up(lg) {
+			width: 30em;
+			height: 30em;
+			padding: 2.8em;
+			/*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
+			border-radius: 50%;
+			margin: -90px auto 0;
+			border: 1px solid theme-color("secondary");
+		}
+		
+		a.poi {
+			display: inline-block;
+			width: 4.5em;
+			height: 4.5em;
+			margin: 10px;
+			/*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
+			border: 1px solid theme-color("secondary");
+			border-radius: 50%;
+			background: rgba(255,255,255,0.9);
+			margin: 0 auto;
+			text-align: center;
+			
+			i {
+				font-size: 50px;
+				line-height: 60px;
+				
+				&.icon-pic-clock {
+					font-size: 45px;
 				}
 				@include media-breakpoint-up(lg) {
-					display: block;
-					width: 6em;
-					height: 6em;
-					margin: -3em;
-					overflow: hidden;
-					position: absolute;
-					top: 50%;
-					left: 50%;
-
-					&.one {
-						transform: rotate(300deg) translate(15em) rotate(-300deg);
-					}
-
-					&.two {
-						transform: translate(15em);
-					}
-					/* 15em = half the width of the wrapper */
-					&.three {
-						transform: rotate(60deg) translate(15em) rotate(-60deg);
-					}
-
-					&.four {
-						transform: rotate(120deg) translate(15em) rotate(-120deg);
-					}
-
-					&.five {
-						transform: translate(-15em);
-					}
-
-					&.six {
-						transform: rotate(240deg) translate(15em) rotate(-240deg);
+					font-size: 70px;
+					line-height: 80px;
+					
+					&.icon-pic-clock {
+						font-size: 65px;
 					}
 				}
 			}
-
+			
+			&.active,
+			&:hover {
+				background: theme-color("secondary");
+				
+				i {
+					color: white;
+				}
+			}
+			@include media-breakpoint-up(lg) {
+				display: block;
+				width: 6em;
+				height: 6em;
+				margin: -3em;
+				overflow: hidden;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				
+				&.one {
+					transform: rotate(300deg) translate(15em) rotate(-300deg);
+				}
+				
+				&.two {
+					transform: translate(15em);
+				}
+				/* 15em = half the width of the wrapper */
+				&.three {
+					transform: rotate(60deg) translate(15em) rotate(-60deg);
+				}
+				
+				&.four {
+					transform: rotate(120deg) translate(15em) rotate(-120deg);
+				}
+				
+				&.five {
+					transform: translate(-15em);
+				}
+				
+				&.six {
+					transform: rotate(240deg) translate(15em) rotate(-240deg);
+				}
+			}
 		}
-
+		
 	}
 }

@@ -1,0 +1,19 @@
+footer {
+    background: theme-color("dark");
+    color: white;
+    @include text-xs;
+    a {
+        color: lighten(theme-color("secondary"), 40);
+        &:hover {
+            color: white;
+        }
+    }
+    
+    ul.list--menu {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            margin: 0 spacer(3) spacer(1) 0;
+        }
+    }
+}

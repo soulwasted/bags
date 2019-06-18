@@ -1,0 +1,17 @@
+.brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: $font-size-sm;
+    padding: spacer(2) 0;
+    
+    img {
+        height: 20px;
+        background-color: red;
+    }
+
+    span {
+        padding-left: spacer(2);
+        display: block;
+    }
+}

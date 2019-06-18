@@ -63,6 +63,14 @@ $screen-xs-max: ($screen-sm-min - 1);
 $screen-sm-max: ($screen-md-min - 1);
 $screen-md-max: ($screen-lg-min - 1);
 
+// xxxs: 0,
+// xxs: 375px,
+// xs: 480px,
+// sm: 576px,
+// md: 768px,
+// lg: 992px,
+// xl: 1200px
+
 // Variables
 //
 // Variables should follow the `$component-state-property-size` formula for
@@ -251,7 +259,7 @@ $box-shadow: 0 0.5rem 1rem rgba($black, .15) !default;
 $box-shadow-lg: 0 1rem 3rem rgba($black, .175) !default;
 
 $component-active-color: $white !default;
-$component-active-bg: theme-color("primary");
+$component-active-bg: theme-color("secondary");
 
 $caret-width: 0.3em !default;
 $caret-vertical-align: $caret-width * .85 !default;
@@ -681,8 +689,8 @@ $zindex-tooltip: 1070 !default;
 
 // Navs
 
-$nav-link-padding-y: 0.5rem !default;
-$nav-link-padding-x: 1rem !default;
+$nav-link-padding-y: 0.2rem !default;
+$nav-link-padding-x: 0.5rem !default;
 $nav-link-disabled-color: $gray-600 !default;
 
 $nav-tabs-border-color: $gray-300 !default;
@@ -1014,13 +1022,14 @@ $figure-caption-color: $gray-600 !default;
 
 // Breadcrumbs
 
-$breadcrumb-padding-y: 0.75rem !default;
-$breadcrumb-padding-x: 1rem !default;
-$breadcrumb-item-padding: 0.5rem !default;
+// $breadcrumb-padding-y: 0.5rem !default;
+$breadcrumb-padding-y: spacer(3);
+$breadcrumb-padding-x: 0;
+$breadcrumb-item-padding: spacer(2);
 
 $breadcrumb-margin-bottom: 1rem !default;
 
-$breadcrumb-bg: $gray-200 !default;
+$breadcrumb-bg: none;
 $breadcrumb-divider-color: $gray-600 !default;
 $breadcrumb-active-color: $gray-600 !default;
 $breadcrumb-divider: quote("/") !default;

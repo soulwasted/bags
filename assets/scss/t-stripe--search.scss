@@ -15,11 +15,10 @@
 	@media (max-width: $screen-xs-max) {
 		// padding: 40px 0 20px;
 	}
-	
+
 	h1 {
 		@include font-size($display4-size);
 	}
-	
 
 	.container:first-child {
 		display: flex;

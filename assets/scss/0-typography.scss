@@ -46,3 +46,12 @@ p {@include text-sm; }
 	// color: theme-color("gray");
 	// color: red;
 }
+.text-dimmed {
+	opacity: 0.5;
+}
+.link-underline {
+	text-decoration: underline;
+	&:hover {
+		text-decoration: none;
+	}
+}

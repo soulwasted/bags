@@ -1,0 +1,26 @@
+.close {
+    font-size: 48px;
+    line-height: 1;
+    margin-top: -10px;
+}
+
+#myModal--advices {
+    .modal-xl {
+        @include media-breakpoint-up(md) {
+			max-width: calc(100vw - 50px);
+		}
+    }
+    ul li {
+        list-style: none;
+        @include text-sm;
+        display: flex;
+        span {
+            display: block;
+            margin-right: spacer(3);
+            color: theme-color("secondary");
+            i {
+                font-size: 24px;
+            }
+        }
+    }
+}
