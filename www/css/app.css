@@ -15139,10 +15139,18 @@ footer {
       .list--items .item {
         width: -webkit-calc((100%/3) - 2 * 0.5rem);
         width: calc((100%/3) - 2 * 0.5rem); } }
-    @media (min-width: 1200px) {
-      .list--items .item {
-        width: -webkit-calc((100%/4) - 2 * 0.5rem);
-        width: calc((100%/4) - 2 * 0.5rem); } }
+
+.goods .list--items .item {
+  margin: 0.5rem;
+  width: 100%; }
+  @media (min-width: 992px) {
+    .goods .list--items .item {
+      width: -webkit-calc((100%/2) - 2 * 0.5rem);
+      width: calc((100%/2) - 2 * 0.5rem); } }
+  @media (min-width: 1200px) {
+    .goods .list--items .item {
+      width: -webkit-calc((100%/3) - 2 * 0.5rem);
+      width: calc((100%/3) - 2 * 0.5rem); } }
 
 .breadcrumb {
   font-size: 0.875rem;

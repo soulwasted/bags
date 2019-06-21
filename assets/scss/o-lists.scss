@@ -119,9 +119,25 @@
 		@include media-breakpoint-up(lg) {
 			width: calc((100%/3) - 2 * #{spacer(2)});
 		}
-		@include media-breakpoint-up(xl) {
-			width: calc((100%/4) - 2 * #{spacer(2)});
-		}
+		// @include media-breakpoint-up(xl) {
+		// 	width: calc((100%/4) - 2 * #{spacer(2)});
+		// }
 
+	}
+}
+
+.goods .list--items {
+	.item {
+		margin: spacer(2);
+		width: 100%;
+		@include media-breakpoint-up(lg) {
+			width: calc((100%/2) - 2 * #{spacer(2)});
+		}
+		@include media-breakpoint-up(xl) {
+			width: calc((100%/3) - 2 * #{spacer(2)});
+		}
+		// @include media-breakpoint-up(xl) {
+		// 	width: calc((100%/4) - 2 * #{spacer(2)});
+		// }
 	}
 }
