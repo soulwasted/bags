@@ -1,0 +1,8 @@
+status:   ready
+context:
+  links:
+  - link: /
+    text: Home
+  - link: '#'
+    text: Some other link
+  active: Active page

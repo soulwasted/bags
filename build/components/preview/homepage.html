@@ -1,0 +1,665 @@
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<title>Preview Layout</title>
+		<link rel="shortcut icon" href="../../img/favicon.png">
+		<link media="all" rel="stylesheet" href="../../css/app.css">
+		<link media="all" rel="stylesheet" href="../../fonts/vrecka-icons/iconfont.css">
+		<script type="text/javascript" src="../../js/scripts.js"></script>
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
+        <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+        <!--[if lte IE 9]><link href="/css/ie9.css" rel="stylesheet"><script src="/js/flexibility.js"></script><![endif]-->
+	</head>
+	<body>
+		
+		<div class="container-fluid fast-contact">
+	<div class="row">
+		<div class="col">
+			<a href="mailto:info@chci-vysavat.cz">info@chci-vysavat.cz</a>
+			<span>+420 737 770 470</span>
+		</div>
+	</div>
+</div>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<a class="navbar-brand" href="#">chci-vysavat.cz</a>
+	<div class="navbar-nav navbar__login ml-auto">
+		<a class="cart nav-item nav-link" href="/prihlasit">
+			<i aria-hidden="true" class="icon-user"></i>
+			<span class="text">&nbsp;Přihlásit</span>
+		</a>
+		<a rel="tooltip" data-placement="bottom" title="Váš košík je prázdný. Pokračujte do obchodu" class="cart nav-item nav-link" href="/kosik">
+			<i aria-hidden="true" class="icon-cart"></i>
+			<span class="text">&nbsp;Nákupní košík</span><span class="d-none d-xxs-inline d-sm-none">Košík</span><span class="badge"><span class="badge__text">1</span></span>
+		</a>
+	</div>
+	<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		<span class="text">menu</span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNav">
+		<div class="navbar-nav">
+			<a class="nav-item nav-link" href="/znacky">Prodávané značky</a>
+			<a class="nav-item nav-link" href="/o-nas">O nás</a>
+			<a class="nav-item nav-link" href="/sacky-do-vysavace-vacs">Více o sáčcích VACS</a>
+			<a class="nav-item nav-link" href="/jak-nakoupit">Jak nakoupit</a>
+			<a class="nav-item nav-link" href="/kontakt">Kontakt</a>
+			<a class="nav-item nav-link" href="/objednavka">Moje objednávka</a>
+			<a class="nav-item nav-link d-sm-none" href="/prihlasit">
+				<i aria-hidden="true" class="icon-user"></i>
+				<span class="text">&nbsp;Přihlásit</span>
+			</a>
+			<a rel="tooltip" data-placement="bottom" title="Váš košík je prázdný. Pokračujte do obchodu" class="nav-item nav-link  d-sm-none" href="/kosik">
+				<i aria-hidden="true" class="icon-cart"></i>
+				<span class="text">&nbsp;Nákupní košík</span><span class="badge"><span class="badge__text">1</span></span>
+			</a>
+		</div>
+	</div>
+
+</nav>
+		
+		
+<div id="section-01" class="container-fluid stripe stripe--search cd-section">
+	<div class="container">
+		<div class="row intro">
+			<div class="col-lg-8 col-md-12 pb-lg-4 pb-md-3 pb-sm-2 pb-1">
+				<h1>Sáčky pro více než 19&nbsp;000 modelů vysavačů</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div id="search-fulltext" class="col-lg-8 col-md">
+				<form id="frm-goodsSearchForm" action="/" method="post">
+					<input id="suggestid" type="hidden" name="suggestid">
+					
+					
+						<pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: raleway, arial, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
+						<div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
+							<div class="content">
+								<div class="top">
+									<div class="tt-dataset tt-dataset-top-brands"></div>
+									<div class="tt-dataset tt-dataset-top-bags"></div>
+								</div>
+								<div class="tt-dataset tt-dataset-all-firms"></div>
+								<div class="tt-dataset searching" style="display: none;">
+									<h5>
+										<span>Vyhledávám modely</span></h5>
+									<img class="img img-responsive center-block" src="/images/loader-gears.gif" alt="HLEDAM">
+								</div>
+								<div class="tt-dataset tt-dataset-all-models"></div>
+							</div>
+						</div>
+					</span>
+					<input
+						id="goodssearch"
+						type="hidden"
+						name="goodssearch"
+						placeholder="Napište značku a/nebo model vysavače"
+						onfocus="this.value = ''; this.onfocus = null"
+						data-nette-suggestlink="?do=signalSuggest"
+						data-nette-suggestinput-options="{componentName:'Public:Homepage',lang:'cs',itemsPerPage:10000,onSelect:'frm-goodsSearchForm',idField:'frm-goodsSearchForm-suggestid'}"
+						class="suggestInput"
+						autocomplete="off">
+					<form class="big_search">
+	<input type="text" class="form-control form-control-lg big_search__input" id="" placeholder="Napište značku a/nebo typ vysavače">
+	<span class="icon-placeholder big_search__icon"><i class="icon-search"></i></span>
+	<button type="submit" class="btn btn-primary btn-lg big_search__btn" id="sendsearch">
+    <span class="icon-placeholder "><i class="icon-search"></i></span>
+    <span>Hledat</span>
+</button>
+
+</form>
+					<input type="hidden" name="_do" value="goodsSearchForm-submit">
+				</form>
+			</div>
+		</div>
+		<div class="row links pt-3">
+			<div class="col-lg-8 col-md-12 mb-4">
+				<a href="#" data-toggle="modal" data-target="#myModal--advices">Jak hledat?</a>
+				<a href="#" data-toggle="modal" data-target="#myModal">Jak zjistit model vysavače?</a>
+				<a href="doplnkove-zbozi">Hepa filtry, motorové filtry, kartáče, vůně…</a>
+			</div>
+		</div>
+	</div>
+	<div class="container pb-lg-4 pb-md-3 pb-sm-2 pb-1">
+		<div class="row">
+			<div class="col-lg-11 col-md-12">
+				<div class="benefits beneftis--home">
+    <a data-html="true" class="benefit" data-toggle="tooltip" title="Čím více sáčků si koupíte, tím &lt;strong&gt;nižší cenu za jeden sáček&lt;/strong&gt; získáte">
+	<span class="icon-placeholder benefit__icon"><i class="icon-piggy"></i></span>
+	<div class="benefit__title">Množstevní slevy</div>
+</a>
+    <a data-html="true" class="benefit" data-toggle="tooltip" title="Zajistíme sáčky pro &lt;strong&gt;jakýkoliv model vysavače&lt;/strong&gt;">
+	<span class="icon-placeholder benefit__icon"><i class="icon-bags"></i></span>
+	<div class="benefit__title">Největší výběr</div>
+</a>
+    <a data-html="true" class="benefit" data-toggle="tooltip" title="U vybraných balení &lt;strong&gt;doprava zdarma&lt;/strong&gt;">
+	<span class="icon-placeholder benefit__icon"><i class="icon-transport"></i></span>
+	<div class="benefit__title">Doprava zdarma a expresní expedice</div>
+</a>
+    <a data-html="true" class="benefit" data-toggle="tooltip" title="U vybraných balení &lt;strong&gt;sáčky do vysavače zdarma&lt;/strong&gt;">
+	<span class="icon-placeholder benefit__icon"><i class="icon-gift"></i></span>
+	<div class="benefit__title">Dárek k nákupu</div>
+</a>
+    <a data-html="true" class="benefit" data-toggle="tooltip" title="&lt;strong&gt;100% záruka&lt;/strong&gt; na vrácení zboží">
+	<span class="icon-placeholder benefit__icon"><i class="icon-badge"></i></span>
+	<div class="benefit__title">Nadstandardní garance</div>
+</a>
+</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="section-02" class="container-fluid stripe stripe--testimonials cd-section">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h2>Ověřeno našimi zákazníky</h2>
+				<p class="text-lg">
+					<strong>Více než 94 % zákazníků doporučuje náš obchod (z 453 recenzí).</strong>
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-2 d-none d-md-block">
+				
+				<img src="../../img/heureka-badge.png" alt="Heureka.cz - ověřené hodnocení obchodu Chci vysávat" class="img-fluid">
+			</div>
+			
+			<div class="col-sm col-xs-12">
+				<div class="card testimonial__card">
+					<div class="text-size-sm">i přes problémy, které jsem měl s vytvořením objednávky mi po dobré komunikaci poradili, vystavili z mne objednávku a zboží poslali. Profi jednání</div>
+					<div class="text-size-xs text-dimmed mb-3">02. 04. 2019</div>
+					
+					<div class="stars">
+						<span aria-hidden="true" class="fa fa-star"></span>
+						<span aria-hidden="true" class="fa fa-star"></span>
+						<span aria-hidden="true" class="fa fa-star"></span>
+						<span aria-hidden="true" class="fa fa-star"></span>
+						<span aria-hidden="true" class="fa fa-star"></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm col-xs-12">
+				<div class="card testimonial__card">
+					<div class="text-size-sm">Rychle vyřízená objednávka, perfektně vyřízená</div>
+					<div class="text-size-xs text-dimmed mb-3">17. 05. 2019</div>
+					<div class="stars">
+						<span aria-hidden="true" class="fa fa-star"></span>
+						<span aria-hidden="true" class="fa fa-star"></span>
+						<span aria-hidden="true" class="fa fa-star"></span>
+						<span aria-hidden="true" class="fa fa-star"></span>
+						<span aria-hidden="true" class="fa fa-star"></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm col-xs-12">
+				<div class="card testimonial__card">
+					<div class="text-size-sm">Určitě doporučuji,vše v pořádku.</div>
+					<div class="text-size-xs text-dimmed mb-3">29. 05. 2019</div>
+					<div class="stars">
+						<span aria-hidden="true" class="fa fa-star"></span>
+						<span aria-hidden="true" class="fa fa-star"></span>
+						<span aria-hidden="true" class="fa fa-star"></span>
+						<span aria-hidden="true" class="fa fa-star"></span>
+						<span aria-hidden="true" class="fa fa-star"></span>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="row">
+			<div class="offset-xs-0 offset-md-2 col-md-10 col-sm-12">
+				<a href="/?do=loadReviews" class="btn btn-primary ajax">Další recenze</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="section-03" class="container-fluid stripe stripe--brands cd-section border-bottom">
+	<div class="container"><div class="row mb-3">
+		<div class="col">
+			<h2>Nejprodávanější značky vysavačů</h2>
+		</div>
+	</div>
+	<div class="brands">
+		<a href="/electrolux" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/electrolux.jpg" alt="ELECTROLUX" title="ELECTROLUX">
+		</a>
+		<a href="/sencor" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/sencor.jpg" alt="SENCOR" title="SENCOR">
+		</a>
+		<a href="/miele" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/miele.jpg" alt="MIELE" title="MIELE">
+		</a>
+		<a href="/zelmer" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/zelmer.jpg" alt="ZELMER" title="ZELMER">
+		</a>
+		<a href="/philips" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/philips.jpg" alt="PHILIPS" title="PHILIPS">
+		</a>
+		<a href="/zanussi" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/zanussi.jpg" alt="ZANUSSI" title="ZANUSSI">
+		</a>
+		<a href="/parkside" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/parkside.jpg" alt="PARKSIDE" title="PARKSIDE">
+		</a>
+		<a href="/hecht" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/hecht.jpg" alt="HECHT" title="HECHT">
+		</a>
+		<a href="/husky" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/husky.jpg" alt="HUSKY" title="HUSKY">
+		</a>
+		<a href="/vorwerk" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/vorwerk.jpg" alt="VORWERK" title="VORWERK">
+		</a>
+		<a href="/concept" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/concept.jpg" alt="CONCEPT" title="CONCEPT">
+		</a>
+		<a href="/einhell" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/einhell.jpg" alt="EINHELL" title="EINHELL">
+		</a>
+		<a href="/narex" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/narex.jpg" alt="NAREX" title="NAREX">
+		</a>
+		<a href="/nilfisk" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/nilfisk.jpg" alt="NILFISK" title="NILFISK">
+		</a>
+		<a href="/eta" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/eta.jpg" alt="ETA" title="ETA">
+		</a>
+		<a href="/aeg" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/aeg.jpg" alt="AEG" title="AEG">
+		</a>
+		<a href="/karcher" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/karcher.jpg" alt="KÄRCHER" title="KÄRCHER">
+		</a>
+		<a href="/rowenta" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/rowenta.jpg" alt="ROWENTA" title="ROWENTA">
+		</a>
+		<a href="/lux" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/lux.jpg" alt="LUX" title="LUX">
+		</a>
+		<a href="/samsung" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/samsung.jpg" alt="SAMSUNG" title="SAMSUNG">
+		</a>
+		<a href="/bosch" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/bosch.jpg" alt="BOSCH" title="BOSCH">
+		</a>
+		<a href="/hyundai" class="brand">
+			<img src="https://chci-vysavat.cz/images/firms/hyundai.jpg" alt="HYUNDAI" title="HYUNDAI">
+		</a>
+		<a href="/znacky" class="brand brand--more">
+			<strong>Další značky »</strong>
+		</a>
+	</div></div>
+</div>
+<div id="section-04" class="container-fluid stripe stripe--bag cd-section">
+	<div class="container">
+		<div class="row">
+			<div class="col mb-3">
+				<h2>Prodáváme sáčky do vysavačů značky VACS</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<img class="vacs-logo img-fluid" src="/img/vacs-logo-stripe.png" alt="VACS"/>
+			</div>
+		</div>
+		<div class="row">
+			<div class="bag__text col-sm-12 col-md-6 col-lg-4">
+				<div id="accordion" role="tablist" aria-multiselectable="true">
+					<div class="card">
+						<div class="card-header" id="headingOne" role="tab">
+							<h6>
+								<a role="button" data-toggle="collapse" data-target="#poi-text-one" aria-expanded="true" aria-controls="collapseOne">PÉČE O VAŠE ZDRAVÍ</a>
+							</h6>
+						</div>
+						<div class="collapse show" id="poi-text-one" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+							<div class="card-body">
+								<p>Sáčky VACS jsou vyrobené z antibakteriální netkané textílie, která má
+									<strong>5 filtračních vrstev</strong>
+									a představuje špičkovou technologii pro ochranu vašeho zdraví.</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingTwo" role="tab">
+							<h6>
+								<a class="collapsed" role="button" data-toggle="collapse" data-target="#poi-text-two" aria-expanded="false" aria-controls="collapseTwo">PRODLOUŽENA ŽIVOTNOST</a>
+							</h6>
+						</div>
+						<div class="collapse" id="poi-text-two" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+							<div class="card-body">
+								<p>Sáčky VACS mají ve srovnání s papírovými sáčky
+									<strong>o 50 % delší živnostnost</strong>. Šetříme Vaše peníze, protože nemusí vyměňovat sáčky tak často.</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingThree" role="tab">
+							<h6>
+								<a class="collapsed" role="button" data-toggle="collapse" data-target="#poi-text-three" aria-expanded="false" aria-controls="collapseThree">ÚČINNĚJŠÍ FILTRACE</a>
+							</h6>
+						</div>
+						<div class="collapse" id="poi-text-three" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+							<div class="card-body">
+								<p>Syntetická netkaná textílie
+									<strong>odfiltruje až 99 % částic</strong>
+									o velikosti jeden mikron - to je až o 40% více oproti papírovému sáčku. Je to dáno skladbou stěny sáčků. Moderní netkané textilie se při výrobě sáčků pokládají ve vrstvách na sebe (sáčky VACS mají 5 vrstev), přičemž každá vrstva je specificky určená
+									pro jinou funkci – od filtrace různých velikostí částic nečistot až po ochrannou funkci.</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingFour" role="tab">
+							<h6>
+								<a class="collapsed" role="button" data-toggle="collapse" data-target="#poi-text-four" aria-expanded="false" aria-controls="collapseThree">LEPŠÍ VYUŽITÍ PROSTORU</a>
+							</h6>
+						</div>
+						<div class="collapse" id="poi-text-four" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+							<div class="card-body">
+								<p>Sáčky VACS nemají skládání, na první pohled vypadají větší než jiné sáčky. Díky pružnosti netkané textilie se
+									<strong>sáček snadno přizpůsobí svému prostoru</strong>
+									ve vysavači a pojme minimálně o 15 % více nečistot než papírový sáček.</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingFive" role="tab">
+							<h6>
+								<a class="collapsed" role="button" data-toggle="collapse" data-target="#poi-text-five" aria-expanded="false" aria-controls="collapseFive">PEVNOST SPOJE</a>
+							</h6>
+						</div>
+						<div class="collapse" id="poi-text-five" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+							<div class="card-body">
+								<p>Papírové sáčky mají lepené spoje, které jsou velice náchylné na poškození. Pokud není lepení kvalitní, může se sáček rozlepit a přestane plnit svou funkci. Nekvalitní papír navíc v místech ohybu může praskat. U sáčků z netkané textilie se
+									jednotlivé díly sáčků se k sobě "taví" a mají podstatně vyšší pevnost.</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingSix" role="tab">
+							<h6>
+								<a class="collapsed" role="button" data-toggle="collapse" data-target="#poi-text-six" aria-expanded="false" aria-controls="collapseSix">HYGIENICKÝ UZÁVĚR</a>
+							</h6>
+						</div>
+						<div class="collapse" id="poi-text-six" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion">
+							<div class="panel-body">
+								<p>Zejména při výměně sáčku ve vysavači se může do vzduchu dostat jemný prach, který ohrožuje vaše zdraví. Hygienický uzávěr udrží prach přesně tam, kam patří – tedy v sáčku.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bag__image col-sm-12 col-md-6 col-lg-8">
+				<div class="bag__image__pois">
+					<a class="poi one active" href="#accordion" data-scroll="data-scroll">
+						<i class="icon-pic-magnify"></i>
+					</a>
+					<a class="poi two" href="#accordion" data-scroll="data-scroll">
+						<i class="icon-pic-clock"></i>
+					</a>
+					<a class="poi three" href="#accordion" data-scroll="data-scroll">
+						<i class="icon-pic-filter"></i>
+					</a>
+					<a class="poi four" href="#accordion" data-scroll="data-scroll">
+						<i class="icon-pic-space"></i>
+					</a>
+					<a class="poi five" href="#accordion" data-scroll="data-scroll">
+						<i class="icon-pic-join"></i>
+					</a>
+					<a class="poi six" href="#accordion" data-scroll="data-scroll">
+						<i class="icon-pic-closing"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col mt-3">
+				<a href="/sacky-do-vysavace-vacs" role="button" class="btn btn-primary">Více o sáčcích VACS</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="../../js/app-bag_interactive.js"></script>
+<div id="section-05" class="container-fluid stripe stripe--ask cd-section">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				
+				<h2>Chcete se na něco zeptat?</h2>
+				<p class="text-lg">Pište na
+					<strong>
+						<a href="mailto:info@chci-vysavat.cz" class="link-underline">info@chci-vysavat.cz</a>
+					</strong>
+					nebo nám zavolejte na
+					<strong>+420 737 770 470</strong>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="section-06" class="container-fluid stripe stripe--order cd-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>Zjistěte stav Vaší objednávky</h2>
+				
+			</div>
+		</div>
+		<form action="/" method="post" id="frm-ordersForm">
+			<div class="form-row">
+				<noscript>
+					<p>Vyplňte nospam:
+						<input name="email_confirm" size="6"></p>
+				</noscript>
+				<script type="text/javascript">
+					document.write('<input type="hidden" name="email_confirm" value="no@spam" />');
+				</script><input type="hidden" name="email_confirm" value="no@spam">
+
+				<div class="form-group col-12 col-md-4">
+					<label for="order-number" class="sr-only">Číslo objednávky</label>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">
+								
+								
+								#
+							</span>
+						</div>
+						<input id="order-number" type="number" placeholder="Číslo objednávky" class="form-control btn-higher" name="order_num">
+					</div>
+				</div>
+
+				<div class="form-group col-12 col-md-4">
+					<label for="order-mail" class="sr-only">Váš e-mail</label>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">
+								<i class="far fa-envelope"></i>
+							</span>
+						</div>
+						<input id="order-mail" type="email" placeholder="Váš e-mail" class="form-control btn-higher" name="order_email">
+					</div>
+				</div>
+				
+				<div class="form-group col-12 col-md-4">
+					<button type="submit" class="btn btn-primary" name="searchOrder" value="Vyhledat objednávku">Vyhledat objednávku</button>
+				</div>
+				<input type="hidden" name="_do" value="ordersForm-submit">
+			</div>
+		</form>
+	</div>
+
+</div>
+
+<!-- Modal-->
+<div id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+	<div role="document" class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body text-center">
+				<button type="button" data-dismiss="modal" aria-label="Close" class="close">
+					<span aria-hidden="true">×
+					</span>
+				</button>
+				<h4>Model vašeho vysavače najdete na štítku umístěném obvykle na zadní straně vysavače</h4>
+				<img src="/img/modal-find_model.jpg" alt="Najděte model">
+				<hr/>
+				<button type="button" data-dismiss="modal" class="btn btn-primary btn-lg">Už vím!</button>
+				<hr/>
+				<p>Nenašli jste svůj model vysavače?
+					<br/>To ale nemusí znamenat, že pro Váš vysavač nemáme sáček.</p>
+				<p>Zavolejte nám na 
+					<strong>+420 737 770 470</strong>,<br>nebo napište na
+					<strong>
+						<a href="mailto:info@chci-vysavat.cz">info@chci-vysavat.cz</a>
+					</strong>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="myModal--advices" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+	<div role="document" class="modal-dialog modal-xl ">
+		<div class="modal-content">
+			<div class="modal-body text-center">
+				<button type="button" data-dismiss="modal" aria-label="Close" class="close">
+					<span aria-hidden="true">×
+					</span>
+				</button>
+				<h4 class="mb-3">Rady pro vyhledání správného modelu vysavače</h4>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-12"><img src="/img/modal-advices-img_01.jpg" alt="Vyplňte název modelu"></div>
+						<div class="col-md-6 col-sm-12 text-left">
+							<ul>
+								<li>
+									<span>
+										<i class="icon-check2"></i>
+									</span>
+									<div>Zadávejte
+										<strong>spíše kratší řetězec</strong>
+										písmen (maximálně 3-5 znaků) nebo čísel
+										<strong>bez mezer</strong>
+										a sledujte jaké modely se vám pod vyhledávacím políčkem vyberou.</div>
+								</li>
+								<li>
+									<span>
+										<i class="icon-check2"></i>
+									</span>
+									<div>
+										<strong>Zkrácený název modelu</strong>
+										vysavače najdete na přední straně vysavače. Na obrázku je např. model
+										<srong>„ultraone“</srong>
+										značky ELECTROLUX.</div>
+								</li>
+								<li>
+									<span>
+										<i class="icon-check2"></i>
+									</span>
+									<div>
+										<strong>Přesný název modelu</strong>
+										vysavače najdete na zadní straně vysavače.<br>Na obrázku je např. model
+										<strong>„SVC 900“</strong>
+										značky SENCOR.
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-3 col-sm-12"><img src="/img/modal-advices-img_02.jpg" alt="Na zadní straně vysavače jsou zpravidla všechny důležité informace"></div>
+					</div>
+				</div>
+				<hr/>
+				<button type="button" data-dismiss="modal" class="btn btn-primary btn-lg">Už vím!</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Modal -->
+<div class="modal" id="myModalSearching" tabindex="-1" role="dialog" aria-labelledby="myModalLabelSearching" aria-hidden="true">
+	<div class="row">
+		<img class="img img-responsive center-block" src="/images/loader-gears.gif" alt="Najděte model"><br>
+	</div>
+</div>
+		
+		<footer class="stripe">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-7">
+				<h6>ZPŮSOB PLATBY</h6>
+				<p>
+					<i class="fas fa-arrow-right"></i>
+					Bankovní převod:
+					<strong>Fio banka, a.s.</strong>, Číslo účtu:
+					<strong>2601201827/2010</strong>
+					<br>
+					<i class="fas fa-arrow-right"></i>
+					Dobírka — Za objednávku zaplatíte v hotovosti při jejím převzetí.
+				</p>
+
+				<h6 class="pt-3">DOPRAVA</h6>
+				<p>
+					<i class="fas fa-arrow-right"></i>
+					Dopravu pro Vás zajišťujeme prostřednictvím:</p>
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<img class="img img-fluid" src="/img/footer-zasilkovna.png"><br>
+						Zásilkovna s.r.o.<br>Lihovarská 1060/12<br>190 00 Praha 9
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<img class="img img-fluid" src="/img/footer-ceska_posta.png"><br>
+						Česká pošta, s.p.<br>Politických vězňů 909/4<br>225 99 Praha 1
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-5">
+				<h6>KONTAKT</h6>
+				<p>
+					
+					<i class="fas fa-phone"></i>
+					<i class="fas fa-phone-alt"></i>
+					+420 737 770 470
+					<br>
+
+					<i class="far fa-envelope"></i>
+					<a href="mailto:info@chci-vysavat.cz">
+						info@chci-vysavat.cz</a>
+				</p>
+
+				<h6 class="pt-3">MENU</h6>
+				<ul class="list-unstyled list--menu">
+					<li><a href="/o-nas">O nás</a></li>
+					<li><a href="/znacky">Prodávané značky</a></li>
+					<li><a href="/jak-nakoupit">Jak nakoupit</a></li>
+					<li><a href="/kontakt">Kontakt</a></li>
+					<li><a href="/objednavka">Moje objednávka</a></li>
+					
+					<li><a href="/pravni-dolozka">Právní doložka</a></li>
+					<li><a href="/informace-o-zpracovani-osobnich-udaju">Informace o zpracování osobních údajů</a></li>
+					<li><a href="/jak-nakoupit/obchodni-podminky">Obchodní podmínky</a></li>
+					<li><a href="/impressum">Impressum</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row mt-3">
+			<div class="col">
+				<a href="https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=939885&amp;typ=PLATNY">chci-vysavat.cz</a>
+				&copy; 2016-2019 &middot; code&amp;design by
+				<a href="http://www.strapa.cz/" target="_blank">strapa.cz</a>
+				&middot; developed by
+				<a href="http://www.devpoint.cz" target="_blank">devPOINT</a>
+			</div>
+		</div>
+	</div>
+</footer>
+		
+		<script type="text/javascript" src="../../js/app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,10 @@
+title:        Doplňkové produkty
+label:        Doplňkové produkty
+status:       ready
+
+context:
+  breadcrumb: 
+    links:
+    - link:   'homepage'
+      text:   Domů
+    active:   Doplňkové produkty

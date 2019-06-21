@@ -1,0 +1,25 @@
+status:        ready
+context:
+  active_link: VSECHNY
+  active_text: VŠECHNY
+  items:
+  - link:      A
+    text:      A
+  - link:      B
+    text:      B
+  - link:      C
+    text:      C
+  - link:      D
+    text:      D
+  - link:      E
+    text:      E
+  - link:      F
+    text:      F
+  - link:      G
+    text:      G
+  - link:      H
+    text:      H
+  - link:      I
+    text:      I
+  - link:      J
+    text:      J

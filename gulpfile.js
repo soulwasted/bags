@@ -87,6 +87,7 @@ var paths = {
 		min: "scripts.min.js",
 		justcopy: [
 			"assets/js/app.js",
+			"assets/js/app-bag_interactive.js",
 			"assets/js/slider.js",
 			"assets/js/detail-2.js"
 		]

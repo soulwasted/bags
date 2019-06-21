@@ -1,19 +1,6 @@
 $detail-selection: 555px;
 $screen-detail-selection: calc(#{$detail-selection} + 2*15px);
 
-.detail h1 {
-	img {
-		display: block;
-		height: 24px;
-		margin-left: 0;
-		@media screen and (max-width: $screen-xs-max) {
-			// height: 16px;
-		}
-	}
-	// @media screen and (min-width: $screen-xs-max) {
-		// margin-top: 0;
-	// }
-}
 
 .main-content {
 	display: flex;

@@ -1,13 +1,18 @@
 .stripe--testimonials {
-	background: lighten($brand-secondary,60) url("/img/testimonials-bg.jpg") center center no-repeat;
+	background: lighten($brand-secondary,60) url("../img/testimonials-bg.jpg") center center no-repeat;
 	background-size: cover;
 	// margin: 32px 0;
 	.testimonial__card {
 		padding: 16px;
 		background: white;
-		box-shadow: $shadow;
+		box-shadow: $box-shadow;
 		border-radius: $border-radius-base;
 		margin-bottom: 15px;
+	    transition: $transition-base;
+		// border: red;
+		&:hover {
+			box-shadow: $box-shadow-lg;
+		}
 	}
 }
 

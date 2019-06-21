@@ -1,3 +1,6 @@
 .nav-pills {
-    font-size: $font-size-lg;
+    font-size: $font-size-md;
+    @include media-breakpoint-up(sm) {
+        font-size: $font-size-lg;
+	}
 }

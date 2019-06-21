@@ -11,6 +11,7 @@
 	}
 }
 
+// FIXME: make better response
 .navbar {
 	box-shadow: $box-shadow-lg;
 	.navbar-nav {
@@ -97,7 +98,7 @@
 	.nav-item {
 		font-size: $font-size-xs !important;
 		text-transform: uppercase;
-		font-weight: $font-weight-bold;
+		// font-weight: $font-weight-bold;
 		padding-left: 0.5rem;
 		right: 0.5rem;
 		@include media-breakpoint-down(xs) {

@@ -1,0 +1,10 @@
+title:        O nás
+label:        O nás
+status:       wip
+
+context:
+  breadcrumb: 
+    links:
+    - link:   'homepage'
+      text:   Domů
+    active:   O nás

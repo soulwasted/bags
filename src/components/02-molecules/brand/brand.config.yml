@@ -1,0 +1,10 @@
+status:      wip
+collated:    true
+default:     primary
+variants:
+  - name:    primary
+    context:
+      link:  /aeg
+      img:   https://chci-vysavat.cz/images/firms/aeg.jpg
+      alt:   logo firmy AEG
+      brand: AEG

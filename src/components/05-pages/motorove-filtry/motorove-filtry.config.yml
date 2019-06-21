@@ -1,0 +1,12 @@
+title:        Motorové filtry
+label:        Motorové filtry
+status:       ready
+
+context:
+  breadcrumb: 
+    links:
+    - link:   '/'
+      text:   Domů
+    - link:   '#'
+      text:   Seznam značek
+    active:   Motorové filtry

@@ -1,6 +1,80 @@
-ul.list {}
+// —————————————————
+// Item
+// —————————————————
 
-ul.list--brands {
+.item {
+	display: flex;
+	border: 1px solid gray("300");
+	border-radius: $border-radius-sm;
+	transition: $transition-base;
+	align-items: center;
+	padding: 2px 8px 2px 2px;
+
+	&:hover {
+		border: 1px solid gray("500");
+		text-decoration: none;
+		box-shadow: $box-shadow;
+
+		.item__info {
+			color: $black;
+		}
+	}
+}
+
+.item__image {
+	width: 75px;
+	object-fit: contain;
+	border-radius: $border-radius / 2;
+	@include media-breakpoint-up(xs) {
+		width: 100px;
+	}
+}
+
+.item__name {
+	padding: 0 spacer(2);
+	width: 100%;
+	font-weight: $font-weight-bold;
+	font-size: $font-size-xs;
+	@include media-breakpoint-up(xs) {
+		font-size: $font-size-sm;
+	}
+}
+
+.item__info {
+	font-size: $font-size-xxxs;
+	color: $gray;
+	transition: $transition-base;
+
+	span {
+		display: block;
+		font-weight: 700;
+	}
+}
+
+.item.item--additional {
+	padding: spacer(2) spacer(2) spacer(2) 2px;
+
+	.item__name {
+		padding: 0;
+	}
+
+	.item__info {
+		// margin-top: spacer(2);
+		font-size: $font-size-xxs;
+	}
+
+	.item__more {
+		margin-top: spacer(2);
+	}
+}
+
+// —————————————————
+// List dependent
+// —————————————————
+
+.list {}
+
+.list--brands {
 	width: 100%;
 	column-gap: spacer(3);
 	padding: spacer(2) 0;
@@ -11,10 +85,43 @@ ul.list--brands {
 	@include media-breakpoint-up(md) {
 		column-count: 3;
 	}
+	@include media-breakpoint-up(lg) {
+		column-count: 4;
+	}
+	@include media-breakpoint-up(xl) {
+		column-count: 5;
+	}
 
 	li {
 		list-style: none;
 		display: inline-block;
 		width: 100%;
+	}
+}
+
+.list--items {
+	padding-left: 0;
+	// padding-bottom: $stripes-padding/4;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-left: -8px;
+	margin-right: -8px;
+	margin-bottom: 0;
+
+	.item {
+		margin: spacer(2);
+		width: 100%;
+		@include media-breakpoint-up(sm) {
+			width: calc((100%/2) - 2 * #{spacer(2)});
+		}
+		@include media-breakpoint-up(lg) {
+			width: calc((100%/3) - 2 * #{spacer(2)});
+		}
+		@include media-breakpoint-up(xl) {
+			width: calc((100%/4) - 2 * #{spacer(2)});
+		}
+
 	}
 }

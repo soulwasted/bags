@@ -1,8 +1,6 @@
 // @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext);
 // @import url(https://fonts.googleapis.com/css?family=Sarina);
 @import url('https://fonts.googleapis.com/css?family=Raleway:500,700&subset=latin-ext');
-// @import url('https://fonts.googleapis.com/css?family=Raleway:400,700&subset=latin-ext');
-
 
 @import "fonts";
 
@@ -14,6 +12,7 @@
 // TOKENS
 @import "0-motion";
 @import "0-typography";
+@import "0-animation";
 
 // ATOMS
 @import "a-button";
@@ -26,6 +25,11 @@
 @import "m-links";
 @import "m-brand";
 @import "m-nav--pills";
+@import "m-stars";
+@import "m-item";
+
+@import "m-goods";
+
 
 // ORGANISMS
 @import "o-navigation";
@@ -43,9 +47,15 @@
 @import "t-stripe--brands";
 @import "t-stripe--bag";
 @import "t-stripe--ask";
+@import "t-stripe--guarantee";
 
 // PAGES
+@import "x-page";
 
+
+
+@import "slider";
+@import "detail-2";
 
 // @import "ekko-lightbox.min.css";
 // @import "nouislider.min.css";
@@ -63,9 +73,7 @@
 // @import "search";
 // @import "stripes";
 // @import "modal";
-// @import "slider";
 // @import "detail";
-// @import "detail-2";
 // @import "cart";
 // @import "cart-2";
 // @import "order";

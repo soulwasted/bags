@@ -1,7 +1,7 @@
 'use strict';
 
 const paths = {
-	build: `${__dirname}/www`,
+	build: `${__dirname}/build`,
 	src: `${__dirname}/src`,
 	// static: `${__dirname}/assets`,
 	static: `${__dirname}/www`

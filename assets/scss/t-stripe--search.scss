@@ -1,5 +1,5 @@
 .stripe--search {
-	background: white url("/img/search-bg-800.jpg") center center no-repeat;
+	background: white url("../img/search-bg-800.jpg") center center no-repeat;
 	background-size: cover;
 	display: flex;
 	flex-flow: column;
@@ -9,7 +9,7 @@
 		min-height: 50vh;
 	}
 	@media screen and (min-width: $screen-md) {
-		background: white url("/img/search-bg-1600.jpg") center center no-repeat;
+		background: white url("../img/search-bg-1600.jpg") center center no-repeat;
 		background-size: cover;
 	}
 	@media (max-width: $screen-xs-max) {

@@ -1,0 +1,24 @@
+.stripe--guarantee {
+	background: url('../img/guarantee-bg.jpg') center center / cover no-repeat;
+	text-align: center;
+	color: white;
+	h2 {
+		margin-bottom: spacer(3);
+	}
+	.badge-100 {
+		letter-spacing: 200;
+		background: url('../img/guarantee-badge.png') center bottom no-repeat;
+		padding: spacer(3) 0;
+		margin-bottom: spacer(4);
+		line-height: 30px;
+		span {
+			font-size: 40px;
+			letter-spacing: 0;
+			font-weight: $font-weight-bold;
+			display: block;
+		}
+	}
+	p {
+		margin-bottom: 0;
+	}
+}

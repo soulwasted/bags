@@ -265,7 +265,7 @@ $caret-width: 0.3em !default;
 $caret-vertical-align: $caret-width * .85 !default;
 $caret-spacing: $caret-width * .85 !default;
 
-$transition-base: all 0.2s ease-in-out !default;
+$transition-base: all 0.3s ease-in-out;
 $transition-fade: opacity 0.15s linear !default;
 $transition-collapse: height 0.35s ease !default;
 
@@ -297,6 +297,7 @@ $font-size-sm: $font-size-base * .875;
 // 14px
 $font-size-xs: $font-size-base * .8125; // 13px
 $font-size-xxs: $font-size-base * .6875; // 11px
+$font-size-xxxs: $font-size-base * .625; // 10px
 
 $font-weight-lighter: lighter !default;
 $font-weight-light: 300;
@@ -331,8 +332,8 @@ $display3-weight: 300 !default;
 $display4-weight: 300 !default;
 $display-line-height: $headings-line-height !default;
 
-$lead-font-size: $font-size-base * 1.25 !default;
-$lead-font-weight: 300 !default;
+$lead-font-size: $font-size-sm * 1.25;
+$lead-font-weight: $font-weight-normal;
 
 $small-font-size: 80% !default;
 
