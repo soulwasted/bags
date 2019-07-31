@@ -62,26 +62,7 @@ $screen-detail-selection: calc(#{$detail-selection} + 2*15px);
 	}
 }
 
-.gallery {
-	margin-bottom: 24px;
-	img {
-		width: 100%;
-	}
-}
 
-.gallery__thumbnails {
-	display: flex;
-	flex-direction: row;
-	// align-items: stretch;
-	a {
-		width: 33%;
-		flex: 1;
-	}
-
-	img {
-		max-width: 185px;
-	}
-}
 .gallery--hepa {
 	.gallery__thumbnails {
 		a {
@@ -310,8 +291,8 @@ $screen-detail-selection: calc(#{$detail-selection} + 2*15px);
 }
 
 .cart-conviction {
-	border: 2px solid $gray-light;
-	border-radius: $border-radius-base;
+	border: 2px solid gray("300");
+	border-radius: $border-radius-lg;
 	padding: 24px 16px;
 	position: relative;
 	margin-top: 24px;
@@ -337,7 +318,7 @@ $screen-detail-selection: calc(#{$detail-selection} + 2*15px);
 
 	&:before {
 		border-color: rgba(204, 204, 204, 0);
-		border-bottom-color: $gray-light;
+		border-bottom-color: gray("300");
 		border-width: 13px;
 		margin-left: -13px;
 	}

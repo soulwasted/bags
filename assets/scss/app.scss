@@ -9,6 +9,13 @@
 // @import "bootstrapVariables";
 
 
+
+// ekko-lightbox
+@import "../../node_modules/ekko-lightbox/dist/ekko-lightbox";
+// noUIslider
+@import "../../node_modules/nouislider/distribute/nouislider.min";
+
+
 // TOKENS
 @import "0-motion";
 @import "0-typography";
@@ -38,6 +45,7 @@
 @import "o-modals";
 @import "o-lists";
 @import "o-breadcrumb";
+@import "o-gallery";
 
 // TEMPLATES
 // @import "t-cards";
@@ -48,14 +56,22 @@
 @import "t-stripe--bag";
 @import "t-stripe--ask";
 @import "t-stripe--guarantee";
+@import "t-price_summary";
+@import "t-slider";
+@import "t-detail-simple";
 
 // PAGES
 @import "x-page";
 
+@import "order";
 
 
-@import "slider";
-@import "detail-2";
+
+
+
+
+
+
 
 // @import "ekko-lightbox.min.css";
 // @import "nouislider.min.css";

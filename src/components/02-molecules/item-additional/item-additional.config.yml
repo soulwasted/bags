@@ -1,0 +1,15 @@
+status:        wip
+
+context:
+  link:        /hepa-filtry/hepa-filtr-do-vysavacu-aeg/hepa-filtr-do-vysavacu-aeg-hf0001
+  img:         https://chci-vysavat.cz/images/assets/pack/myThumb/HF0001.jpg
+  img_alt:     Fotka sáčku
+  name:        Hepa filtr do vysavačů AEG (HF0001)
+  info:        >
+    <div class="item__benefit">+ doprava ZDARMA</div>
+    <div class="item__benefit">+ dobírka (platba při převzetí) ZDARMA</div>
+    <div class="item__benefit">+ motorový filtr ZDARMA: 10 ks</div>
+    <div class="item__benefit">+ dobírka (platba při převzetí) ZDARMA</div>
+    <div class="item__benefit">+ motorový filtr ZDARMA: 10 ks</div>
+  price_piece: 230
+  price_total: 460

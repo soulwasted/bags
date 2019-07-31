@@ -6,8 +6,10 @@ $(document).ready(function () {
 	// cart
 	cartToggles();
 
-});
+	// enable ekko lightbox
+	lightbox();
 
+});
 
 // ———————————————————————————
 // new cart design toggles
@@ -23,5 +25,12 @@ function cartToggles() {
 	$("#cart-toggle-company-rb").click(function () {
 		$("#cart-toggle-company").slideDown();
 		$("#cart-toggle-person").slideUp();
+	});
+}
+
+function lightbox() {
+	$(document).on('click', '[data-toggle="lightbox"]', function (event) {
+		event.preventDefault();
+		$(this).ekkoLightbox();
 	});
 }

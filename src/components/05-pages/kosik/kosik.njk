@@ -1,0 +1,269 @@
+{# {% render '@breadcrumb',
+breadcrumb %} #}
+
+<div class="container pt-4">
+	<div class="row">
+		<div class="col">
+			<h1>Košík</h1>
+		</div>
+	</div>
+
+	<hr>
+
+	{% render '@item-cart' %}
+
+	<div class="additional_items ml-additional">
+		<h5 class="text-primary">
+			<span class="icon">
+				<i class="icon-thumbs_up text-c-primary"></i>
+			</span>
+			<strong class="text-c-primary">Doplňkové zboží</strong>
+		</h5>
+		<p>K vašemu modelu vysavače by bylo dobré dokoupit ještě toto příslušenství:</p>
+		{% render '@item-additional' %}
+		{% render '@item-additional' %}
+	</div>
+
+	<hr>
+
+	{% render '@item-cart' %}
+
+	<div class="additional_items ml-additional">
+		<h5 class="text-primary">
+			<span class="icon">
+				<i class="icon-thumbs_up text-c-primary"></i>
+			</span>
+			<strong class="text-c-primary">Doplňkové zboží</strong>
+		</h5>
+		<p>K vašemu modelu vysavače by bylo dobré dokoupit ještě toto příslušenství:</p>
+		{% render '@item-additional' %}
+	</div>
+
+	<hr>
+
+	<div class="additional_items">
+		<h5 class="text-primary">
+			<span class="icon">
+				<i class="icon-thumbs_up text-c-primary"></i>
+			</span>
+			<strong class="text-c-primary">Doplňkové zboží</strong>
+		</h5>
+		<p>K vašemu modelu vysavače by bylo dobré dokoupit ještě toto příslušenství:</p>
+		{% render '@item-additional' %}
+		{% render '@item-additional' %}
+		{% render '@item-additional' %}
+		{% render '@item-additional' %}
+	</div>
+
+	<hr/>
+
+	<form id="cart">
+		<h3>Doprava</h3>
+		<div class="radio">
+			<div class="order__choice">
+				<label><input type="radio" name="radiosPayment">DPD<span>(ZDARMA)</span></label>
+				<div class="order__price">ZDARMA</div>
+			</div>
+		</div>
+		<div class="radio">
+			<div class="order__choice">
+				<label><input type="radio" name="radiosPayment">FUN Courier<span>(305 Kč)</span></label>
+				<div class="order__price">305 Kč</div>
+			</div>
+		</div>
+		<h3>Expresní expedice</h3>
+		<div class="checkbox">
+			<div class="order__choice">
+				<label><input type="checkbox">Expresní expedice<span>ZDARMA</span><span>(305 Kč)</span></label>
+				<div class="order__price">305 Kč</div>
+			</div>
+		</div>
+		<h3>Způsob platby</h3>
+		<div class="radio">
+			<div class="order__choice">
+				<label><input type="radio" name="radiosPayment">Dobírka (hotově při převzetí objednávky)<span>(305 Kč)</span></label>
+				<div class="order__price">305 Kč</div>
+			</div>
+		</div>
+		<div class="radio">
+			<div class="order__choice">
+				<label><input type="radio" name="radiosPayment">Bankovní převod (platba předem)<span>(ZDARMA)</span></label>
+				<div class="order__price">ZDARMA</div>
+			</div>
+		</div>
+		<div class="order__summary">
+			<div class="order__discount">
+				<div class="form-inline">
+					<label for="cart-code">Máte slevový kód / kód pro vůni zdarma?</label>
+					<div class="form-group">
+						<div class="input-group">
+							<div class="input-group-addon">
+								<span aria-hidden="true" class="glyphicon glyphicon-star"></span></div><input id="cart-code" type="number" placeholder="Zde zadej kód" class="form-control"></div>
+					</div>
+					<button type="submit" class="btn btn-default">Uplatnit kód</button>
+				</div>
+			</div>
+			<div class="order__summary-box">
+				<div class="order__summary__row">
+					<div class="order__summary__title">Objednávka CELKEM (bez DPH)</div>
+					<div class="order__price">14.720 Kč</div>
+				</div>
+				<div class="order__summary__row">
+					<div class="order__summary__title">DPH (21%)</div>
+					<div class="order__price">3.974 Kč</div>
+				</div>
+				<div class="order__summary__row">
+					<div class="order__summary__title">Zaokrouhlení</div>
+					<div class="order__price">4 Kč</div>
+				</div>
+				<div class="order__summary__row">
+					<div class="order__summary__title">
+						<strong>Objednávka CELKEM (vč. DPH)</strong>
+					</div>
+					<div class="order__price">
+						<strong>18.690 Kč</strong>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr/>
+
+		<div class="order__contact">
+			<div class="order__contact__group">
+				<h3>Kontaktní osoba</h3>
+				<p>(vždy zadejte osobu ne firmu)</p>
+				<div class="order__contact__group__items">
+					<div class="form-group">
+						<label for="form-cart-name" class="control-label">*&nbsp;Jméno</label><input id="form-cart-name" type="text" placeholder="" class="form-control"></div>
+					<div class="form-group">
+						<label for="form-cart-surname" class="control-label">*&nbsp;Příjmení</label><input id="form-cart-surname" type="text" placeholder="" class="form-control"></div>
+					<div class="form-group">
+						<label for="form-cart-phone" class="control-label">*&nbsp;Telefon</label><input id="form-cart-phone" type="tel" placeholder="+420" class="form-control"></div>
+					<div class="form-group">
+						<label for="form-cart-mail" class="control-label">*&nbsp;e-mail</label><input id="form-cart-mail" type="email" placeholder="" class="form-control"></div>
+				</div>
+			</div>
+			<div class="order__contact__group">
+				<h3>Fakturační adresa</h3>
+				<div class="radio">
+					<div class="order__choice">
+						<label><input id="cart-toggle-person-rb" type="radio" name="radiosBuy" checked="checked">
+							<strong>Nakupuji jako fyzická osoba/občan</strong>
+						</label>
+					</div>
+				</div>
+				<div class="radio">
+					<div class="order__choice">
+						<label><input id="cart-toggle-company-rb" type="radio" name="radiosBuy">
+							<strong>Nakupuji jako firma</strong>
+						</label>
+					</div>
+				</div>
+				<div id="cart-toggle-person" class="order__contact__group__items order__contact__group__items--person" style="display: block;">
+					<div class="form-group">
+						<label for="form-cart-person-name" class="control-label">Jméno a příjmení</label><input id="form-cart-person-name" type="text" placeholder="" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="form-cart-person-address" class="control-label">Ulice, číslo domu, sektor, blok, poschodí, byt</label><input id="form-cart-person-address" type="text" placeholder="" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="form-cart-person-address-number" class="control-label">Okres</label><input id="form-cart-person-address-number" type="text" placeholder="" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="form-cart-person-city" class="control-label">Město</label><input id="form-cart-person-city" type="text" placeholder="" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="form-cart-person-address-code" class="control-label">PSČ</label><input id="form-cart-person-address-code" type="text" placeholder="" class="form-control">
+					</div>
+				</div>
+				<div id="cart-toggle-company" class="order__contact__group__items order__contact__group__items--company" style="display: none;">
+					<div class="form-group">
+						<label for="form-cart-company-dic" class="control-label">DIČ</label><input id="form-cart-company-dic" type="text" placeholder="" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="form-cart-company-ico" class="control-label">IČO</label><input id="form-cart-company-ico" type="text" placeholder="" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="form-cart-company-name" class="control-label">Obchodní jméno</label><input id="form-cart-company-name" type="text" placeholder="" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="form-cart-company-address" class="control-label">Ulice, číslo domu, sektor, blok, poschodí, byt:</label><input id="form-cart-company-address" type="text" placeholder="" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="form-cart-company-address-disctrict" class="control-label">Okres</label><input id="form-cart-company-address-disctrict" type="text" placeholder="" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="form-cart-company-city" class="control-label">Město</label><input id="form-cart-company-city" type="text" placeholder="" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="form-cart-company-address-code" class="control-label">PSČ</label><input id="form-cart-company-address-code" type="text" placeholder="" class="form-control">
+					</div>
+				</div>
+			</div>
+			<div class="order__contact__group">
+				<div class="checkbox">
+					<h3>
+						<label><input id="cart-toggle-delivery-address-cb" type="checkbox">Doručovací adresa</label>
+					</h3>
+				</div>
+				<div id="cart-toggle-delivery-address" class="order__contact__group__items" style="display: none;">
+					<div class="form-group">
+						<label for="form-cart-delivery-name" class="control-label">Jméno a příjmení / firma</label><input id="form-cart-delivery-name" type="text" placeholder="" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="form-cart-delivery-address" class="control-label">Ulice, číslo domu, sektor, blok, poschodí, byt:</label><input id="form-cart-delivery-address" type="text" placeholder="" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="form-cart-delivery-address-number" class="control-label">Číslo popisné</label><input id="form-cart-delivery-address-number" type="text" placeholder="" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="form-cart-delivery-city" class="control-label">Město</label><input id="form-cart-delivery-city" type="text" placeholder="" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="form-cart-delivery-address-code" class="control-label">PSČ</label><input id="form-cart-delivery-address-code" type="text" placeholder="" class="form-control">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr/>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<h3>Ostatní informace pro e-shop</h3>
+			</div>
+		</div>
+		<div class="row choice">
+			<div class="col-xs-12">
+				<div class="form-group">
+					<label for="form-cart-note" class="control-label">Upřesnění objednávky a vzkazy pro e-shop:</label>
+					<textarea id="form-cart-note" rows="3" class="form-control"></textarea>
+				</div>
+			</div>
+		</div>
+		<div class="row choice">
+			<div class="col-xs-12">
+				<div class="checkbox">
+					<label><input type="checkbox">
+						<strong>*&nbsp;Seznámil jsem se s obchodními podmínkami porozuměl jsem jejich obsahu a souhlasím s nimi</strong>
+					</label>
+				</div>
+				<div class="checkbox">
+					<label><input type="checkbox">Získávat informace o slevách a novinkách</label>
+				</div>
+			</div>
+		</div>
+
+		<hr/>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<a href="souhrn.html" class="btn btn-primary btn-lg btn-block">
+					Zkontrolovat objednávku<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></a>
+				<p>Zkontrolujete si ještě jednou svoji objednávku a pak ji můžete odeslat</p>
+			</div>
+		</div>
+	</form>
+
+</div>

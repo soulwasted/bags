@@ -1,4 +1,43 @@
-input {
-    // border-radius: $border-radius;
-    // border: 1px solid theme-color("border");
+input[type="email"],
+input[type="number"],
+input[type="text"] {}
+
+input[type=checkbox]:checked {
+    background: red;
+}
+
+form {
+	.input-group {
+		// width: inherit !important;
+		// display: inline-table;
+	}
+}
+
+
+
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"],
+.radio input[type="radio"],
+.radio-inline input[type="radio"] {
+	width: 20px !important;
+	height: 16px !important;
+	margin-left: -30px;
+	&:checked {
+		background: $brand-primary;
+	}
+}
+label input[type="radio"]:checked {
+	font-weight: bold;
+}
+label {
+	font-size: $font-size-sm;
+	span {
+		padding-left: spacer(2);
+		// FIXME: opacity to colour / variable?
+		opacity: 0.6;
+	}
+}
+.checkbox label,
+.radio label {
+	padding-left: 30px;
 }

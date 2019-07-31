@@ -6,13 +6,13 @@
 		<link media="all" rel="stylesheet" href="{{ '/css/app.css' | path }}">
 		<link media="all" rel="stylesheet" href="{{ '/css/ds.css' | path }}">
 		<link media="all" rel="stylesheet" href="{{ '/fonts/vrecka-icons/iconfont.css' | path }}">
+		<script type="text/javascript" src="{{ '/js/scripts.js' | path }}"></script>
+		<script type="text/javascript" src="{{ '/js/app.js' | path }}"></script>
 	</head>
 	<body>
 		<div class="mx-auto w-100">
 			{{ yield | safe }}
 		</div>
 
-		<script type="text/javascript" src="{{ '/js/scripts.js' | path }}"></script>
-		<script type="text/javascript" src="{{ '/js/app.js' | path }}"></script>
 	</body>
 </html>

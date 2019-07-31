@@ -1,0 +1,23 @@
+<div class="item item--cart {{ class }}">
+	<a href="{{ link }}"><img src="{{ img }}" class="item__image"></a>
+	<div class="item__content">
+		<a href="{{ link }}" class="item__name">{{ name }}</a>
+		<div class="item__info">{{ info | safe }}</div>
+	</div>
+	<div class="item__remove">
+		<a href="#">
+			<i class="fas fa-times"></i> <span class="text">odebrat</span>
+		</a>
+	</div>
+	<div class="item__price item__price--piece">{{ price_piece }} Kč</div>
+	<div class="stepper item__stepper">
+		<div id="stepperMinus">
+			<i class="fas fa-minus"></i>
+		</div>
+		<input id="sliderInput" type="number" value="2">
+		<div id="stepperPlus">
+			<i class="fas fa-plus"></i>
+		</div>
+	</div>
+	<div class="item__price item__price--total">{{ price_total }} Kč</div>
+</div>

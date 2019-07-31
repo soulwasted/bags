@@ -32,10 +32,7 @@ $buttonStepperRadius: 5px;
 			}
 
 			.icon {
-				// border-radius: 50%;
 				text-align: center;
-				// background: lighten($brand-success, 60);
-				// width: 32px;
 				height: 50px;
 				width: 50px;
 				overflow: hidden;
@@ -61,7 +58,6 @@ $buttonStepperRadius: 5px;
 					display: block;
 					font-size: 13px;
 					font-weight: 700;
-					// text-transform: uppercase;
 					@media screen and (max-width: $screen-sm-max) {
 						font-size: 11px;
 					}
@@ -86,8 +82,7 @@ $buttonStepperRadius: 5px;
 					}
 				}
 
-				.text {
-					}
+				.text {}
 			}
 		}
 
@@ -112,24 +107,28 @@ $buttonStepperRadius: 5px;
 }
 
 #slider {
-	margin: 34px 20px 60px;
+	margin: 30px 20px 60px;
 	@media screen and (max-width: $screen-xs-max) {
 		margin-bottom: 45px;
 	}
 
 	&.noUi-target {
 		height: 6px;
-		background: $brand-success;
+		background: white;
 		border-radius: 3px;
 		box-shadow: 0 0 0 5px $light-blue;
 		border: none;
 	}
 
+	.noUi-connect {
+		background: theme-color("primary");
+	}
+
 	.noUi-background {
 		// background: $gray-lighter !important;
-		background: $light-blue;
-		border-radius: 3px;
-		box-shadow: 0 0 0 5px $light-blue;
+		// background: red;
+		// border-radius: 3px;
+		// box-shadow: 0 0 0 5px $light-blue;
 	}
 
 	.noUi-value {
@@ -146,17 +145,17 @@ $buttonStepperRadius: 5px;
 		width: $sliderButtSize;
 		height: $sliderButtSize;
 		border-radius: $buttonRadius;
-		left: -25px;
 		top: -23px;
 		background-image: linear-gradient(to bottom, #ffffff, #d0cdcd);
+		// background-image: linear-gradient(to bottom, lighten(theme-color("secondary"), 5), darken(theme-color("secondary"), 5));
 		border: 0;
-		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+		box-shadow: $box-shadow-slider;
 		cursor: pointer;
-		transition: box-shadow 0.5s;
+		transition: $transition-base;
 
 		&:hover {
-			background: lighten($brand-success,4);
-			box-shadow: 0 0 30px 0 rgba(0,0,0,0.5);
+			background-image: linear-gradient(to top, #d4d4d4, #a2a1a1);
+			// box-shadow: none;
 		}
 
 		&::after,
@@ -165,7 +164,7 @@ $buttonStepperRadius: 5px;
 			width: 2px;
 			left: 20px;
 			top: 15px;
-			background: $brand-secondary;
+			background: theme-color("secondary");
 			box-shadow: 1px 0 0 0 #000000;
 			opacity: 0.15;
 		}
@@ -175,10 +174,13 @@ $buttonStepperRadius: 5px;
 			top: 15px;
 		}
 	}
+
 	.noUi-pips-horizontal {
 		padding-top: 5px;
 	}
-	.noUi-marker-large, .noUi-marker-sub {
+
+	.noUi-marker-large,
+	.noUi-marker-sub {
 		background-image: linear-gradient(to bottom, #d9eef3, #0089b0);
 	}
 }
@@ -199,15 +201,16 @@ $buttonStepperRadius: 5px;
 		background: $brand-primary;
 		cursor: pointer;
 		color: black;
-		font-weight: 700;
-		font-size: 20px;
+		font-weight: $font-weight-bold;
+		font-size: $font-size-lg;
 		text-align: center;
 		line-height: $sliderButtSize;
 		background-image: linear-gradient(to bottom, #ffffff, #d0cdcd);
-		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+		box-shadow: $box-shadow-slider;
 
 		&:hover {
-			background: darken($brand-primary, 10);
+			// background: darken($brand-primary, 10);
+			background-image: linear-gradient(to top, #d4d4d4, #a2a1a1);
 		}
 	}
 
@@ -247,7 +250,7 @@ $buttonStepperRadius: 5px;
 		}
 
 		&:hover {
-			border-color: darken($brand-primary, 10);
+			// border-color: darken($brand-primary, 10);
 		}
 	}
 }
@@ -274,6 +277,7 @@ $buttonStepperRadius: 5px;
 			font-size: 12px;
 			line-height: 32px;
 		}
+
 		#sliderInput {
 			width: 40px;
 			height: 40px;
@@ -329,6 +333,7 @@ p.note {
 	margin-top: 15px;
 	font-size: 12px;
 	color: black;
+
 	i {
 		font-size: 28px;
 		color: $brand-secondary;

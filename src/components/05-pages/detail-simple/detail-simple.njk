@@ -1,0 +1,107 @@
+{% render '@breadcrumb',
+breadcrumb %}
+
+<div class="container mb-5">
+		
+	<div class="row">
+		<div class="col-sm-12 col-md-8 col-lg-7 order-md-2">
+			<h1><img src="https://chci-vysavat.cz/images/firms/philips.jpg" alt="logo firmy PHILIPS" class="d-block">Sáčky do vysavače
+				<a href="#">PHILIPS</a>
+				Vision Vitall: HR 6340-6800, HR 6938-6939, HR 6983</h1>
+			
+			{% render '@detail-simple-benefits' %}
+			{% render '@button-with-icon-right', { class: 'btn-primary btn-lg', icon: 'cart', text: 'Vložit do košíku' } %}
+			{% render '@detail-simple-cart-conviction' %}
+		</div>
+		<div class="col-sm-12 col-md-4 col-lg-5">
+			<a href="https://chci-vysavat.cz/images/assets/pack/myLarge/SBG154.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Fotka sáčku">
+				<img alt="Fotka sáčku" class="img-fluid" src="https://chci-vysavat.cz/images/assets/pack/myLarge/SBG154.jpg">
+			</a>
+			{% render '@gallery', { class: 'gallery--half'} %}
+			<div>
+				<p>
+					Skladem:
+					<strong>ano</strong>
+				</p>
+				<p>
+					Materiál:
+					<strong>Netkaná textílie</strong>
+				</p>
+				<p>
+					Počet filtračních vrstev:
+					<strong>5</strong>
+				</p>
+				<p>Pět vrstev sáčku VACS do vysavače
+					<span class="text-primary">ELECTROLUX</span>
+					<span class="text-primary">S-BAG</span>
+					chrání Vaše zdraví a prodlužuje životnost vysavače. Tyto sáčky jsou plnohodnotnou alternativou k originálnímu výrobku. Sáčky s takto jemnou filtrací nejsou vhodné pro vysávání popela a brusného prachu.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<hr/>
+
+	<form action="/electrolux/s-bag" method="post" id="frm-goodsTestBuyForm">
+		<p class="text-center">
+			Pokud chcete vyzkoušet kvalitu našich sáčků, můžete si objednat na zkoušku 1 sáček za cenu 35 Kč. Zaplatíte pouze tuto cenu a dopravu.
+			<button type="submit" name="submit[]" value="99999" class="btn btn-outline-dark btn-sm">Vložit do košíku 1 sáček</button>
+		</p>
+
+		<input type="hidden" name="goods_id" value="186306"><input type="hidden" name="_do" value="goodsTestBuyForm-submit"><!--[if IE]><input type=IEbug disabled style="display:none"><![endif]--></form>
+
+	<hr/>
+
+	<div class="row">
+		<div class="col">
+			<h3>Tento typ sáčku se hodí i do těchto modelů vysavačů značky ELECTROLUX:</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<p class="readmore">
+				<a href="/electrolux/zcs-2540cs">ELECTROLUX ZCS 2540CS</a>,
+				<a href="/electrolux/zcs-2540cs-clasic-silence">ELECTROLUX ZCS 2540CS Clasic Silence</a>,
+				<a href="/electrolux/zcs-2450-cs">ELECTROLUX ZCS 2450 CS</a>,
+				<a href="/electrolux/zcs-2520-b">ELECTROLUX ZCS 2520 b</a>,
+				<a href="/electrolux/zcs-2560-c">ELECTROLUX ZCS 2560 c</a>,
+				<a href="/electrolux/zcs-2560">ELECTROLUX ZCS 2560</a>,
+				<a href="/electrolux/ultraone-green-zg-8800">ELECTROLUX Ultraone Green ZG 8800</a>,
+				<a href="/electrolux/zg-8800">ELECTROLUX ZG 8800</a>,
+				<a href="/electrolux/ze-360-p">ELECTROLUX ZE 360 P</a>,
+				<a href="/electrolux/ergomini">ELECTROLUX Ergomini</a>,
+				<a href="/electrolux/ergomini-zp-3500">ELECTROLUX Ergomini ZP 3500</a>,
+				<a href="/electrolux/ergomini-zp-3501">ELECTROLUX Ergomini ZP 3501</a>,
+				<a href="/electrolux/ergomini-zp-3502">ELECTROLUX Ergomini ZP 3502</a>,
+				<a href="/electrolux/ergomini-zp-3503">ELECTROLUX Ergomini ZP 3503</a>,
+				<a href="/electrolux/ergomini-zp-3504">ELECTROLUX Ergomini ZP 3504</a>,
+				<a href="/electrolux/ergomini-zp-3505">ELECTROLUX Ergomini ZP 3505</a>,
+				<a href="/electrolux/ergomini-zp-3510">ELECTROLUX Ergomini ZP 3510</a>,
+				<a href="/electrolux/ergomini-zp-3520">ELECTROLUX Ergomini ZP 3520</a>,
+				<a href="/electrolux/extra-long-reach">ELECTROLUX Extra Long Reach</a>,
+				<a href="/electrolux/zp-4000-ergo-classic">ELECTROLUX ZP 4000 Ergo Classic</a>
+				a další…
+			</p>
+		</div>
+	</div>
+
+	<hr/>
+
+	<a id="additional"></a>
+	<div class="row">
+		<div class="col">
+			<h3>Doporučujeme</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<div class="list--items">
+				{% for item in items %}{% render '@item-with_button',
+					item %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+
+{% render '@stripe-guarantee' %}

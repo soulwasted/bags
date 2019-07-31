@@ -54,7 +54,12 @@ var paths = {
 		src: [
 			"node_modules/jquery/dist/jquery.js",
 			"node_modules/popper.js/dist/umd/popper.js",
-			"assets/js/bootstrap.min.js"
+			"node_modules/bootstrap/dist/js/bootstrap.min.js"
+			// "assets/js/bootstrap.min.js"
+			
+			
+			
+			
 			
 			// "node_modules/responsive-toolkit/dist/bootstrap-toolkit.js",
 			
@@ -64,15 +69,17 @@ var paths = {
 			// "bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js",
 			// "bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js",
 			// "bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js",
-			// // "bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js",
+			// "bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js",
 			// "bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js",
 			// "bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js",
 			// "bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js",
-			// // "bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js",
-			// // "bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js",
+			// "bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js",
+			// "bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js",
 			// "bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js",
 			// "bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js",
-			// // "bower_components/responsive-bootstrap-toolkit/dist/bootstrap-toolkit.js",
+
+			// "bower_components/responsive-bootstrap-toolkit/dist/bootstrap-toolkit.js",
+
 			// "bower_components/ekko-lightbox/dist/ekko-lightbox.min.js",
 			// "bower_components/smooth-scroll/dist/js/smooth-scroll.js",
 			// "bower_components/scrollreveal/dist/scrollreveal.js",
@@ -80,7 +87,7 @@ var paths = {
 			// "assets/js/modernizr.js",
 			// "bower_components/nouislider/distribute/nouislider.js",
 			// "node_modules/readmore-js/readmore.min.js"
-			// // "assets/js/**/*.js"
+			// "assets/js/**/*.js"
 		],
 		dest: "www/js",
 		name: "scripts.js",
@@ -89,7 +96,10 @@ var paths = {
 			"assets/js/app.js",
 			"assets/js/app-bag_interactive.js",
 			"assets/js/slider.js",
-			"assets/js/detail-2.js"
+			"assets/js/detail-simple.js",
+			"node_modules/ekko-lightbox/dist/ekko-lightbox.min.js",
+			"node_modules/nouislider/distribute/nouislider.min.js",
+			"node_modules/wnumb/wNumb.js"
 		]
 	},
 	sass: {

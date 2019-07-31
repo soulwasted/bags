@@ -1,0 +1,248 @@
+// —————————————————
+// Item
+// —————————————————
+
+.item {
+	display: flex;
+	border: 1px solid gray("300");
+	border-radius: $border-radius-sm;
+	transition: $transition-base;
+	align-items: center;
+	padding: 2px 8px 2px 2px;
+
+	&:hover {
+		border: 1px solid gray("500");
+		text-decoration: none;
+		box-shadow: $box-shadow;
+
+		.item__info {
+			color: $black;
+		}
+	}
+}
+
+.item__image {
+	width: 75px;
+	margin-right: spacer(2);
+	object-fit: contain;
+	border-radius: $border-radius / 2;
+	@include media-breakpoint-up(xs) {
+		width: 100px;
+	}
+}
+
+.item__content {}
+
+.item__name {
+	width: 100%;
+	font-weight: $font-weight-bold;
+	font-size: $font-size-xs;
+	@include media-breakpoint-up(xs) {
+		font-size: $font-size-sm;
+	}
+}
+
+.item__info {
+	font-size: $font-size-xxxs;
+	color: $gray;
+	transition: $transition-base;
+
+	span {
+		display: block;
+		font-weight: 700;
+	}
+}
+
+.item__remove {
+	// width: 100px;
+	margin-left: auto;
+	margin-right: spacer(3);
+	height: 32px;
+	line-height: 32px;
+
+	a {
+		white-space: nowrap;
+		color: theme-color("black");
+		text-decoration: none;
+		font-size: $font-size-sm;
+	}
+
+	span.text {
+		margin-left: 3px;
+	}
+	@include media-breakpoint-down(md) {}
+	@media (max-width: $screen-sm-max) {
+		// flex: 1 0 100%;
+		// margin-left: 8px;
+	}
+}
+
+.item__price {
+	font-size: 14px;
+	text-align: right;
+	padding: 0 spacer(2);
+	height: 32px;
+	line-height: 32px;
+
+	@media (max-width: $screen-sm-max) {
+		// flex: 1 0 auto;
+		// padding: 0 spacer(2);
+	}
+}
+
+.item__price--piece {
+	// margin-left: auto;
+	@media (max-width: $screen-sm-max) {
+		// text-align: left;
+	}
+	@include media-breakpoint-down(xxs) {
+		// text-align: left;
+		margin-left: calc(75px + 8px);;
+		padding-left: 0;
+	}
+}
+
+.item__price__small {
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.item__price--total {
+	color: $black-new;
+	padding-right: 0;
+	font-weight: $font-weight-bold;
+	@media (max-width: $screen-md-max) {
+		flex: 0 0 auto;
+	}
+}
+
+// —————————————————
+// Item -- cart
+// —————————————————
+
+// FIXME: remove nesting?
+
+.item.item--cart {
+	box-shadow: none;
+	border: none;
+	align-items: flex-start;
+	@include media-breakpoint-down(md) {
+		flex-wrap: wrap;
+	}
+
+	.item__content {
+		@include media-breakpoint-down(md) {
+			width: calc(100% - 100px - 8px);
+		}
+	}
+
+	.item__name {
+		color: theme-color("black");
+	}
+
+	.item__info {
+		font-size: $font-size-sm;
+		color: theme-color("secondary");
+	}
+	.item__remove {
+		@include media-breakpoint-down(md) {
+			margin-left: calc(100px + 8px);
+			margin-right: auto;
+		}
+		@include media-breakpoint-down(xxs) {
+			margin-left: calc(75px + 8px);
+			width: calc(100% - 75px - 8px);
+		}
+	}
+}
+
+// —————————————————
+// Item __ stepper
+// —————————————————
+.item__stepper.stepper {
+	margin-top: 0;
+	@media (max-width: $screen-xs-max) {
+		justify-content: flex-end !important;
+		// margin: 10px 0 !important;
+	}
+
+	#stepperMinus,
+	#stepperPlus {
+		width: 32px;
+		height: 32px;
+		font-size: 12px;
+		line-height: 32px;
+		box-shadow: $box-shadow-sm;
+	}
+
+	#stepperMinus {
+		border-radius: 4px 0 0 4px;
+	}
+
+	#stepperPlus {
+		border-radius: 0 4px 4px 0;
+	}
+
+	#sliderInput {
+		width: 32px;
+		height: 32px;
+		padding-bottom: 0;
+		font-size: 14px;
+		border: 1px solid theme-color("dark");
+		border-radius: 0;
+	}
+
+	.item__stepper__label {
+		font-size: 12px;
+		padding: 0 5px;
+		@media (max-width: $screen-sm-max) {
+			display: none;
+		}
+	}
+}
+
+// —————————————————
+// Item -- additional
+// —————————————————
+.item.item--additional {
+	box-shadow: none;
+	border: none;
+	padding: spacer(2) spacer(2) spacer(2) 2px;
+
+	.item__name {
+		padding: 0;
+	}
+
+	.item__info {
+		// margin-top: spacer(2);
+		font-size: $font-size-xxs;
+	}
+
+	.item__more {
+		margin-top: spacer(2);
+	}
+}
+.item__image--additional {
+	width: 50px;
+	height: 34px;
+	margin: 0 spacer(1);
+}
+
+.additional_items {
+	margin-top: spacer(3);
+	
+	p {
+		margin-bottom: 0;
+	}
+	
+	h5 {
+		margin-bottom: 0;
+	}
+}
+
+.ml-additional {
+	margin-left: calc(100px + 8px);
+	@include media-breakpoint-down(xxs) {
+		margin-left: calc(75px + 8px);
+	}
+}
