@@ -1,0 +1,8 @@
+status:       wip
+
+context:
+  breadcrumb: 
+    links:
+    - link:   'homepage'
+      text:   Domů
+    active:   Košík

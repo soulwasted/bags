@@ -20,14 +20,14 @@
 		
 		<div class="container-fluid fast-contact">
 	<div class="row">
-		<div class="col">
+		<div class="col text-center">
 			<a href="mailto:info@chci-vysavat.cz">info@chci-vysavat.cz</a>
 			<span>+420 737 770 470</span>
 		</div>
 	</div>
 </div>
 
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<nav class="navbar navbar-expand-md navbar-light sticky-top">
 	<a class="navbar-brand" href="homepage">chci-vysavat.cz</a>
 	<div class="navbar-nav navbar__login ml-auto">
 		<a class="cart nav-item nav-link" href="/prihlasit">
@@ -41,7 +41,7 @@
 	</div>
 	<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
-		<span class="text">menu</span>
+		<span class="text d-none d-xxs-block">menu</span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbarNav">
 		<div class="navbar-nav">
@@ -85,107 +85,7 @@
 	</nav>
 </div>
 
-<script>
-	var currency = "Kč";
-	var price_system = 1;
-	var benefitDisabled = 0.3;
-	var benefitEnabled = 1.0;
-	var vat_koef = 0.2099999999999999922284388276239042170345783233642578125;
-	var vat_date = "2017-09-30T00:00:00+02:00";
-	var no_vat = "bez DPH";
-	var groups = [
-		{
-			"id": 65680,
-			"multiple": 1,
-			"packFree": 0,
-			"transportFree": 0,
-			"paymentFree": 0,
-			"scentFree": 0,
-			"priceVat": 148.009999999999990905052982270717620849609375,
-			"priceNoVat": 122.31999999999999317878973670303821563720703125,
-			"discount": 0,
-			"package_price": 122.31999999999999317878973670303821563720703125,
-			"package_motor_filter": 1,
-			"package_bag": 4
-		}, {
-			"id": 65681,
-			"multiple": 3,
-			"packFree": 0,
-			"transportFree": 1,
-			"paymentFree": 0,
-			"scentFree": 0,
-			"priceVat": 118.3900000000000005684341886080801486968994140625,
-			"priceNoVat": 97.840000000000003410605131648480892181396484375,
-			"discount": 20,
-			"package_price": 293.51999999999998181010596454143524169921875,
-			"package_motor_filter": 3,
-			"package_bag": 12
-		}, {
-			"id": 65682,
-			"multiple": 5,
-			"packFree": 0,
-			"transportFree": 1,
-			"paymentFree": 0,
-			"scentFree": 0,
-			"priceVat": 106.5799999999999982946974341757595539093017578125,
-			"priceNoVat": 88.0799999999999982946974341757595539093017578125,
-			"discount": 28,
-			"package_price": 440.3999999999999772626324556767940521240234375,
-			"package_motor_filter": 5,
-			"package_bag": 20
-		}, {
-			"id": 65683,
-			"multiple": 10,
-			"packFree": 0,
-			"transportFree": 1,
-			"paymentFree": 0,
-			"scentFree": 0,
-			"priceVat": 100.6200000000000045474735088646411895751953125,
-			"priceNoVat": 83.159999999999996589394868351519107818603515625,
-			"discount": 32,
-			"package_price": 831.59999999999990905052982270717620849609375,
-			"package_motor_filter": 10,
-			"package_bag": 40
-		}
-	];
-	var sliderStart = 4;
-	var sliderEnd = 4 - 1;
-	var bagsMin = 4;
-	var bagsMax = 100;
-	var discount_text = "ZDARMA";
-	var bags_text = "sáček|sáčky|sáčků".split("|");
-	var filters_text = "motorový filtr|motorové filtry|motorových filtrů".split("|");
-	var ptype = 0;
-	var productComponents = {
-		"motor_filter": {
-			"count": 1,
-			"good": {}
-		},
-		"bag": {
-			"count": 4,
-			"good": {},
-			"components": {
-				"grip": {},
-				"sack": {}
-			}
-		}
-	};
-	var packageType = "bag"
-	var atype = 1; // 0 - PCS, 1+ - PACKAGES : AMOUNT TYPE
-	if (atype == 0) {
-		var stepper = 1;
-	} else {
-		var stepper = 4;
-	}
-	var pcs = 12;
 
-	dl = [
-		{
-			'pageType': 'product',
-			'productId': "4758823768815_3"
-		}
-	];
-</script>
 
 <div class="container mb-5">
 	<div class="row">
@@ -200,17 +100,16 @@
 		</div>
 	</div>
 	
-	
-<form action="/electrolux/s-bag" method="post" id="frm-goodsBuyForm">
-	<div class="container-fluid sliderWrapper">
-		<div class="container">
-			<div class="row sliderRow">
-				<div class="col-xs-12 col-sm-8">
-					<div class="row">
+	<form action="/electrolux/s-bag" method="post" id="frm-goodsBuyForm">
+	<div class="sliderWrapper">
+		<div class="row sliderRow">
+			<div class="col-sm-12 col-md-8">
+				<div class="row">
     <div class="col-xs-12">
         <h4 class="hand bags">
             <span>Vyberte si počet sáčků…</span>
         </h4>
+        
         <div id="slider"></div>
     </div>
 </div>
@@ -218,7 +117,7 @@
 <script type="text/javascript" src="../../js/nouislider.min.js"></script>
 <script type="text/javascript" src="../../js/slider.js"></script>
 
-					<div class="row sliderBenefits">
+				<div class="row sliderBenefits">
     <div class="allBenefits">
         <div class="benefit">
             <div class="icon">
@@ -305,8 +204,8 @@
         </div>
     </div>
 </div>
-					<div class="row">
-    <div class="col-xs-12">
+				<div class="row">
+    <div class="col-12">
         <p class="note">
             <i class="icon-plus"></i>Ke každým 4 sáčkům obdržíte 1 motorový filtr ZDARMA.<br>
             <a href="#" data-toggle="modal" data-target="#myModalFilter">CO JE TO MOTOROVÝ FILTR?</a>
@@ -316,30 +215,30 @@
         </p>
     </div>
 </div>
-				</div>
+			</div>
 
-				<div class="col-xs-12 col-sm-4">
-					<div class="stepper">
+			<div class="col-sm-12 col-md-4">
+				<div class="stepper">
 	<div id="stepperMinus">
-		<span aria-hidden="true" class="glyphicon glyphicon-minus"></span>
+		<i class="fas fa-minus"></i>
 	</div>
 	<input id="sliderInput" type="number" value="2">
 	<div id="stepperPlus">
-		<span aria-hidden="true" class="glyphicon glyphicon-plus"></span>
+		<i class="fas fa-plus"></i>
 	</div>
 </div>
 <div class="stepperLabel">sáčků</div>
-					<div class="row discounts">
+				<div class="row discounts">
 	<div class="col-xs-12 summary">
 		<div class="row">
-			<div class="col-xs-4 col-sm-12 sum-item.active sum-transport">
+			<div class="col-md-12 col-xs-6 col-xxs-12 sum-item sum-transport">
 				<div class="summary__item transport-free" style="visibility: visible;">+ doprava
 					<span>
 						<i class="icon-check2"></i>ZDARMA
 					</span>
 				</div>
 			</div>
-			<div class="col-xs-4 col-sm-12 sum-item.active sum-filters">
+			<div class="col-md-12 col-xs-6 col-xxs-12 sum-item sum-filters">
 				<div class="summary__item filterActual" style="visibility: visible;">+ 3 motorové filtry
 					<span>
 						<i class="icon-check2"></i>ZDARMA
@@ -362,8 +261,6 @@
 		</div>
 	</div>
 </div>
-				</div>
-
 			</div>
 		</div>
 	</div>
@@ -442,7 +339,6 @@
 				<span class="text-primary">S-BAG</span>
 				chrání Vaše zdraví a prodlužuje životnost vysavače. Tyto sáčky jsou plnohodnotnou alternativou k originálnímu výrobku. Sáčky s takto jemnou filtrací nejsou vhodné pro vysávání popela a brusného prachu.
 			</p>
-
 		</div>
 	</div>
 
@@ -596,7 +492,7 @@
 	</div>
 </div>
 		
-		<footer class="stripe">
+		<footer>
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-7">
@@ -617,11 +513,11 @@
 					Dopravu pro Vás zajišťujeme prostřednictvím:</p>
 				<div class="row">
 					<div class="col-sm-6 col-xs-12">
-						<img class="img img-fluid" src="/img/footer-zasilkovna.png"><br>
+						<img class="img img-fluid" src="../../img/footer-zasilkovna.png"><br>
 						Zásilkovna s.r.o.<br>Lihovarská 1060/12<br>190 00 Praha 9
 					</div>
 					<div class="col-sm-6 col-xs-12">
-						<img class="img img-fluid" src="/img/footer-ceska_posta.png"><br>
+						<img class="img img-fluid" src="../../img/footer-ceska_posta.png"><br>
 						Česká pošta, s.p.<br>Politických vězňů 909/4<br>225 99 Praha 1
 					</div>
 				</div>

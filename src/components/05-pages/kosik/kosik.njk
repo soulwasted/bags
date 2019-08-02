@@ -57,53 +57,67 @@ breadcrumb %} #}
 
 	<hr/>
 
-	<form id="cart">
+	<form id="cart" class="order">
 		<h3>Doprava</h3>
 		<div class="radio">
 			<div class="order__choice">
-				<label><input type="radio" name="radiosPayment">DPD<span>(ZDARMA)</span></label>
+				<label><input type="radio" name="radiosPayment">
+					<span class="label__text">DPD</span><span class="label__price">(ZDARMA)</span></label>
 				<div class="order__price">ZDARMA</div>
 			</div>
 		</div>
 		<div class="radio">
 			<div class="order__choice">
-				<label><input type="radio" name="radiosPayment">FUN Courier<span>(305 Kč)</span></label>
+				<label><input type="radio" name="radiosPayment">
+					<span class="label__text">FUN Courier</span><span class="label__price">(305 Kč)</span></label>
 				<div class="order__price">305 Kč</div>
 			</div>
 		</div>
-		<h3>Expresní expedice</h3>
+		<h6>Expresní expedice</h6>
 		<div class="checkbox">
 			<div class="order__choice">
-				<label><input type="checkbox">Expresní expedice<span>ZDARMA</span><span>(305 Kč)</span></label>
+				<label><input type="checkbox">
+					<span class="label__text">Expresní expedice</span><span class="label__price">(305 Kč)</span></label>
 				<div class="order__price">305 Kč</div>
 			</div>
 		</div>
 		<h3>Způsob platby</h3>
 		<div class="radio">
 			<div class="order__choice">
-				<label><input type="radio" name="radiosPayment">Dobírka (hotově při převzetí objednávky)<span>(305 Kč)</span></label>
+				<label><input type="radio" name="radiosPayment">
+					<span class="label__text">Dobírka (hotově při převzetí objednávky)</span><span class="label__price">(305 Kč)</span></label>
 				<div class="order__price">305 Kč</div>
 			</div>
 		</div>
 		<div class="radio">
 			<div class="order__choice">
-				<label><input type="radio" name="radiosPayment">Bankovní převod (platba předem)<span>(ZDARMA)</span></label>
+				<label><input type="radio" name="radiosPayment">
+					<span class="label__text">Bankovní převod (platba předem)</span><span class="label__price">(ZDARMA)</span></label>
 				<div class="order__price">ZDARMA</div>
 			</div>
 		</div>
-		<div class="order__summary">
-			<div class="order__discount">
-				<div class="form-inline">
+		<div class="order__summary row">
+			<div class="order__discount col-md">
+				<div class="form-group">
 					<label for="cart-code">Máte slevový kód / kód pro vůni zdarma?</label>
-					<div class="form-group">
-						<div class="input-group">
-							<div class="input-group-addon">
-								<span aria-hidden="true" class="glyphicon glyphicon-star"></span></div><input id="cart-code" type="number" placeholder="Zde zadej kód" class="form-control"></div>
+					<div class="form-row">
+						<div class="col-auto">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fas fa-percentage"></i>
+									</div>
+								</div>
+								<input id="cart-code" type="number" placeholder="Zde zadejte kód" class="form-control">
+							</div>
+						</div>						
+						<div class="col-auto">
+							<button type="submit" class="btn btn-outline-secondary text-sm">Uplatnit kód</button>
+						</div>
 					</div>
-					<button type="submit" class="btn btn-default">Uplatnit kód</button>
 				</div>
 			</div>
-			<div class="order__summary-box">
+			<div class="order__summary-box col-md">
 				<div class="order__summary__row">
 					<div class="order__summary__title">Objednávka CELKEM (bez DPH)</div>
 					<div class="order__price">14.720 Kč</div>
@@ -112,9 +126,13 @@ breadcrumb %} #}
 					<div class="order__summary__title">DPH (21%)</div>
 					<div class="order__price">3.974 Kč</div>
 				</div>
+				<div class="order__summary__row text-secondary font-weight-bold">
+					<div class="order__summary__title">Sleva</div>
+					<div class="order__price">10%</div>
+				</div>
 				<div class="order__summary__row">
 					<div class="order__summary__title">Zaokrouhlení</div>
-					<div class="order__price">4 Kč</div>
+					<div class="order__price">-4 Kč</div>
 				</div>
 				<div class="order__summary__row">
 					<div class="order__summary__title">
@@ -135,13 +153,13 @@ breadcrumb %} #}
 				<p>(vždy zadejte osobu ne firmu)</p>
 				<div class="order__contact__group__items">
 					<div class="form-group">
-						<label for="form-cart-name" class="control-label">*&nbsp;Jméno</label><input id="form-cart-name" type="text" placeholder="" class="form-control"></div>
+						<label for="form-cart-name" class="control-label">{% render '@required-symbol' %}Jméno</label><input id="form-cart-name" type="text" placeholder="" class="form-control"></div>
 					<div class="form-group">
-						<label for="form-cart-surname" class="control-label">*&nbsp;Příjmení</label><input id="form-cart-surname" type="text" placeholder="" class="form-control"></div>
+						<label for="form-cart-surname" class="control-label">{% render '@required-symbol' %}Příjmení</label><input id="form-cart-surname" type="text" placeholder="" class="form-control"></div>
 					<div class="form-group">
-						<label for="form-cart-phone" class="control-label">*&nbsp;Telefon</label><input id="form-cart-phone" type="tel" placeholder="+420" class="form-control"></div>
+						<label for="form-cart-phone" class="control-label">{% render '@required-symbol' %}Telefon</label><input id="form-cart-phone" type="tel" placeholder="+420" class="form-control"></div>
 					<div class="form-group">
-						<label for="form-cart-mail" class="control-label">*&nbsp;e-mail</label><input id="form-cart-mail" type="email" placeholder="" class="form-control"></div>
+						<label for="form-cart-mail" class="control-label">{% render '@required-symbol' %}e-mail</label><input id="form-cart-mail" type="email" placeholder="" class="form-control"></div>
 				</div>
 			</div>
 			<div class="order__contact__group">
@@ -203,9 +221,9 @@ breadcrumb %} #}
 			</div>
 			<div class="order__contact__group">
 				<div class="checkbox">
-					<h3>
-						<label><input id="cart-toggle-delivery-address-cb" type="checkbox">Doručovací adresa</label>
-					</h3>
+					<label><h3>
+						<input id="cart-toggle-delivery-address-cb" type="checkbox">Doručovací adresa
+					</h3></label>
 				</div>
 				<div id="cart-toggle-delivery-address" class="order__contact__group__items" style="display: none;">
 					<div class="form-group">
@@ -246,7 +264,7 @@ breadcrumb %} #}
 			<div class="col-xs-12">
 				<div class="checkbox">
 					<label><input type="checkbox">
-						<strong>*&nbsp;Seznámil jsem se s obchodními podmínkami porozuměl jsem jejich obsahu a souhlasím s nimi</strong>
+						<strong>{% render '@required-symbol' %}Seznámil jsem se s obchodními podmínkami porozuměl jsem jejich obsahu a souhlasím s nimi</strong>
 					</label>
 				</div>
 				<div class="checkbox">
@@ -259,9 +277,9 @@ breadcrumb %} #}
 
 		<div class="row">
 			<div class="col-xs-12">
-				<a href="souhrn.html" class="btn btn-primary btn-lg btn-block">
+				<a href="souhrn" class="btn btn-primary btn-lg btn-block">
 					Zkontrolovat objednávku<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></a>
-				<p>Zkontrolujete si ještě jednou svoji objednávku a pak ji můžete odeslat</p>
+				<p class="text-center">Zkontrolujete si ještě jednou svoji objednávku a pak ji můžete odeslat.</p>
 			</div>
 		</div>
 	</form>

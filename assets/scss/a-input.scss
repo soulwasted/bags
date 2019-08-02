@@ -1,6 +1,8 @@
 input[type="email"],
 input[type="number"],
-input[type="text"] {}
+input[type="text"] {
+    font-size: $font-size-sm;
+}
 
 input[type=checkbox]:checked {
     background: red;
@@ -19,9 +21,9 @@ form {
 .checkbox-inline input[type="checkbox"],
 .radio input[type="radio"],
 .radio-inline input[type="radio"] {
-	width: 20px !important;
+	width: 24px !important;
 	height: 16px !important;
-	margin-left: -30px;
+	margin-left: -24px;
 	&:checked {
 		background: $brand-primary;
 	}
@@ -31,13 +33,25 @@ label input[type="radio"]:checked {
 }
 label {
 	font-size: $font-size-sm;
-	span {
-		padding-left: spacer(2);
-		// FIXME: opacity to colour / variable?
-		opacity: 0.6;
-	}
+    .label__text {
+        margin-right: spacer(2);
+    }
+    .label__price {        
+        // FIXME: opacity to colour / variable?
+        opacity: 0.6;
+    }
 }
 .checkbox label,
 .radio label {
-	padding-left: 30px;
+	padding-left: 24px;
+}
+
+i.label__required {
+    // font-size: $font-size-xs;
+    font-size: 75%;
+	color: theme-color("primary");
+    display: inline-block;
+    margin-top: -5px;
+	&::before {
+	}
 }

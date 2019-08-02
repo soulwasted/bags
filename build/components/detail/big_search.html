@@ -153,15 +153,12 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-d3a88bff6f3c7e9a2411af46ae9360c3-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"big_search"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control form-control-lg big_search__input"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">""</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Napište značku a/nebo typ vysavače"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-placeholder big_search__icon"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-search"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary btn-lg big_search__btn"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sendsearch"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control form-control-lg big_search__input"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"search-input"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Napište značku a/nebo typ vysavače"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-placeholder big_search__icon"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-search"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary btn-lg big_search__btn"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sendsearch"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-placeholder "</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-search"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Hledat<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-
-<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -169,11 +166,11 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-d3a88bff6f3c7e9a2411af46ae9360c3-panel-view">
     <code class="Code Code--lang-text">
-        <pre>&lt;form <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"big_search"</span>&gt;
-	{% render '<span class="hljs-meta"><a href="input.html">@input</a></span>', {<span class="hljs-class"><span class="hljs-keyword">class</span></span>:<span class="hljs-symbol">'form</span>-control-lg big_search__input', placeholder:<span class="hljs-symbol">'Napi</span>šte značku a/nebo typ vysavače'} %}
-	{% render '<span class="hljs-meta"><a href="icon.html">@icon</a></span>', {image:<span class="hljs-symbol">'searc</span>h', <span class="hljs-class"><span class="hljs-keyword">class</span></span>:<span class="hljs-symbol">'big_search__ico</span>n'} %}
-	{% render '<span class="hljs-meta">@button</span>-search' %}
-&lt;/form&gt;</pre>
+        <pre>{# &lt;form <span class="hljs-keyword">class</span>=<span class="hljs-string">"big_search"</span>&gt; #}
+	{% render <span class="hljs-string">'<a href="input.html">@input</a>'</span>, {<span class="hljs-keyword">class</span>:<span class="hljs-string">'form-control-lg big_search__input'</span>, id:<span class="hljs-string">'search-input'</span>, placeholder:<span class="hljs-string">'Napište značku a/nebo typ vysavače'</span>} %}
+	{% render <span class="hljs-string">'<a href="icon.html">@icon</a>'</span>, {image:<span class="hljs-string">'search'</span>, <span class="hljs-keyword">class</span>:<span class="hljs-string">'big_search__icon'</span>} %}
+	{% render <span class="hljs-string">'<a href="button-search.html">@button-search</a>'</span> %}
+{# &lt;/form&gt; #}</pre>
     </code>
 </div>
 
@@ -355,6 +352,30 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="spacing.html" data-pjax>
+                <span>Spacing</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="icon.html" data-pjax>
                 <span>Icons</span>
                 
@@ -365,6 +386,30 @@
 
 
 <span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="motion.html" data-pjax>
+                <span>Motion</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -572,6 +617,28 @@
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-button-with-icon">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Button With Icon</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-5" data-behaviour="collection" id="tree-components-collection-left-big">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Left Big</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="button-with-icon.html" data-pjax>
@@ -592,6 +659,56 @@
 
 
             </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-5" data-behaviour="collection" id="tree-components-collection-right">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Right</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-with-icon-right.html" data-pjax>
+                <span>With icon</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
@@ -637,6 +754,30 @@
 
 
 <span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="required-symbol.html" data-pjax>
+                <span>Required Symbol</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -825,10 +966,114 @@
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-detail">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Detail</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-simple-cart-conviction">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Simple Cart Conviction</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="detail-simple-cart-conviction.html" data-pjax>
+                <span>Detail Simple Cart Conviction</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="item.html" data-pjax>
                 <span>Item</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="item-additional.html" data-pjax>
+                <span>Item Additional</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="item-cart.html" data-pjax>
+                <span>Item Cart</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -931,6 +1176,30 @@
         </li>
         
     
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="search-tt.html" data-pjax>
+                <span>Search Tt</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
 
             </ul>
         </li>
@@ -975,6 +1244,118 @@
             
             
             
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-benefits-detail-simple">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Benefits Detail Simple</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="benefits-detail-simple-xl.html" data-pjax>
+                <span>XL</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="benefits-detail-simple-l.html" data-pjax>
+                <span>L</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="benefits-detail-simple-m.html" data-pjax>
+                <span>M</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="benefits-detail-simple-s.html" data-pjax>
+                <span>S</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
     
         
         
@@ -1345,6 +1726,46 @@
             
     
         
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-detail-simple-benefits">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Detail Simple Benefits</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="benefits-detail-simple.html" data-pjax>
+                <span>Benefits Detail Simple</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="modal.html" data-pjax>
@@ -1627,6 +2048,30 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="detail-simple.html" data-pjax>
+                <span>Detail Simple</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="doplnkove-produkty.html" data-pjax>
                 <span>Doplňkové produkty</span>
                 
@@ -1637,6 +2082,30 @@
 
 
 <span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="kosik.html" data-pjax>
+                <span>Košík</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -1677,6 +2146,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="o-nas.html" data-pjax>
                 <span>O nás</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="souhrn.html" data-pjax>
+                <span>Souhrn</span>
                 
 
 <div class="Status Status--unlabelled">

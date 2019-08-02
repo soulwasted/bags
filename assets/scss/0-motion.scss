@@ -10,4 +10,12 @@ $motion: map-merge(
 $motion-on: 0.3s;
 $motion-out: 0.6s;
 
-
+.example--motion {
+    transition: $motion-out;
+    // width: 160px;
+    // height: 160px;
+    &:hover {
+        box-shadow: $box-shadow-lg;
+        transition: $motion-on;
+    }
+}

@@ -9,6 +9,8 @@ $(document).ready(function () {
 	// enable ekko lightbox
 	lightbox();
 
+	whisperFocus();
+
 });
 
 // ———————————————————————————
@@ -33,4 +35,28 @@ function lightbox() {
 		event.preventDefault();
 		$(this).ekkoLightbox();
 	});
+}
+
+function whisperFocus() {
+	$("#search-input").focus(function () {
+		// console.log("here");
+		$(".tt-menu").addClass("show");
+		var anchor = document.querySelector('#search-input');
+		// smoothScroll.animateScroll(anchor);
+	});
+	$("#search-input").blur(function () {
+		if ($("#search-input").val().length == 0) {
+			$(".tt-menu").removeClass("show");
+		};
+		// $("i.icon-search").removeClass("anim");
+	});
+	$("#search-input").keyup(function (e) {
+		if (e.keyCode === 27) {
+			$(".tt-menu").removeClass("show");
+			$("#search-input").blur();
+		}
+	});
+	// $("#search-input").keypress(function () {
+	// 	$("i.icon-search").addClass("anim");
+	// });
 }
