@@ -1,0 +1,14 @@
+.heureka-offer {
+	display: flex;
+	align-items: center;
+	// padding-left: 20px;
+	strong {
+		// padding-top: 5px;
+		font-size: 14px;
+	}
+	.heureka-logo {
+		width: 100%;
+		max-width: 100px;
+		mix-blend-mode: multiply;
+	}
+}

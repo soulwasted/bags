@@ -1,0 +1,26 @@
+// —————————————————
+// Item -- add
+// —————————————————
+.item.item--add {
+	box-shadow: none;
+	border: none;
+	padding: spacer(2) spacer(2) spacer(2) 2px;
+
+	.item__name {
+		padding: 0;
+	}
+
+	.item__info {
+		// margin-top: spacer(2);
+		font-size: $font-size-xxs;
+	}
+
+	.item__more {
+		margin-top: spacer(2);
+	}
+	.item__image {
+		width: 50px;
+		height: 34px;
+		margin: 0 spacer(1);
+	}
+}

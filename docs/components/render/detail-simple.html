@@ -1,58 +1,413 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr" class="no-js">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script>
-    window.frctl = {
-        env: 'static'
-    };
-    </script>
-    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
-    <link rel="shortcut icon" href="../../assets/icons/icon.ico" type="image/ico">
-
-<link rel="stylesheet" href="../../fractal/css/default.css?cachebust=1.2.1" type="text/css">
 
 
-<title>Error rendering component detail-simple | BAGS — Design System</title>
-
-</head>
-<body>
-
-
-
-<div class="Frame Frame--full" id="frame">
-
-
-<div class="Error Error--render">
-    <h4 class="Error-title">Error rendering component</h4>
-    <div class="Error-message Prose">
-        <p>(unknown path)
-  Error: Could not render component &#39;@detail-simple-benefits&#39; - component not found.</p>
-
-    </div>
-    
-    <code class="Error-stack">
-        <pre>Template render error: (unknown path)
-  Error: Could not render component '@detail-simple-benefits' - component not found.
-    at Object._prettifyError (/Users/swd/DEV/bags-fractal-ds/node_modules/@frctl/nunjucks/node_modules/nunjucks/src/lib.js:36:11)
-    at /Users/swd/DEV/bags-fractal-ds/node_modules/@frctl/nunjucks/node_modules/nunjucks/src/environment.js:567:19
-    at eval (eval at compile (/Users/swd/DEV/bags-fractal-ds/node_modules/@frctl/nunjucks/node_modules/nunjucks/src/environment.js:628:3), <anonymous>:9:11)
-    at entity.render.then.catch.err (/Users/swd/DEV/bags-fractal-ds/node_modules/@frctl/nunjucks/src/extensions/render.js:47:21)
-    at process._tickCallback (internal/process/next_tick.js:109:7)</pre>
-    </code>
-    
+<div class="container">
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			
+				<li class="breadcrumb-item">
+					<a href="homepage">Domů</a>
+				</li>
+			
+				<li class="breadcrumb-item">
+					<a href="znacky">Seznam značek</a>
+				</li>
+			
+				<li class="breadcrumb-item">
+					<a href="philips">PHILIPS</a>
+				</li>
+			
+			<li class="breadcrumb-item active" aria-current="page">Vision Vitall</li>
+		</ol>
+	</nav>
 </div>
 
-
+<div class="container mb-5">
+		
+	<div class="row">
+		<div class="col-sm-12 col-md-8 col-lg-7 order-md-2">
+			<h1><img src="https://chci-vysavat.cz/images/firms/philips.jpg" alt="logo firmy PHILIPS" class="d-block">Sáčky do vysavače
+				<a href="#">PHILIPS</a>
+				Vision Vitall: HR 6340-6800, HR 6938-6939, HR 6983</h1>
+			
+			<form action="#" class="selection">
+    <div class="package package--xl"><input type="radio" id="package-xl" name="package" value="package-xl">
+	<label for="package-xl">
+		XL<div class="small">32 sáčků</div>
+	</label>
+	<div class="package__price">€ 42
+		<div class="package__price-before">€ 57</div>
+	</div>
+	<div class="package__benefits">
+		<div class="package__benefit">
+			<div class="icon">
+				<i aria-hidden="true" class="icon-transport"></i>
+			</div>
+			<div class="text">Doprava
+				<strong>zadarmo</strong>
+			</div>
+		</div>
+		<div class="package__benefit">
+			<div class="icon">
+				<i aria-hidden="true" class="icon-save-hand"></i>
+			</div>
+			<div class="text">Sleva
+				<strong>26 %</strong>
+			</div>
+		</div>
+		<div class="package__benefit">
+			<div class="icon">
+				<i aria-hidden="true" class="icon-microfilter"></i>
+			</div>
+			<div class="text">8× mikrofiltr
+				<strong>zadarmo</strong>
+			</div>
+		</div>
+		<div class="package__benefit">
+			<div class="icon">
+				<i aria-hidden="true" class="icon-gift"></i>
+			</div>
+			<div class="text">1× vůně
+				<strong>zadarmo</strong>
+			</div>
+		</div>
+	</div>
+</div>
+    <div class="package package--l package--selected"><input type="radio" id="package-l" name="package" value="package-l" checked="">
+	<label for="package-l">
+		L<div class="small">24 sáčků</div>
+	</label>
+	<div class="package__price">€ 36
+		<div class="package__price-before">€ 44</div>
+	</div>
+	<div class="package__benefits">
+		<div class="package__benefit">
+			<div class="icon">
+				<i aria-hidden="true" class="icon-transport"></i>
+			</div>
+			<div class="text">Doprava
+				<strong>zadarmo</strong>
+			</div>
+		</div>
+		<div class="package__benefit">
+			<div class="icon">
+				<i aria-hidden="true" class="icon-save-hand"></i>
+			</div>
+			<div class="text">Sleva
+				<strong>19 %</strong>
+			</div>
+		</div>
+		<div class="package__benefit">
+			<div class="icon">
+				<i aria-hidden="true" class="icon-microfilter"></i>
+			</div>
+			<div class="text">6× mikrofiltr
+				<strong>zadarmo</strong>
+			</div>
+		</div>
+	</div>
+</div>
+    <div class="package package--m"><input type="radio" id="package-m" name="package" value="package-m">
+	<label for="package-m">
+		M<div class="small">16 sáčků</div>
+	</label>
+	<div class="package__price">€ 30
+		<div class="package__price-before">€ 34</div>
+	</div>
+	<div class="package__benefits">
+		<div class="package__benefit">
+			<div class="icon">
+				<i aria-hidden="true" class="icon-transport"></i>
+			</div>
+			<div class="text">Doprava
+				<strong>zadarmo</strong>
+			</div>
+		</div>
+		<div class="package__benefit">
+			<div class="icon">
+				<i aria-hidden="true" class="icon-save-hand"></i>
+			</div>
+			<div class="text">Sleva
+				<strong>12 %</strong>
+			</div>
+		</div>
+		<div class="package__benefit">
+			<div class="icon">
+				<i aria-hidden="true" class="icon-microfilter"></i>
+			</div>
+			<div class="text">4× mikrofiltr
+				<strong>zadarmo</strong>
+			</div>
+		</div>
+	</div>
+</div>
+    <div class="package package--s"><input type="radio" id="package-s" name="package" value="package-s">
+	<label for="package-s">
+		S<div class="small">8 sáčků</div>
+	</label>
+	<div class="package__price">€ 17</div>
+	<div class="package__benefits">
+		<div class="package__benefit">
+			<div class="icon">
+				<i aria-hidden="true" class="icon-transport"></i>
+			</div>
+			<div class="text">Doprava
+				<strong>za € 2</strong>
+			</div>
+		</div>
+		<div class="package__benefit">
+			<div class="icon">
+				<i aria-hidden="true" class="icon-microfilter"></i>
+			</div>
+			<div class="text">2× mikrofiltr
+				<strong>zadarmo</strong>
+			</div>
+		</div>
+	</div>
+</div>
+</form>
+<script type="text/javascript" src="../../js/detail-simple.js"></script>
+			<button type="button" class="btn btn-primary btn-lg">
+	Vložit do košíku
+	<i class="icon-cart"></i>
+</button>
+			<div class="cart-conviction">
+	<i aria-hidden="true" class="icon-badge"></i>
+	<strong>můžete vrátit:</strong>
+	<ul>
+		<li>zboží do 3 měsíců od nákupu bez udání důvodu</li>
+		<li>i rozbalené balení sáčků</li>
+		<li>balení i v případě, že jeden sáček je použitý a chybí</li>
+	</ul>
+</div>
+		</div>
+		<div class="col-sm-12 col-md-4 col-lg-5">
+			<a href="https://chci-vysavat.cz/images/assets/pack/myLarge/SBG154.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Fotka sáčku">
+				<img alt="Fotka sáčku" class="img-fluid" src="https://chci-vysavat.cz/images/assets/pack/myLarge/SBG154.jpg">
+			</a>
+			<div class="gallery gallery--half">
+    <a href="https://chci-vysavat.cz/images/goods/0a.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Fotka sáčku" class="gallery__link">
+        <img src="https://chci-vysavat.cz/images/goods/0a.jpg" alt="Fotka sáčku" class="img-fluid gallery__img">
+    </a>
+    <a href="https://chci-vysavat.cz/images/goods/0b.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Fotka sáčku" class="gallery__link">
+        <img src="https://chci-vysavat.cz/images/goods/0b.jpg" alt="Fotka sáčku" class="img-fluid gallery__img">
+    </a>
+    <a href="https://chci-vysavat.cz/images/goods/0c.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Fotka sáčku" class="gallery__link">
+        <img src="https://chci-vysavat.cz/images/goods/0c.jpg" alt="Fotka sáčku" class="img-fluid gallery__img">
+    </a>
+    <a href="https://chci-vysavat.cz/images/goods/0a.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Fotka sáčku" class="gallery__link">
+        <img src="https://chci-vysavat.cz/images/goods/0a.jpg" alt="Fotka sáčku" class="img-fluid gallery__img">
+    </a>
+    <a href="https://chci-vysavat.cz/images/goods/0b.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Fotka sáčku" class="gallery__link">
+        <img src="https://chci-vysavat.cz/images/goods/0b.jpg" alt="Fotka sáčku" class="img-fluid gallery__img">
+    </a>
+    <a href="https://chci-vysavat.cz/images/goods/0c.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Fotka sáčku" class="gallery__link">
+        <img src="https://chci-vysavat.cz/images/goods/0c.jpg" alt="Fotka sáčku" class="img-fluid gallery__img">
+    </a>
 </div>
 
+<script type="text/javascript" src="../../js/ekko-lightbox.min.js"></script>
+			<div>
+				<p>
+					Skladem:
+					<strong>ano</strong>
+				</p>
+				<p>
+					Materiál:
+					<strong>Netkaná textílie</strong>
+				</p>
+				<p>
+					Počet filtračních vrstev:
+					<strong>5</strong>
+				</p>
+				<p>Pět vrstev sáčku VACS do vysavače
+					<span class="text-primary">ELECTROLUX</span>
+					<span class="text-primary">S-BAG</span>
+					chrání Vaše zdraví a prodlužuje životnost vysavače. Tyto sáčky jsou plnohodnotnou alternativou k originálnímu výrobku. Sáčky s takto jemnou filtrací nejsou vhodné pro vysávání popela a brusného prachu.
+				</p>
+			</div>
+		</div>
+	</div>
 
+	<hr/>
 
+	<form action="/electrolux/s-bag" method="post" id="frm-goodsTestBuyForm">
+		<p class="text-center">
+			Pokud chcete vyzkoušet kvalitu našich sáčků, můžete si objednat na zkoušku 1 sáček za cenu 35 Kč. Zaplatíte pouze tuto cenu a dopravu.
+			<button type="submit" name="submit[]" value="99999" class="btn btn-outline-dark btn-sm">Vložit do košíku 1 sáček</button>
+		</p>
 
-<script src="../../fractal/js/mandelbrot.js?cachebust=1.2.1"></script>
+		<input type="hidden" name="goods_id" value="186306"><input type="hidden" name="_do" value="goodsTestBuyForm-submit"><!--[if IE]><input type=IEbug disabled style="display:none"><![endif]--></form>
 
+	<hr/>
 
+	<div class="row">
+		<div class="col">
+			<h3>Tento typ sáčku se hodí i do těchto modelů vysavačů značky ELECTROLUX:</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<p class="readmore">
+				<a href="/electrolux/zcs-2540cs">ELECTROLUX ZCS 2540CS</a>,
+				<a href="/electrolux/zcs-2540cs-clasic-silence">ELECTROLUX ZCS 2540CS Clasic Silence</a>,
+				<a href="/electrolux/zcs-2450-cs">ELECTROLUX ZCS 2450 CS</a>,
+				<a href="/electrolux/zcs-2520-b">ELECTROLUX ZCS 2520 b</a>,
+				<a href="/electrolux/zcs-2560-c">ELECTROLUX ZCS 2560 c</a>,
+				<a href="/electrolux/zcs-2560">ELECTROLUX ZCS 2560</a>,
+				<a href="/electrolux/ultraone-green-zg-8800">ELECTROLUX Ultraone Green ZG 8800</a>,
+				<a href="/electrolux/zg-8800">ELECTROLUX ZG 8800</a>,
+				<a href="/electrolux/ze-360-p">ELECTROLUX ZE 360 P</a>,
+				<a href="/electrolux/ergomini">ELECTROLUX Ergomini</a>,
+				<a href="/electrolux/ergomini-zp-3500">ELECTROLUX Ergomini ZP 3500</a>,
+				<a href="/electrolux/ergomini-zp-3501">ELECTROLUX Ergomini ZP 3501</a>,
+				<a href="/electrolux/ergomini-zp-3502">ELECTROLUX Ergomini ZP 3502</a>,
+				<a href="/electrolux/ergomini-zp-3503">ELECTROLUX Ergomini ZP 3503</a>,
+				<a href="/electrolux/ergomini-zp-3504">ELECTROLUX Ergomini ZP 3504</a>,
+				<a href="/electrolux/ergomini-zp-3505">ELECTROLUX Ergomini ZP 3505</a>,
+				<a href="/electrolux/ergomini-zp-3510">ELECTROLUX Ergomini ZP 3510</a>,
+				<a href="/electrolux/ergomini-zp-3520">ELECTROLUX Ergomini ZP 3520</a>,
+				<a href="/electrolux/extra-long-reach">ELECTROLUX Extra Long Reach</a>,
+				<a href="/electrolux/zp-4000-ergo-classic">ELECTROLUX ZP 4000 Ergo Classic</a>
+				a další…
+			</p>
+		</div>
+	</div>
 
-</body>
-</html>
+	<hr/>
+
+	<a id="additional"></a>
+	<div class="row">
+		<div class="col">
+			<h3>Doporučujeme</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<div class="list--items">
+				<div class="item item--button ">
+	<img alt="obrázek doplňku ELECTROLUX S-BAG" src="https://chci-vysavat.cz/images/assets/pack/myThumb/SC0001.jpg" class="item__image">
+	<div class="item__name"><a href="">Balení vůní do vysavače - citrónová</a></div>
+	<div class="item__content">
+		<div class="item__info">Balení obsahuje: <strong>(1 ks)</strong><br> Skladem:   <strong>ano</strong><br> Cena:      <strong>59.00 Kč</strong></div>
+		<div class="item__more"><button type="submit" name="submit[]" value="186303" class="btn btn-primary btn-sm">Vložit do košíku</button></div>
+	</div>
+</div>
+				<div class="item item--button ">
+	<img alt="obrázek doplňku ELECTROLUX S-BAG" src="https://chci-vysavat.cz/images/assets/pack/myThumb/SC0001.jpg" class="item__image">
+	<div class="item__name"><a href="">Balení vůní do vysavače - citrónová</a></div>
+	<div class="item__content">
+		<div class="item__info">Balení obsahuje: <strong>(1 ks)</strong><br> Skladem:   <strong>ano</strong><br> Cena:      <strong>59.00 Kč</strong></div>
+		<div class="item__more"><button type="submit" name="submit[]" value="186303" class="btn btn-primary btn-sm">Vložit do košíku</button></div>
+	</div>
+</div>
+				<div class="item item--button ">
+	<img alt="obrázek doplňku ELECTROLUX S-BAG" src="https://chci-vysavat.cz/images/assets/pack/myThumb/SC0001.jpg" class="item__image">
+	<div class="item__name"><a href="">Balení vůní do vysavače - citrónová</a></div>
+	<div class="item__content">
+		<div class="item__info">Balení obsahuje: <strong>(1 ks)</strong><br> Skladem:   <strong>ano</strong><br> Cena:      <strong>59.00 Kč</strong></div>
+		<div class="item__more"><button type="submit" name="submit[]" value="186303" class="btn btn-primary btn-sm">Vložit do košíku</button></div>
+	</div>
+</div>
+				<div class="item item--button ">
+	<img alt="obrázek doplňku ELECTROLUX S-BAG" src="https://chci-vysavat.cz/images/assets/pack/myThumb/SC0001.jpg" class="item__image">
+	<div class="item__name"><a href="">Balení vůní do vysavače - citrónová</a></div>
+	<div class="item__content">
+		<div class="item__info">Balení obsahuje: <strong>(1 ks)</strong><br> Skladem:   <strong>ano</strong><br> Cena:      <strong>59.00 Kč</strong></div>
+		<div class="item__more"><button type="submit" name="submit[]" value="186303" class="btn btn-primary btn-sm">Vložit do košíku</button></div>
+	</div>
+</div>
+				<div class="item item--button ">
+	<img alt="obrázek doplňku ELECTROLUX S-BAG" src="https://chci-vysavat.cz/images/assets/pack/myThumb/SC0001.jpg" class="item__image">
+	<div class="item__name"><a href="">Balení vůní do vysavače - citrónová</a></div>
+	<div class="item__content">
+		<div class="item__info">Balení obsahuje: <strong>(1 ks)</strong><br> Skladem:   <strong>ano</strong><br> Cena:      <strong>59.00 Kč</strong></div>
+		<div class="item__more"><button type="submit" name="submit[]" value="186303" class="btn btn-primary btn-sm">Vložit do košíku</button></div>
+	</div>
+</div>
+				<div class="item item--button ">
+	<img alt="obrázek doplňku ELECTROLUX S-BAG" src="https://chci-vysavat.cz/images/assets/pack/myThumb/SC0001.jpg" class="item__image">
+	<div class="item__name"><a href="">Balení vůní do vysavače - citrónová</a></div>
+	<div class="item__content">
+		<div class="item__info">Balení obsahuje: <strong>(1 ks)</strong><br> Skladem:   <strong>ano</strong><br> Cena:      <strong>59.00 Kč</strong></div>
+		<div class="item__more"><button type="submit" name="submit[]" value="186303" class="btn btn-primary btn-sm">Vložit do košíku</button></div>
+	</div>
+</div>
+				<div class="item item--button ">
+	<img alt="obrázek doplňku ELECTROLUX S-BAG" src="https://chci-vysavat.cz/images/assets/pack/myThumb/SC0001.jpg" class="item__image">
+	<div class="item__name"><a href="">Balení vůní do vysavače - citrónová</a></div>
+	<div class="item__content">
+		<div class="item__info">Balení obsahuje: <strong>(1 ks)</strong><br> Skladem:   <strong>ano</strong><br> Cena:      <strong>59.00 Kč</strong></div>
+		<div class="item__more"><button type="submit" name="submit[]" value="186303" class="btn btn-primary btn-sm">Vložit do košíku</button></div>
+	</div>
+</div>
+				<div class="item item--button ">
+	<img alt="obrázek doplňku ELECTROLUX S-BAG" src="https://chci-vysavat.cz/images/assets/pack/myThumb/SC0001.jpg" class="item__image">
+	<div class="item__name"><a href="">Balení vůní do vysavače - citrónová</a></div>
+	<div class="item__content">
+		<div class="item__info">Balení obsahuje: <strong>(1 ks)</strong><br> Skladem:   <strong>ano</strong><br> Cena:      <strong>59.00 Kč</strong></div>
+		<div class="item__more"><button type="submit" name="submit[]" value="186303" class="btn btn-primary btn-sm">Vložit do košíku</button></div>
+	</div>
+</div>
+				<div class="item item--button ">
+	<img alt="obrázek doplňku ELECTROLUX S-BAG" src="https://chci-vysavat.cz/images/assets/pack/myThumb/SC0001.jpg" class="item__image">
+	<div class="item__name"><a href="">Balení vůní do vysavače - citrónová</a></div>
+	<div class="item__content">
+		<div class="item__info">Balení obsahuje: <strong>(1 ks)</strong><br> Skladem:   <strong>ano</strong><br> Cena:      <strong>59.00 Kč</strong></div>
+		<div class="item__more"><button type="submit" name="submit[]" value="186303" class="btn btn-primary btn-sm">Vložit do košíku</button></div>
+	</div>
+</div>
+				<div class="item item--button ">
+	<img alt="obrázek doplňku ELECTROLUX S-BAG" src="https://chci-vysavat.cz/images/assets/pack/myThumb/SC0001.jpg" class="item__image">
+	<div class="item__name"><a href="">Balení vůní do vysavače - citrónová</a></div>
+	<div class="item__content">
+		<div class="item__info">Balení obsahuje: <strong>(1 ks)</strong><br> Skladem:   <strong>ano</strong><br> Cena:      <strong>59.00 Kč</strong></div>
+		<div class="item__more"><button type="submit" name="submit[]" value="186303" class="btn btn-primary btn-sm">Vložit do košíku</button></div>
+	</div>
+</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid stripe stripe--guarantee">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h2>Nadstandardní garance</h2>
+			</div>
+		</div>
+		<div class="row badge-100">
+			<div class="col">
+				<span>100%</span>záruka na vrácení zboží
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<p>můžete vrátit zboží
+					<strong>do 3 měsíců od nákupu</strong>
+					bez udání důvodu</p>
+				<div class="stars">
+    <i class="fas fa-star" aria-hidden="true" ></i>
+    <i class="fas fa-star" aria-hidden="true" ></i>
+    <i class="fas fa-star" aria-hidden="true" ></i>
+    <i class="fas fa-star" aria-hidden="true" ></i>
+    <i class="fas fa-star" aria-hidden="true" ></i>
+</div>
+				<p>můžete vrátit i
+					<strong>rozbalené balení</strong>
+					sáčků</p>
+				<div class="stars">
+    <i class="fas fa-star" aria-hidden="true" ></i>
+    <i class="fas fa-star" aria-hidden="true" ></i>
+    <i class="fas fa-star" aria-hidden="true" ></i>
+    <i class="fas fa-star" aria-hidden="true" ></i>
+    <i class="fas fa-star" aria-hidden="true" ></i>
+</div>
+				<p>můžete vrátit balení i v případě, že
+					<strong>jeden sáček je použitý a chybí</strong>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

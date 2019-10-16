@@ -1,6 +1,6 @@
 // .big_search {}
 
-#search-fulltext form  {
+#search-fulltext form {
 	z-index: 2;
 	position: relative;
 }
@@ -80,7 +80,7 @@ input.big_search__input {
 	display: none;
 	// visibility: hidden;
 	// opacity: 0;
-	transition: visibility 0.3s, opacity 0.3s linear;
+	// transition: visibility 0.3s, opacity 0.3s linear;
 
 	position: absolute;
 	background: white;

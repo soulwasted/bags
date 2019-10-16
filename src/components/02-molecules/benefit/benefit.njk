@@ -1,4 +1,4 @@
-<a data-html="true" class="benefit" data-toggle="tooltip" title="{{ tt_title }}">
+<a data-html="true" class="benefit {{ class }}" data-toggle="tooltip" title="{{ tt_title }}">
 	{% render '@icon', icon  %}
-	<div class="benefit__title">{{ title }}</div>
+	<div class="benefit__title">{{ title | safe }}</div>
 </a>

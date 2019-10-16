@@ -34,16 +34,25 @@
 @import "m-nav--pills";
 @import "m-stars";
 @import "m-item";
+@import "m-item--add";
+@import "m-item--button";
+@import "m-item--cart";
+@import "m-heureka-offer";
+@import "m-ribbon";
 
 @import "m-goods";
+@import "m-expedition";
 
 
 // ORGANISMS
 @import "o-navigation";
 @import "o-benefits";
+@import "o-benefits--bag";
 @import "o-footer";
 @import "o-modals";
-@import "o-lists";
+@import "o-list";
+@import "o-list--items";
+@import "o-list--brands";
 @import "o-breadcrumb";
 @import "o-gallery";
 
@@ -56,7 +65,7 @@
 @import "t-stripe--bag";
 @import "t-stripe--ask";
 @import "t-stripe--guarantee";
-@import "t-price_summary";
+@import "t-slider_summary";
 @import "t-slider";
 @import "t-detail-simple";
 

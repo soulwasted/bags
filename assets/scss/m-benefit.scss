@@ -28,7 +28,8 @@
 		margin-right: 0;
 	}
 	&:hover {
-		.benefit__icon {
+		.benefit__icon, 
+		.benefit__title {
 			color: theme-color("black");
 			transition: $motion-out;
 		}
@@ -56,6 +57,7 @@
 		font-size: $font-size-xxs;
 		line-height: $line-height-sm;
 		margin-bottom: 0;
+		transition: $motion-on;
 		@include media-breakpoint-up(md) {
 			font-size: $font-size-xs;
 		}

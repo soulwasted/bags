@@ -13,19 +13,21 @@ const path = require('path');
 /*  Require the Fractal module */
 const fractal = module.exports = require('@frctl/fractal').create();
 
-// const mandelbrot = require('@frctl/mandelbrot'); // require the Mandelbrot theme module
 
-// create a new instance with custom config options
-// const myCustomisedTheme = mandelbrot({
+
+// const mandelbrot = require('@frctl/mandelbrot'); // require the Mandelbrot theme module
+// 
+// // create a new instance with custom config options
+// const bagsTheme = mandelbrot({
 // 	skin: "default",
 // 	styles: [
 // 		'default',
-// 		'www/css/app.css'
+// 		'/www/css/mytheme.css'
 // 	],
 // 	"nav": ["docs", "components"]
 // });
-
-// fractal.web.theme(myCustomisedTheme); // tell Fractal to use the configured theme by default
+// 
+// bagsTheme.addStatic(__dirname + '/www/css'); 
 
 const mandelbrot = require('@frctl/mandelbrot')({
 	favicon: '/assets/icons/icon.ico',
@@ -68,6 +70,7 @@ fractal.docs.set('path', `${paths.src}/docs`);
 
 // Web UI config
 fractal.web.theme(mandelbrot);
+// fractal.web.theme(bagsTheme);
 fractal.web.set('static.path', paths.static);
 // fractal.web.set('static.path', __dirname + '/www');
 fractal.web.set('builder.dest', paths.build);

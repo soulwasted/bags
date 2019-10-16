@@ -1,0 +1,8 @@
+<div class="list--items">
+	{% for i in range(0, 10) -%}
+		{% render '@item-button' %}
+	{%- endfor %}
+	{# {% for item in items %}{% render '@item',
+		item %}
+	{% endfor %} #}
+</div>

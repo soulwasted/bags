@@ -55,10 +55,31 @@ p {@include text-sm; }
 		text-decoration: none;
 	}
 }
+.text--caption {
+	font-size: 12px;
+}
+
+
+
+.note {
+	color: black;
+	display: flex;
+	align-items: baseline;
+	i {
+		font-size: 20px;
+		color: $brand-secondary;
+		margin-right: 10px;
+	}
+}
+
 
 .page h2 {
 	margin-top: spacer(4);
 }
+
+
+
+
 
 
 
@@ -136,9 +157,9 @@ p {@include text-sm; }
 		margin: 0 auto;
 		margin-top: 20px;
 		text-align: left;
-		@media screen and (max-width: $screen-xs) {
-			margin-top: -5px;
-		}
+		// @media screen and (max-width: $screen-xs) {
+		// 	margin-top: -5px;
+		// }
 		span {
 			text-align: left;
 			transform: rotate(-15deg);

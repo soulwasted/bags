@@ -7,6 +7,11 @@ var benefitEnabled = 1.0;
 
 
 $(document).ready(function () {
+	
+	// Absolute position of benefits. 
+	// We need to calculate height of benefits.
+	setBenefitsHeight();
+	
 	var sliderInput = document.getElementById('sliderInput');
 	var stepperMinus = document.getElementById('stepperMinus');
 	var stepperPlus = document.getElementById('stepperPlus');
@@ -130,6 +135,16 @@ $(document).ready(function () {
 		if (sliderInput.value < 100) {
 			$(sliderInput).removeClass("over100");
 		}
+	}
+	
+	function setBenefitsHeight() {
+	    var benefitsHeight = $('.allBenefits:nth-child(4)').css("height");
+	    $('.sliderBenefits').css({'height': benefitsHeight});
+
+	    $(window).on('resize', function() {
+	       benefitsHeight = $('.allBenefits:nth-child(4)').css('height');
+		   $('.sliderBenefits').css({'height': benefitsHeight});
+	    });
 	}
 
 });

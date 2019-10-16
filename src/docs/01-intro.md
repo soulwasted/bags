@@ -8,11 +8,12 @@ Extended using [design tokens](https://medium.com/eightshapes-llc/25dd82d58421) 
 <!-- ## Colour Palettes
 {{ _self.title }} -->
 
-## Name of the system?
-- bagsy
-- bagsys
-- inbag
-
-
-
 ![Atomic Design](http://atomicdesign.bradfrost.com/images/content/atomic-design-process.png)
+
+## Name of the system?
+- baggin
+- inbag
+- ?
+
+
+

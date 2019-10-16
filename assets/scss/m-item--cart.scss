@@ -1,0 +1,44 @@
+// —————————————————
+// Item -- cart
+// —————————————————
+
+// FIXME: remove nesting?
+
+.item.item--cart {
+	box-shadow: none;
+	border: none;
+	align-items: flex-start;
+	
+	// rewrite definitions from m-item
+	margin: 0;
+	width: 100%;	
+	
+	@include media-breakpoint-down(md) {
+		flex-wrap: wrap;
+	}
+
+	.item__content {
+		@include media-breakpoint-down(md) {
+			width: calc(100% - 100px - 8px);
+		}
+	}
+
+	.item__name {
+		color: theme-color("black");
+	}
+
+	.item__info {
+		font-size: $font-size-sm;
+		color: theme-color("secondary");
+	}
+	.item__remove {
+		@include media-breakpoint-down(md) {
+			margin-left: calc(100px + 8px);
+			margin-right: auto;
+		}
+		@include media-breakpoint-down(xxs) {
+			margin-left: calc(75px + 8px);
+			width: calc(100% - 75px - 8px);
+		}
+	}
+}

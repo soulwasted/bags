@@ -1,7 +1,7 @@
 title:          Benefit
 label:          Benefit
 status:         ready
-# collated:     true
+collated:       true
 default:        piggy
 variants:
   - name:       piggy
@@ -38,4 +38,47 @@ variants:
       tt_title: <strong>100% záruka</strong> na vrácení zboží
       icon:
         image:  badge
+        class:  benefit__icon
+# ————————————
+  - name:       bag-magnify
+    context:
+      title:    5&nbsp;filtračních vrstev
+      tt_title: 
+      icon:
+        image:  pic-magnify
+        class:  benefit__icon
+  - name:       bag-space
+    context:
+      title:    Lepší využití prostoru
+      tt_title: 
+      icon:
+        image:  pic-space
+        class:  benefit__icon
+  - name:       bag-clock
+    context:
+      title:    Prodloužená životnost
+      tt_title: 
+      icon:
+        image:  pic-clock
+        class:  benefit__icon
+  - name:       bag-filter
+    context:
+      title:    Účinnější filtrace
+      tt_title: 
+      icon:
+        image:  pic-filter
+        class:  benefit__icon
+  - name:       bag-join
+    context:
+      title:    Pevnost spoje
+      tt_title: 
+      icon:
+        image:  pic-join
+        class:  benefit__icon
+  - name:       bag-closing
+    context:
+      title:    Hygienický uzávěr
+      tt_title: 
+      icon:
+        image:  pic-closing
         class:  benefit__icon

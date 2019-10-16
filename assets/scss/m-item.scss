@@ -19,6 +19,15 @@
 			color: $black;
 		}
 	}
+	
+	margin: spacer(2);
+	width: 100%;
+	@include media-breakpoint-up(sm) {
+		width: calc((100%/2) - 2 * #{spacer(2)});
+	}
+	@include media-breakpoint-up(lg) {
+		width: calc((100%/3) - 2 * #{spacer(2)});
+	}
 }
 
 .item__image {
@@ -116,45 +125,7 @@
 	}
 }
 
-// —————————————————
-// Item -- cart
-// —————————————————
 
-// FIXME: remove nesting?
-
-.item.item--cart {
-	box-shadow: none;
-	border: none;
-	align-items: flex-start;
-	@include media-breakpoint-down(md) {
-		flex-wrap: wrap;
-	}
-
-	.item__content {
-		@include media-breakpoint-down(md) {
-			width: calc(100% - 100px - 8px);
-		}
-	}
-
-	.item__name {
-		color: theme-color("black");
-	}
-
-	.item__info {
-		font-size: $font-size-sm;
-		color: theme-color("secondary");
-	}
-	.item__remove {
-		@include media-breakpoint-down(md) {
-			margin-left: calc(100px + 8px);
-			margin-right: auto;
-		}
-		@include media-breakpoint-down(xxs) {
-			margin-left: calc(75px + 8px);
-			width: calc(100% - 75px - 8px);
-		}
-	}
-}
 
 // —————————————————
 // Item __ stepper
@@ -201,32 +172,7 @@
 	}
 }
 
-// —————————————————
-// Item -- additional
-// —————————————————
-.item.item--additional {
-	box-shadow: none;
-	border: none;
-	padding: spacer(2) spacer(2) spacer(2) 2px;
 
-	.item__name {
-		padding: 0;
-	}
-
-	.item__info {
-		// margin-top: spacer(2);
-		font-size: $font-size-xxs;
-	}
-
-	.item__more {
-		margin-top: spacer(2);
-	}
-}
-.item__image--additional {
-	width: 50px;
-	height: 34px;
-	margin: 0 spacer(1);
-}
 
 .additional_items {
 	margin-top: spacer(3);

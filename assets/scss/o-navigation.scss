@@ -47,6 +47,22 @@
 			}
 		}
 	}
+	
+	
+	// FIXME: text position
+	.badge {
+		// background: theme-color("primary");
+		background: gray("600");
+		color: white;
+		border-radius: 7px;
+		margin-left: 0.2rem;
+		margin-right: 0.2rem;
+
+		.badge__text {
+			// margin-top: -2px;
+			// position: relative;
+		}
+	}
 }
 
 .navbar-toggler {
@@ -115,19 +131,6 @@
 		@include media-breakpoint-up(xl) {
 			font-size: $font-size-sm !important;
 		}
-		// FIXME: text position
-		.badge {
-			// background: theme-color("primary");
-			background: gray("600");
-			color: white;
-			border-radius: 7px;
-			margin-left: 0.2rem;
-			margin-right: 0.2rem;
-
-			.badge__text {
-				// margin-top: -2px;
-				// position: relative;
-			}
-		}
 	}
 }
+
