@@ -1,0 +1,20 @@
+.input--compatibility--wrapper {	¨
+	width: 100%;
+	max-width: 220px;
+}
+.input--compatibility {
+}
+
+.input__icon {
+    float: right;
+	position: relative;
+	margin-top: -40px;
+	@extend .text-size-lg;
+	color: rgba(0, 0, 0, 0.6);
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-up(md) {
+		// margin-left: 20px;
+		// margin-top: -67px;
+	}
+}

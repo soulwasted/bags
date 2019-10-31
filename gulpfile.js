@@ -97,6 +97,7 @@ var paths = {
 			"assets/js/app-bag_interactive.js",
 			"assets/js/slider.js",
 			"assets/js/detail-simple.js",
+			"assets/js/selection-hepa.js",
 			"node_modules/ekko-lightbox/dist/ekko-lightbox.min.js",
 			"node_modules/nouislider/distribute/nouislider.min.js",
 			"node_modules/wnumb/wNumb.js"

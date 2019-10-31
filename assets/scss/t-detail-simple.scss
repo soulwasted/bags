@@ -79,9 +79,9 @@ $screen-detail-selection: calc(#{$detail-selection} + 2*15px);
 	min-height: 100px;
 	border: 2px solid white;
 	border-top: 2px solid $gray-lightest;
-	transition: all 0.5s;
+	transition: all $motion-on;
 	* {
-		transition: all 0.5s;	
+		transition: all $motion-on;	
 	}
 
 	&:first-child {

@@ -1,0 +1,19 @@
+table {
+    tr {
+        td {
+            @extend .text-size-sm;
+            width: 50%;
+            padding: spacer(1) spacer(2);
+            
+            &:first-child {
+                font-weight: 700;
+            }
+        }
+        
+        &:nth-child(odd) {
+            td {
+                background-color: lighten(theme-color("secondary"), 60%);
+            }
+        }
+    }
+}

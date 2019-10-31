@@ -28,6 +28,7 @@
 
 // MOLECULES
 @import "m-big_search";
+@import "m-input--compatibility";
 @import "m-benefit";
 @import "m-links";
 @import "m-brand";
@@ -42,6 +43,8 @@
 
 @import "m-goods";
 @import "m-expedition";
+
+@import "m-table";
 
 
 // ORGANISMS
@@ -68,6 +71,8 @@
 @import "t-slider_summary";
 @import "t-slider";
 @import "t-detail-simple";
+@import "t-selection--hepa";
+
 
 // PAGES
 @import "x-page";

@@ -1,0 +1,14 @@
+title:        HEPA filtr
+label:        HEPA filtr
+status:       wip
+
+context:
+  breadcrumb: 
+    links:
+    - link:   '/'
+      text:   Domů
+    - link:   '#'
+      text:   Seznam značek
+    - link:   '#'
+      text:   HEPA filtry
+    active:   HEPA filtr do vysavačů AEG (HF0001)
