@@ -91,10 +91,6 @@ breadcrumb %}
 	<div class="row">
 		<div class="col">
 			<h3>Doporučujeme</h3>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col">
 			<div class="list--items">
 				{% for i in range(0, 10) -%}
 					{% render '@item-button' %}
@@ -104,4 +100,5 @@ breadcrumb %}
 	</div>
 </div>
 
+{% render '@stripe-testimonials' %}
 {% render '@stripe-guarantee' %}

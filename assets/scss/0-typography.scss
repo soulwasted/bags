@@ -65,6 +65,9 @@ p {@include text-sm; }
 	color: black;
 	display: flex;
 	align-items: baseline;
+	p {
+		margin-bottom: spacer(1);
+	}
 	i {
 		font-size: 20px;
 		color: $brand-secondary;

@@ -15067,6 +15067,8 @@ p {
   -webkit-align-items: baseline;
       -ms-flex-align: baseline;
           align-items: baseline; }
+  .note p {
+    margin-bottom: 0.25rem; }
   .note i {
     font-size: 20px;
     color: #0089b0;
@@ -15435,7 +15437,8 @@ input.big_search__input {
   width: calc(100% - 20px); }
 
 .input--compatibility--wrapper {
-  width: 220px; }
+  width: 100%;
+  max-width: 220px; }
 
 .input__icon {
   float: right;
@@ -16783,6 +16786,8 @@ footer {
     font-weight: 700;
     color: #4d4d4d;
     font-size: 17px; }
+    #slider .noUi-value.noUi-value-sub {
+      font-size: 12px; }
     #slider .noUi-value:last-child {
       width: 60px; }
   #slider .noUi-handle {
@@ -16790,12 +16795,12 @@ footer {
     height: 40px;
     border-radius: 50%;
     right: -20px;
-    top: -20px;
+    top: -18px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d0cdcd));
     background-image: -webkit-linear-gradient(top, #ffffff, #d0cdcd);
     background-image: -o-linear-gradient(top, #ffffff, #d0cdcd);
     background-image: linear-gradient(to bottom, #ffffff, #d0cdcd);
-    border: 0;
+    border: 5px solid #0089b0;
     -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     cursor: pointer;
@@ -16805,7 +16810,7 @@ footer {
     transition: box-shadow 0.5s;
     transition: box-shadow 0.5s, -webkit-box-shadow 0.5s; }
     #slider .noUi-handle:hover {
-      background: #0099c4;
+      background: #0089b0;
       -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5);
               box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5); }
     #slider .noUi-handle::after, #slider .noUi-handle::before {
