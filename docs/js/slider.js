@@ -29,7 +29,7 @@ $(document).ready(function () {
 	}
 
 	noUiSlider.create(slider, {
-		start: [sliderSteps[0]],
+		start: [sliderSteps[2]],
 		connect: 'lower',
 		step: 1,
 		range: {
@@ -50,7 +50,7 @@ $(document).ready(function () {
 		})
 	});
 
-	sliderInput.value = sliderSteps[3];
+	sliderInput.value = sliderSteps[2];
 
 	// init of slider and input
 	slider.noUiSlider.on('update', function (values, handle) {

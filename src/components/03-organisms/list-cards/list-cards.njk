@@ -1,0 +1,6 @@
+{# {% for i in range(0, 10) -%}
+	{% render '@card' %}
+{%- endfor %} #}
+{% for article in articles %}{% render '@card',
+	article %}
+{% endfor %}

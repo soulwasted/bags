@@ -1,0 +1,12 @@
+title:        Poradna — Detail
+label:        Poradna — Detail
+status:       wip
+
+context:
+  breadcrumb: 
+    links:
+    - link:   'homepage'
+      text:   Domů
+    - link:   'poradna'
+      text:   Poradna
+    active:   Jak vyměnit sáček ve vysavači
