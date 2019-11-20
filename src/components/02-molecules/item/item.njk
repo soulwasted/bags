@@ -1,5 +1,5 @@
 <a href="{{ link }}" class="item {{ class }}">
-	<img alt="{{ img_alt }}" src="{{ img }}" class="item__image">
+	<img alt="{{ img_alt }}" src="{{ img | path }}" class="item__image">
 	<div class="item__content">
 		<div class="item__name">{{ name }}</div>
 		<div class="item__info">{{ info | safe }}</div>

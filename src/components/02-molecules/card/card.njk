@@ -1,15 +1,17 @@
 <div class="card {{ class }}">
 	<a href="{{ link | safe }}" class="card__image {{ card__image__class }}">
-		<img alt="{{ img_alt }} {{ title }}" src="{{ img }}" />
+		<img alt="{{ img_alt }} {{ title }}" src="{{ img | path }}"/>
 	</a>
 	<div class="card__content">
 		<div class="card__title">
-			<h4><a href="{{ link | safe }}">{{ title | safe }}</a></h4>
+			<h4>
+				<a href="{{ link | safe }}">{{ title | safe }}</a>
+			</h4>
 		</div>
 		<div class="card__meta">
 			<span class="card__date">{{ date | safe }}</span>
-			 — 
-			autor: <span class="card__author">{{ author | safe }}</span>
+			— autor:
+			<span class="card__author">{{ author | safe }}</span>
 		</div>
 		<div class="card__text">
 			{{ text | safe | truncate(255, false) }}
