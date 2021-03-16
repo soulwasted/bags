@@ -8,13 +8,15 @@
 			max-width: 360px;
 		}
 	}
-	
+
+
+
 	.bag__text {
 		order: 2;
 		@include media-breakpoint-up(md) {
 			order: -1;
 		}
-		
+
 		#accordion {
 			z-index: 10;
 			position: relative;
@@ -22,7 +24,10 @@
 			@include media-breakpoint-up(md) {
 				margin-top: 0;
 			}
-			
+			.card {
+				flex-flow: column;
+			}
+
 			h6 {
 				a {
 					display: block;
@@ -30,13 +35,13 @@
 					// color: theme-color("dark");
 					padding-top: spacer(1);
 					padding-bottom: spacer(1);
-					
+
 					&.collapsed {
 						color: theme-color("secondary");
 					}
 				}
 			}
-			
+
 			p {
 				@include text-xs;
 				@include media-breakpoint-up(lg) {
@@ -45,7 +50,7 @@
 			}
 		}
 	}
-	
+
 	.bag__image {
 		// order: 2;
 		background: url("../img/vacs-bag.jpg") center center no-repeat;
@@ -56,7 +61,7 @@
 		padding: 0;
 		max-height: 400px;
 		text-align: center;
-		
+
 		@include media-breakpoint-up(md) {
 			position: relative;
 			background-position: center 70%;
@@ -69,12 +74,12 @@
 			margin-top: 0;
 		}
 	}
-	
+
 	.bag__image__pois {
 		padding: 150px 0 50px;
 		width: 100%;
 		height: auto;
-		
+
 		@include media-breakpoint-up(lg) {
 			width: 30em;
 			height: 30em;
@@ -84,7 +89,7 @@
 			margin: -90px auto 0;
 			border: 1px solid theme-color("secondary");
 		}
-		
+
 		a.poi {
 			display: inline-block;
 			width: 4.5em;
@@ -96,28 +101,28 @@
 			background: rgba(255,255,255,0.9);
 			margin: 0 auto;
 			text-align: center;
-			
+
 			i {
 				font-size: 50px;
 				line-height: 60px;
-				
+
 				&.icon-pic-clock {
 					font-size: 45px;
 				}
 				@include media-breakpoint-up(lg) {
 					font-size: 70px;
 					line-height: 80px;
-					
+
 					&.icon-pic-clock {
 						font-size: 65px;
 					}
 				}
 			}
-			
+
 			&.active,
 			&:hover {
 				background: theme-color("secondary");
-				
+
 				i {
 					color: white;
 				}
@@ -131,11 +136,11 @@
 				position: absolute;
 				top: 50%;
 				left: 50%;
-				
+
 				&.one {
 					transform: rotate(300deg) translate(15em) rotate(-300deg);
 				}
-				
+
 				&.two {
 					transform: translate(15em);
 				}
@@ -143,20 +148,20 @@
 				&.three {
 					transform: rotate(60deg) translate(15em) rotate(-60deg);
 				}
-				
+
 				&.four {
 					transform: rotate(120deg) translate(15em) rotate(-120deg);
 				}
-				
+
 				&.five {
 					transform: translate(-15em);
 				}
-				
+
 				&.six {
 					transform: rotate(240deg) translate(15em) rotate(-240deg);
 				}
 			}
 		}
-		
+
 	}
 }

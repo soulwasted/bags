@@ -48,7 +48,7 @@ var paths = {
 	// 	dest: "www"
 	// },
 	images: {
-		
+
 	},
 	scripts: {
 		src: [
@@ -56,16 +56,16 @@ var paths = {
 			"node_modules/popper.js/dist/umd/popper.js",
 			"node_modules/bootstrap/dist/js/bootstrap.min.js"
 			// "assets/js/bootstrap.min.js"
-			
-			
-			
-			
-			
+
+
+
+
+
 			// "node_modules/responsive-toolkit/dist/bootstrap-toolkit.js",
-			
+
 			// slowly add those below
-			
-			
+
+
 			// "bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js",
 			// "bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js",
 			// "bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js",

@@ -10,7 +10,7 @@
   },
   "main": "gulpfile.js",
   "dependencies": {
-    "@frctl/fractal": "^1.1.7",
+    "@frctl/fractal": "^1.5.4",
     "@frctl/mandelbrot": "^1.2.1",
     "@frctl/nunjucks": "^2.0.1",
     "bootstrap": "^4.3.1",

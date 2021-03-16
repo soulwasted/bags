@@ -2,10 +2,13 @@
 	display: flex;
 	align-items: center;
 	transition: all 0.5s;
-	cursor: pointer;
+	cursor: default;
 	width: calc(100% - 24px);
 	margin-right: 24px;
 	margin-bottom: 12px;
+	&:hover {
+		text-decoration: none;
+	}
 	@include media-breakpoint-down(xs) {
 		width: calc(100% - 24px);
 		// background: blue;
@@ -28,7 +31,7 @@
 		margin-right: 0;
 	}
 	&:hover {
-		.benefit__icon, 
+		.benefit__icon,
 		.benefit__title {
 			color: theme-color("black");
 			transition: $motion-out;
