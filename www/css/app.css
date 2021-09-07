@@ -5115,7 +5115,7 @@ mark,
 
 @media (min-width: 1200px) {
   .container, .container-xxs, .container-xs, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1140px; } }
+    max-width: 1440px; } }
 
 .row {
   display: -webkit-box;
@@ -17118,6 +17118,11 @@ footer {
     .stripe {
       padding-top: 3rem;
       padding-bottom: 3rem; } }
+  @media (min-width: 992px) {
+    .stripe {
+      width: 100%;
+      padding-left: 3rem;
+      padding-right: 3rem; } }
   .stripe .container {
     padding: 0; }
   .stripe h2 {

@@ -5,11 +5,16 @@
         padding-top: spacer("xl");
         padding-bottom: spacer("xl");
     }
-    
+    @include media-breakpoint-up(lg) {
+        width: 100%;
+        padding-left: spacer("xl");
+        padding-right: spacer("xl");
+    }
+
 	.container {
 		padding: 0;
 	}
-    
+
     h2 {
         margin-top: 0;
     }
