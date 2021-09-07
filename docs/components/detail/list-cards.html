@@ -10,8 +10,17 @@
     </script>
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
     <link rel="shortcut icon" href="../../assets/icons/icon.ico" type="image/ico">
+<style>
+    :root {
+        
+        
+        
+    }
+</style>
 
-<link rel="stylesheet" href="../../fractal/css/default.css?cachebust=1.2.1" type="text/css">
+<link rel="stylesheet" href="../../fractal/css/default.css?cachebust=1.8.1" type="text/css">
+
+<link rel="stylesheet" href="../../fractal/css/highlight.css?cachebust=1.8.1" type="text/css">
 
 
 <title>List Cards | BAGS — Design System</title>
@@ -26,16 +35,20 @@
     <div class="Frame-header">
         <div class="Header">
     <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
-        <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <div class="Header-navToggleIcon Header-navToggleIcon--open">
+            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
 </svg>
 
-        <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        </div>
+        <div class="Header-navToggleIcon Header-navToggleIcon--closed">
+            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
 </svg>
 
+        </div>
     </button>
     <a href="../../index.html" class="Header-title" data-pjax>BAGS — Design System</a>
 </div>
@@ -48,17 +61,13 @@
             <div class="Frame-inner" id="pjax-container">
             
 
-
-    
-    
-
 <div class="Pen" data-behaviour="pen" id="pen-74742a609b3ebd371c5af47f15054d07">
 
     
 
     <div class="Pen-panel Pen-header">
     <h1 class="Pen-title">
-        <a class="Pen-previewLink" href="../preview/list-cards.html" title="Component preview">
+        <a class="Pen-previewLink" href="../preview/list-cards.html" title="Preview">
             List Cards
             <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -67,6 +76,9 @@
 
         </a>
     </h1>
+
+    <span class="Pen-preview-size" data-role="preview-size"></span>
+
     
 
 <div class="Status Status--tag">
@@ -82,12 +94,10 @@
     <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-74742a609b3ebd371c5af47f15054d07">
     <div class="Preview-wrapper" data-role="resizer">
         <div class="Preview-resizer">
-            
              <iframe
                 class="Preview-iframe"
                 data-role="window"
                 src="../preview/list-cards.html"
-                sandbox="allow-same-origin allow-scripts allow-forms allow-modals"
                  style=""
                 marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
             </iframe>
@@ -110,19 +120,25 @@
         
         
         <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
-            <a href="#browser-74742a609b3ebd371c5af47f15054d07-panel-html">HTML</a>
+            <a href="#browser-74742a609b3ebd371c5af47f15054d07-panel-html">
+                HTML
+            </a>
         </li>
         
         
         
         <li class="Browser-tab Browser-tab--view" data-role="tab">
-            <a href="#browser-74742a609b3ebd371c5af47f15054d07-panel-view">View</a>
+            <a href="#browser-74742a609b3ebd371c5af47f15054d07-panel-view">
+                View
+            </a>
         </li>
         
         
         
         <li class="Browser-tab Browser-tab--context" data-role="tab">
-            <a href="#browser-74742a609b3ebd371c5af47f15054d07-panel-context">Context</a>
+            <a href="#browser-74742a609b3ebd371c5af47f15054d07-panel-context">
+                Context
+            </a>
         </li>
         
         
@@ -134,13 +150,17 @@
         
         
         <li class="Browser-tab Browser-tab--info" data-role="tab">
-            <a href="#browser-74742a609b3ebd371c5af47f15054d07-panel-info">Info</a>
+            <a href="#browser-74742a609b3ebd371c5af47f15054d07-panel-info">
+                Info
+            </a>
         </li>
         
         
         
         <li class="Browser-tab Browser-tab--notes" data-role="tab">
-            <a href="#browser-74742a609b3ebd371c5af47f15054d07-panel-notes">Notes</a>
+            <a href="#browser-74742a609b3ebd371c5af47f15054d07-panel-notes">
+                Notes
+            </a>
         </li>
         
         
@@ -151,213 +171,244 @@
     
     
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-74742a609b3ebd371c5af47f15054d07-panel-html">
-    <code class="Code Code--lang-html">
+    <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card "</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__image "</span>&gt;</span>
-		<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Fotka článku Jak vyměnit sáček ve vysavači"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../img/poradna-img-01.jpg"</span>/&gt;</span>
-	<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__content"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card &quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__image &quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Fotka článku Jak vyměnit sáček ve vysavači&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../img/poradna-img-01.jpg&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__title&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span>&gt;</span>Jak vyměnit sáček ve vysavači<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span>&gt;</span>Jak vyměnit sáček ve vysavači<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__meta"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__date"</span>&gt;</span>18. 11. 2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> — autor:
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__author"</span>&gt;</span>Andrej Kašický<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__meta&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__date&quot;</span>&gt;</span>18. 11. 2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            — autor:
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__author&quot;</span>&gt;</span>Andrej Kašický<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__text"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__text&quot;</span>&gt;</span>
             Obdrželi jste zásilku sáčků VACS? V několika krocích vám poradíme, jak vyměnit sáčky do vysavače a jak vyměnit filtr ve vysavači. Není to nic těžkého a zvládne to každý. Ať už máte vysavač Eta, Zelmer, Rowenta či jakýkoliv jiný, postup se příliš neliší....
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card "</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__image "</span>&gt;</span>
-		<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Fotka článku Polarised multimedia internet solution"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://picsum.photos/500/250?random=10"</span>/&gt;</span>
-	<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__content"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card &quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__image &quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Fotka článku Polarised multimedia internet solution&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://picsum.photos/500/250?random=10&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__title&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span>&gt;</span>Polarised multimedia internet solution<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span>&gt;</span>Polarised multimedia internet solution<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__meta"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__date"</span>&gt;</span>29.1.2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> — autor:
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__author"</span>&gt;</span>Sloan Boddy<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__meta&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__date&quot;</span>&gt;</span>29.1.2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            — autor:
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__author&quot;</span>&gt;</span>Sloan Boddy<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__text"</span>&gt;</span>
-            In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse...
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__text&quot;</span>&gt;</span>
+            In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+            Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse...
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card "</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__image "</span>&gt;</span>
-		<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Fotka článku Monitored well-modulated portal"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://picsum.photos/500/250?random=1"</span>/&gt;</span>
-	<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__content"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card &quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__image &quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Fotka článku Monitored well-modulated portal&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://picsum.photos/500/250?random=1&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__title&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span>&gt;</span>Monitored well-modulated portal<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span>&gt;</span>Monitored well-modulated portal<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__meta"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__date"</span>&gt;</span>12.7.2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> — autor:
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__author"</span>&gt;</span>Nikoletta Digance<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__meta&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__date&quot;</span>&gt;</span>12.7.2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            — autor:
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__author&quot;</span>&gt;</span>Nikoletta Digance<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__text"</span>&gt;</span>
-            In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__text&quot;</span>&gt;</span>
+            In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+            Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card "</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__image "</span>&gt;</span>
-		<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Fotka článku Visionary asynchronous circuit"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://picsum.photos/500/250?random=2"</span>/&gt;</span>
-	<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__content"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card &quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__image &quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Fotka článku Visionary asynchronous circuit&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://picsum.photos/500/250?random=2&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__title&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span>&gt;</span>Visionary asynchronous circuit<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span>&gt;</span>Visionary asynchronous circuit<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__meta"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__date"</span>&gt;</span>20.6.2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> — autor:
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__author"</span>&gt;</span>Raimund Mylechreest<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__meta&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__date&quot;</span>&gt;</span>20.6.2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            — autor:
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__author&quot;</span>&gt;</span>Raimund Mylechreest<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__text"</span>&gt;</span>
-            Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__text&quot;</span>&gt;</span>
+            Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+            Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card "</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__image "</span>&gt;</span>
-		<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Fotka článku Reverse-engineered asynchronous moratorium"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://picsum.photos/500/250?random=3"</span>/&gt;</span>
-	<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__content"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card &quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__image &quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Fotka článku Reverse-engineered asynchronous moratorium&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://picsum.photos/500/250?random=3&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__title&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span>&gt;</span>Reverse-engineered asynchronous moratorium<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span>&gt;</span>Reverse-engineered asynchronous moratorium<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__meta"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__date"</span>&gt;</span>25.10.2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> — autor:
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__author"</span>&gt;</span>Babita Lethcoe<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__meta&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__date&quot;</span>&gt;</span>25.10.2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            — autor:
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__author&quot;</span>&gt;</span>Babita Lethcoe<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__text"</span>&gt;</span>
-            In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget...
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__text&quot;</span>&gt;</span>
+            In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+            Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+            Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget...
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card "</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__image "</span>&gt;</span>
-		<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Fotka článku Synergized 24 hour internet solution"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://picsum.photos/500/250?random=4"</span>/&gt;</span>
-	<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__content"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card &quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__image &quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Fotka článku Synergized 24 hour internet solution&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://picsum.photos/500/250?random=4&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__title&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span>&gt;</span>Synergized 24 hour internet solution<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span>&gt;</span>Synergized 24 hour internet solution<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__meta"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__date"</span>&gt;</span>5.6.2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> — autor:
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__author"</span>&gt;</span>Meta MacAllister<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__meta&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__date&quot;</span>&gt;</span>5.6.2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            — autor:
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__author&quot;</span>&gt;</span>Meta MacAllister<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__text"</span>&gt;</span>
-            Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam...
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__text&quot;</span>&gt;</span>
+            Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+            Nullam...
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card "</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__image "</span>&gt;</span>
-		<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Fotka článku Synergistic cohesive approach"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://picsum.photos/500/250?random=5"</span>/&gt;</span>
-	<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__content"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card &quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__image &quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Fotka článku Synergistic cohesive approach&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://picsum.photos/500/250?random=5&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__title&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span>&gt;</span>Synergistic cohesive approach<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span>&gt;</span>Synergistic cohesive approach<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__meta"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__date"</span>&gt;</span>5.6.2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> — autor:
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__author"</span>&gt;</span>Rocky Kerbey<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__meta&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__date&quot;</span>&gt;</span>5.6.2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            — autor:
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__author&quot;</span>&gt;</span>Rocky Kerbey<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__text"</span>&gt;</span>
-            Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla...
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__text&quot;</span>&gt;</span>
+            Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+            Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+
+            Fusce consequat. Nulla...
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card "</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__image "</span>&gt;</span>
-		<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Fotka článku Re-contextualized zero defect time-frame"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://picsum.photos/500/250?random=6"</span>/&gt;</span>
-	<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__content"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card &quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__image &quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Fotka článku Re-contextualized zero defect time-frame&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://picsum.photos/500/250?random=6&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__title&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span>&gt;</span>Re-contextualized zero defect time-frame<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span>&gt;</span>Re-contextualized zero defect time-frame<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__meta"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__date"</span>&gt;</span>28.1.2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> — autor:
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__author"</span>&gt;</span>Vidovic Zum Felde<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__meta&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__date&quot;</span>&gt;</span>28.1.2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            — autor:
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__author&quot;</span>&gt;</span>Vidovic Zum Felde<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__text"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__text&quot;</span>&gt;</span>
             Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card "</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__image "</span>&gt;</span>
-		<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Fotka článku Upgradable 3rd generation data-warehouse"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://picsum.photos/500/250?random=7"</span>/&gt;</span>
-	<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__content"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card &quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__image &quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Fotka článku Upgradable 3rd generation data-warehouse&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://picsum.photos/500/250?random=7&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__title&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span>&gt;</span>Upgradable 3rd generation data-warehouse<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span>&gt;</span>Upgradable 3rd generation data-warehouse<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__meta"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__date"</span>&gt;</span>24.9.2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> — autor:
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__author"</span>&gt;</span>Maurise Kohring<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__meta&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__date&quot;</span>&gt;</span>24.9.2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            — autor:
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__author&quot;</span>&gt;</span>Maurise Kohring<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__text"</span>&gt;</span>
-            Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__text&quot;</span>&gt;</span>
+            Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+            Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+            Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card "</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__image "</span>&gt;</span>
-		<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Fotka článku Profound directional productivity"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://picsum.photos/500/250?random=8"</span>/&gt;</span>
-	<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__content"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card &quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__image &quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Fotka článku Profound directional productivity&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://picsum.photos/500/250?random=8&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__title&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span>&gt;</span>Profound directional productivity<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span>&gt;</span>Profound directional productivity<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__meta"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__date"</span>&gt;</span>21.10.2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> — autor:
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__author"</span>&gt;</span>Menard Tortice<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__meta&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__date&quot;</span>&gt;</span>21.10.2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            — autor:
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__author&quot;</span>&gt;</span>Menard Tortice<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__text"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__text&quot;</span>&gt;</span>
             Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card "</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__image "</span>&gt;</span>
-		<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Fotka článku Cross-group holistic superstructure"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://picsum.photos/500/250?random=9"</span>/&gt;</span>
-	<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__content"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card &quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__image &quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Fotka článku Cross-group holistic superstructure&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://picsum.photos/500/250?random=9&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__title&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"poradna-detail"</span>&gt;</span>Cross-group holistic superstructure<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;poradna-detail&quot;</span>&gt;</span>Cross-group holistic superstructure<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__meta"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__date"</span>&gt;</span>20.4.2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> — autor:
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__author"</span>&gt;</span>Wally Langwade<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__meta&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__date&quot;</span>&gt;</span>20.4.2019<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            — autor:
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__author&quot;</span>&gt;</span>Wally Langwade<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__text"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__text&quot;</span>&gt;</span>
             Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -368,121 +419,121 @@
 
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-74742a609b3ebd371c5af47f15054d07-panel-view">
-    <code class="Code Code--lang-text">
-        <pre>{# {% <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>) -%}
-	{% <span class="hljs-keyword">render</span> <span class="hljs-string">'<a href="card.html">@card</a>'</span> %}
-{%- endfor %} #}
-{% <span class="hljs-keyword">for</span> article <span class="hljs-keyword">in</span> articles %}{% <span class="hljs-keyword">render</span> <span class="hljs-string">'<a href="card.html">@card</a>'</span>,
-	article %}
-{% endfor %}</pre>
+    <code class="Code Code--lang-django hljs">
+        <pre><span class="hljs-comment">{# {% for i in range(0, 10) -%}
+	{% render &#x27;<a href="card.html">@card</a>&#x27; %}
+{%- endfor %} #}</span><span class="xml">
+</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">for</span></span> article <span class="hljs-keyword">in</span> articles %}</span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="card.html">@card</a>&#x27;,
+	article %}</span><span class="xml">
+</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endfor</span></span> %}</span></pre>
     </code>
 </div>
 
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-74742a609b3ebd371c5af47f15054d07-panel-context">
-    <code class="Code Code--lang-json">
+    <code class="Code Code--lang-json hljs">
         
             
             <pre>{
-  <span class="hljs-attr">"articles"</span>: [
+  <span class="hljs-attr">&quot;articles&quot;</span>: [
     {
-      <span class="hljs-attr">"img"</span>: <span class="hljs-string">"/img/poradna-img-01.jpg"</span>,
-      <span class="hljs-attr">"img_alt"</span>: <span class="hljs-string">"Fotka článku"</span>,
-      <span class="hljs-attr">"link"</span>: <span class="hljs-string">"poradna-detail"</span>,
-      <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Jak vyměnit sáček ve vysavači"</span>,
-      <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Obdrželi jste zásilku sáčků VACS? V několika krocích vám poradíme, jak vyměnit sáčky do vysavače a jak vyměnit filtr ve vysavači. Není to nic těžkého a zvládne to každý. Ať už máte vysavač Eta, Zelmer, Rowenta či jakýkoliv jiný, postup se příliš neliší. Může se měnit v detailech v závislosti na způsobu otevírání krytu apod., ale princip uložení sáčku je vždy stejný."</span>,
-      <span class="hljs-attr">"date"</span>: <span class="hljs-string">"18. 11. 2019"</span>,
-      <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Andrej Kašický"</span>
+      <span class="hljs-attr">&quot;img&quot;</span>: <span class="hljs-string">&quot;/img/poradna-img-01.jpg&quot;</span>,
+      <span class="hljs-attr">&quot;img_alt&quot;</span>: <span class="hljs-string">&quot;Fotka článku&quot;</span>,
+      <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;poradna-detail&quot;</span>,
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Jak vyměnit sáček ve vysavači&quot;</span>,
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Obdrželi jste zásilku sáčků VACS? V několika krocích vám poradíme, jak vyměnit sáčky do vysavače a jak vyměnit filtr ve vysavači. Není to nic těžkého a zvládne to každý. Ať už máte vysavač Eta, Zelmer, Rowenta či jakýkoliv jiný, postup se příliš neliší. Může se měnit v detailech v závislosti na způsobu otevírání krytu apod., ale princip uložení sáčku je vždy stejný.&quot;</span>,
+      <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;18. 11. 2019&quot;</span>,
+      <span class="hljs-attr">&quot;author&quot;</span>: <span class="hljs-string">&quot;Andrej Kašický&quot;</span>
     },
     {
-      <span class="hljs-attr">"img"</span>: <span class="hljs-string">"https://picsum.photos/500/250?random=10"</span>,
-      <span class="hljs-attr">"img_alt"</span>: <span class="hljs-string">"Fotka článku"</span>,
-      <span class="hljs-attr">"link"</span>: <span class="hljs-string">"poradna-detail"</span>,
-      <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Polarised multimedia internet solution"</span>,
-      <span class="hljs-attr">"text"</span>: <span class="hljs-string">"In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus."</span>,
-      <span class="hljs-attr">"date"</span>: <span class="hljs-string">"29.1.2019"</span>,
-      <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Sloan Boddy"</span>
+      <span class="hljs-attr">&quot;img&quot;</span>: <span class="hljs-string">&quot;https://picsum.photos/500/250?random=10&quot;</span>,
+      <span class="hljs-attr">&quot;img_alt&quot;</span>: <span class="hljs-string">&quot;Fotka článku&quot;</span>,
+      <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;poradna-detail&quot;</span>,
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Polarised multimedia internet solution&quot;</span>,
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.&quot;</span>,
+      <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;29.1.2019&quot;</span>,
+      <span class="hljs-attr">&quot;author&quot;</span>: <span class="hljs-string">&quot;Sloan Boddy&quot;</span>
     },
     {
-      <span class="hljs-attr">"img"</span>: <span class="hljs-string">"https://picsum.photos/500/250?random=1"</span>,
-      <span class="hljs-attr">"img_alt"</span>: <span class="hljs-string">"Fotka článku"</span>,
-      <span class="hljs-attr">"link"</span>: <span class="hljs-string">"poradna-detail"</span>,
-      <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Monitored well-modulated portal"</span>,
-      <span class="hljs-attr">"text"</span>: <span class="hljs-string">"In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst."</span>,
-      <span class="hljs-attr">"date"</span>: <span class="hljs-string">"12.7.2019"</span>,
-      <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Nikoletta Digance"</span>
+      <span class="hljs-attr">&quot;img&quot;</span>: <span class="hljs-string">&quot;https://picsum.photos/500/250?random=1&quot;</span>,
+      <span class="hljs-attr">&quot;img_alt&quot;</span>: <span class="hljs-string">&quot;Fotka článku&quot;</span>,
+      <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;poradna-detail&quot;</span>,
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Monitored well-modulated portal&quot;</span>,
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.&quot;</span>,
+      <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;12.7.2019&quot;</span>,
+      <span class="hljs-attr">&quot;author&quot;</span>: <span class="hljs-string">&quot;Nikoletta Digance&quot;</span>
     },
     {
-      <span class="hljs-attr">"img"</span>: <span class="hljs-string">"https://picsum.photos/500/250?random=2"</span>,
-      <span class="hljs-attr">"img_alt"</span>: <span class="hljs-string">"Fotka článku"</span>,
-      <span class="hljs-attr">"link"</span>: <span class="hljs-string">"poradna-detail"</span>,
-      <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Visionary asynchronous circuit"</span>,
-      <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit."</span>,
-      <span class="hljs-attr">"date"</span>: <span class="hljs-string">"20.6.2019"</span>,
-      <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Raimund Mylechreest"</span>
+      <span class="hljs-attr">&quot;img&quot;</span>: <span class="hljs-string">&quot;https://picsum.photos/500/250?random=2&quot;</span>,
+      <span class="hljs-attr">&quot;img_alt&quot;</span>: <span class="hljs-string">&quot;Fotka článku&quot;</span>,
+      <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;poradna-detail&quot;</span>,
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Visionary asynchronous circuit&quot;</span>,
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&quot;</span>,
+      <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;20.6.2019&quot;</span>,
+      <span class="hljs-attr">&quot;author&quot;</span>: <span class="hljs-string">&quot;Raimund Mylechreest&quot;</span>
     },
     {
-      <span class="hljs-attr">"img"</span>: <span class="hljs-string">"https://picsum.photos/500/250?random=3"</span>,
-      <span class="hljs-attr">"img_alt"</span>: <span class="hljs-string">"Fotka článku"</span>,
-      <span class="hljs-attr">"link"</span>: <span class="hljs-string">"poradna-detail"</span>,
-      <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Reverse-engineered asynchronous moratorium"</span>,
-      <span class="hljs-attr">"text"</span>: <span class="hljs-string">"In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque."</span>,
-      <span class="hljs-attr">"date"</span>: <span class="hljs-string">"25.10.2019"</span>,
-      <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Babita Lethcoe"</span>
+      <span class="hljs-attr">&quot;img&quot;</span>: <span class="hljs-string">&quot;https://picsum.photos/500/250?random=3&quot;</span>,
+      <span class="hljs-attr">&quot;img_alt&quot;</span>: <span class="hljs-string">&quot;Fotka článku&quot;</span>,
+      <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;poradna-detail&quot;</span>,
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Reverse-engineered asynchronous moratorium&quot;</span>,
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.&quot;</span>,
+      <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;25.10.2019&quot;</span>,
+      <span class="hljs-attr">&quot;author&quot;</span>: <span class="hljs-string">&quot;Babita Lethcoe&quot;</span>
     },
     {
-      <span class="hljs-attr">"img"</span>: <span class="hljs-string">"https://picsum.photos/500/250?random=4"</span>,
-      <span class="hljs-attr">"img_alt"</span>: <span class="hljs-string">"Fotka článku"</span>,
-      <span class="hljs-attr">"link"</span>: <span class="hljs-string">"poradna-detail"</span>,
-      <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Synergized 24 hour internet solution"</span>,
-      <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis."</span>,
-      <span class="hljs-attr">"date"</span>: <span class="hljs-string">"5.6.2019"</span>,
-      <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Meta MacAllister"</span>
+      <span class="hljs-attr">&quot;img&quot;</span>: <span class="hljs-string">&quot;https://picsum.photos/500/250?random=4&quot;</span>,
+      <span class="hljs-attr">&quot;img_alt&quot;</span>: <span class="hljs-string">&quot;Fotka článku&quot;</span>,
+      <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;poradna-detail&quot;</span>,
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Synergized 24 hour internet solution&quot;</span>,
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.&quot;</span>,
+      <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;5.6.2019&quot;</span>,
+      <span class="hljs-attr">&quot;author&quot;</span>: <span class="hljs-string">&quot;Meta MacAllister&quot;</span>
     },
     {
-      <span class="hljs-attr">"img"</span>: <span class="hljs-string">"https://picsum.photos/500/250?random=5"</span>,
-      <span class="hljs-attr">"img_alt"</span>: <span class="hljs-string">"Fotka článku"</span>,
-      <span class="hljs-attr">"link"</span>: <span class="hljs-string">"poradna-detail"</span>,
-      <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Synergistic cohesive approach"</span>,
-      <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl."</span>,
-      <span class="hljs-attr">"date"</span>: <span class="hljs-string">"5.6.2019"</span>,
-      <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Rocky Kerbey"</span>
+      <span class="hljs-attr">&quot;img&quot;</span>: <span class="hljs-string">&quot;https://picsum.photos/500/250?random=5&quot;</span>,
+      <span class="hljs-attr">&quot;img_alt&quot;</span>: <span class="hljs-string">&quot;Fotka článku&quot;</span>,
+      <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;poradna-detail&quot;</span>,
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Synergistic cohesive approach&quot;</span>,
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.&quot;</span>,
+      <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;5.6.2019&quot;</span>,
+      <span class="hljs-attr">&quot;author&quot;</span>: <span class="hljs-string">&quot;Rocky Kerbey&quot;</span>
     },
     {
-      <span class="hljs-attr">"img"</span>: <span class="hljs-string">"https://picsum.photos/500/250?random=6"</span>,
-      <span class="hljs-attr">"img_alt"</span>: <span class="hljs-string">"Fotka článku"</span>,
-      <span class="hljs-attr">"link"</span>: <span class="hljs-string">"poradna-detail"</span>,
-      <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Re-contextualized zero defect time-frame"</span>,
-      <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio."</span>,
-      <span class="hljs-attr">"date"</span>: <span class="hljs-string">"28.1.2019"</span>,
-      <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Vidovic Zum Felde"</span>
+      <span class="hljs-attr">&quot;img&quot;</span>: <span class="hljs-string">&quot;https://picsum.photos/500/250?random=6&quot;</span>,
+      <span class="hljs-attr">&quot;img_alt&quot;</span>: <span class="hljs-string">&quot;Fotka článku&quot;</span>,
+      <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;poradna-detail&quot;</span>,
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Re-contextualized zero defect time-frame&quot;</span>,
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.&quot;</span>,
+      <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;28.1.2019&quot;</span>,
+      <span class="hljs-attr">&quot;author&quot;</span>: <span class="hljs-string">&quot;Vidovic Zum Felde&quot;</span>
     },
     {
-      <span class="hljs-attr">"img"</span>: <span class="hljs-string">"https://picsum.photos/500/250?random=7"</span>,
-      <span class="hljs-attr">"img_alt"</span>: <span class="hljs-string">"Fotka článku"</span>,
-      <span class="hljs-attr">"link"</span>: <span class="hljs-string">"poradna-detail"</span>,
-      <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Upgradable 3rd generation data-warehouse"</span>,
-      <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Phasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi."</span>,
-      <span class="hljs-attr">"date"</span>: <span class="hljs-string">"24.9.2019"</span>,
-      <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Maurise Kohring"</span>
+      <span class="hljs-attr">&quot;img&quot;</span>: <span class="hljs-string">&quot;https://picsum.photos/500/250?random=7&quot;</span>,
+      <span class="hljs-attr">&quot;img_alt&quot;</span>: <span class="hljs-string">&quot;Fotka článku&quot;</span>,
+      <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;poradna-detail&quot;</span>,
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Upgradable 3rd generation data-warehouse&quot;</span>,
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Phasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.&quot;</span>,
+      <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;24.9.2019&quot;</span>,
+      <span class="hljs-attr">&quot;author&quot;</span>: <span class="hljs-string">&quot;Maurise Kohring&quot;</span>
     },
     {
-      <span class="hljs-attr">"img"</span>: <span class="hljs-string">"https://picsum.photos/500/250?random=8"</span>,
-      <span class="hljs-attr">"img_alt"</span>: <span class="hljs-string">"Fotka článku"</span>,
-      <span class="hljs-attr">"link"</span>: <span class="hljs-string">"poradna-detail"</span>,
-      <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Profound directional productivity"</span>,
-      <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque."</span>,
-      <span class="hljs-attr">"date"</span>: <span class="hljs-string">"21.10.2019"</span>,
-      <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Menard Tortice"</span>
+      <span class="hljs-attr">&quot;img&quot;</span>: <span class="hljs-string">&quot;https://picsum.photos/500/250?random=8&quot;</span>,
+      <span class="hljs-attr">&quot;img_alt&quot;</span>: <span class="hljs-string">&quot;Fotka článku&quot;</span>,
+      <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;poradna-detail&quot;</span>,
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Profound directional productivity&quot;</span>,
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.&quot;</span>,
+      <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;21.10.2019&quot;</span>,
+      <span class="hljs-attr">&quot;author&quot;</span>: <span class="hljs-string">&quot;Menard Tortice&quot;</span>
     },
     {
-      <span class="hljs-attr">"img"</span>: <span class="hljs-string">"https://picsum.photos/500/250?random=9"</span>,
-      <span class="hljs-attr">"img_alt"</span>: <span class="hljs-string">"Fotka článku"</span>,
-      <span class="hljs-attr">"link"</span>: <span class="hljs-string">"poradna-detail"</span>,
-      <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Cross-group holistic superstructure"</span>,
-      <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem."</span>,
-      <span class="hljs-attr">"date"</span>: <span class="hljs-string">"20.4.2019"</span>,
-      <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Wally Langwade"</span>
+      <span class="hljs-attr">&quot;img&quot;</span>: <span class="hljs-string">&quot;https://picsum.photos/500/250?random=9&quot;</span>,
+      <span class="hljs-attr">&quot;img_alt&quot;</span>: <span class="hljs-string">&quot;Fotka článku&quot;</span>,
+      <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;poradna-detail&quot;</span>,
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Cross-group holistic superstructure&quot;</span>,
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.&quot;</span>,
+      <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;20.4.2019&quot;</span>,
+      <span class="hljs-attr">&quot;author&quot;</span>: <span class="hljs-string">&quot;Wally Langwade&quot;</span>
     }
   ]
 }</pre>
@@ -504,10 +555,6 @@
             <strong class="Meta-key">Handle:</strong>
             <span class="Meta-value">@list-cards</span>
         </li>
-        
-        
-        
-        
         
         <li class="Meta-item">
             <strong class="Meta-key">Preview:</strong>
@@ -557,7 +604,7 @@
     <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-74742a609b3ebd371c5af47f15054d07-panel-notes">
     <div class="Prose Prose--condensed">
         
-        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        <p class="Browser-isEmptyNote">No notes defined.</p>
         
     </div>
 </div>
@@ -577,23 +624,37 @@
             </div>
         </div>
 
-        <div class="Frame-handle" data-role="frame-resize-handle"></div>
-        
         <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
-            <nav class="Navigation">
+            
 
     
+    
+
+
+<nav class="Navigation" data-behaviour="navigation">
+    <div class="Navigation-panel Navigation-panel--main" data-role="main-panel">
+    
+        
 <div class="Navigation-group">
 
 <div class="Tree" data-behaviour="tree" id="tree-docs">
-    <h3 class="Tree-title">documentation</h3>
+    <div class="Tree-header">
+        <h3 class="Tree-title">documentation</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
     <ul class="Tree-items Tree-depth-1">
         
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../docs/intro.html" data-pjax>
+            <a class="Tree-entityLink" href="../../docs/intro.html" data-role="tree-link" data-pjax data-handle="">
                 <span>Intro</span>
                 
             </a>
@@ -607,30 +668,45 @@
 </div>
 
 
+    
+        
 
     
-<div class="Navigation-group">
-
+    
+    <div class="Navigation-group">
+        
 <div class="Tree" data-behaviour="tree" id="tree-components">
-    <h3 class="Tree-title">components</h3>
+    <div class="Tree-header">
+        <h3 class="Tree-title">components</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
     <ul class="Tree-items Tree-depth-1">
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-tokens">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Tokens</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
+        
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-tokens">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-tokens-items">
+                    Tokens
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-tokens-items">
+                
+                
+                
+                
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="typography.html" data-pjax>
+            <a class="Tree-entityLink" href="typography.html" data-role="tree-link" data-pjax data-handle="typography">
                 <span>Typography</span>
                 
 
@@ -653,8 +729,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="spacing.html" data-pjax>
+            <a class="Tree-entityLink" href="spacing.html" data-role="tree-link" data-pjax data-handle="spacing">
                 <span>Spacing</span>
                 
 
@@ -677,8 +755,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="icon.html" data-pjax>
+            <a class="Tree-entityLink" href="icon.html" data-role="tree-link" data-pjax data-handle="icon">
                 <span>Icons</span>
                 
 
@@ -701,8 +781,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="motion.html" data-pjax>
+            <a class="Tree-entityLink" href="motion.html" data-role="tree-link" data-pjax data-handle="motion">
                 <span>Motion</span>
                 
 
@@ -725,8 +807,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="shadows.html" data-pjax>
+            <a class="Tree-entityLink" href="shadows.html" data-role="tree-link" data-pjax data-handle="shadows">
                 <span>Shadows</span>
                 
 
@@ -748,36 +832,45 @@
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-atoms">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Atoms</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
+        
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-atoms">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-atoms-items">
+                    Atoms
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-atoms-items">
+                
+                
+                
+                
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-buttons">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Buttons</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
+        
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-buttons">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-buttons-items">
+                    Buttons
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-buttons-items">
+                
+                
+                
+                
     
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="buttons-overview.html" data-pjax>
+            <a class="Tree-entityLink" href="buttons-overview.html" data-role="tree-link" data-pjax data-handle="buttons-overview">
                 <span>Buttons Overview</span>
                 
 
@@ -800,8 +893,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="button.html" data-pjax>
+            <a class="Tree-entityLink" href="button.html" data-role="tree-link" data-pjax data-handle="button">
                 <span>Basic</span>
                 
 
@@ -824,8 +919,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="button-block.html" data-pjax>
+            <a class="Tree-entityLink" href="button-block.html" data-role="tree-link" data-pjax data-handle="button-block">
                 <span>Block</span>
                 
 
@@ -848,8 +945,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="button-outline.html" data-pjax>
+            <a class="Tree-entityLink" href="button-outline.html" data-role="tree-link" data-pjax data-handle="button-outline">
                 <span>Outline</span>
                 
 
@@ -872,8 +971,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="button-search.html" data-pjax>
+            <a class="Tree-entityLink" href="button-search.html" data-role="tree-link" data-pjax data-handle="button-search">
                 <span>Button Search</span>
                 
 
@@ -896,8 +997,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="button-size.html" data-pjax>
+            <a class="Tree-entityLink" href="button-size.html" data-role="tree-link" data-pjax data-handle="button-size">
                 <span>Sizes</span>
                 
 
@@ -919,31 +1022,39 @@
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-button-with-icon">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Button With Icon</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
+        
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-button-with-icon">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-button-with-icon-items">
+                    Button With Icon
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-button-with-icon-items">
+                
+                
+                
+                
     
         
-        <li class="Tree-item Tree-collection Tree-depth-5" data-behaviour="collection" id="tree-components-collection-left-big">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Left Big</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
+        
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-5" data-behaviour="collection" id="tree-components-collection-left-big">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-left-big-items">
+                    Left Big
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-left-big-items">
+                
+                
+                
+                
     
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="button-with-icon.html" data-pjax>
+            <a class="Tree-entityLink" href="button-with-icon.html" data-role="tree-link" data-pjax data-handle="button-with-icon">
                 <span>With icon</span>
                 
 
@@ -965,25 +1076,31 @@
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-5" data-behaviour="collection" id="tree-components-collection-right">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Right</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
+        
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-5" data-behaviour="collection" id="tree-components-collection-right">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-right-items">
+                    Right
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-right-items">
+                
+                
+                
+                
     
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="button-with-icon-right.html" data-pjax>
+            <a class="Tree-entityLink" href="button-with-icon-right.html" data-role="tree-link" data-pjax data-handle="button-with-icon-right">
                 <span>With icon</span>
                 
 
@@ -1005,24 +1122,29 @@
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="input.html" data-pjax>
+            <a class="Tree-entityLink" href="input.html" data-role="tree-link" data-pjax data-handle="input">
                 <span>Input</span>
                 
 
@@ -1045,8 +1167,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="link.html" data-pjax>
+            <a class="Tree-entityLink" href="link.html" data-role="tree-link" data-pjax data-handle="link">
                 <span>Link</span>
                 
 
@@ -1069,8 +1193,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="required-symbol.html" data-pjax>
+            <a class="Tree-entityLink" href="required-symbol.html" data-role="tree-link" data-pjax data-handle="required-symbol">
                 <span>Required Symbol</span>
                 
 
@@ -1092,25 +1218,31 @@
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-molecules">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Molecules</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
+        
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-molecules">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-molecules-items">
+                    Molecules
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-molecules-items">
+                
+                
+                
+                
     
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="benefit.html" data-pjax>
+            <a class="Tree-entityLink" href="benefit.html" data-role="tree-link" data-pjax data-handle="benefit">
                 <span>Benefit</span>
                 
 
@@ -1133,8 +1265,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="brand.html" data-pjax>
+            <a class="Tree-entityLink" href="brand.html" data-role="tree-link" data-pjax data-handle="brand">
                 <span>Brand</span>
                 
 
@@ -1157,8 +1291,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="card.html" data-pjax>
+            <a class="Tree-entityLink" href="card.html" data-role="tree-link" data-pjax data-handle="card">
                 <span>Card</span>
                 
 
@@ -1180,31 +1316,39 @@
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-detail">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Detail</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
+        
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-detail">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-detail-items">
+                    Detail
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-detail-items">
+                
+                
+                
+                
     
         
-        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-simple-cart-conviction">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Simple Cart Conviction</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
+        
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-simple-cart-conviction">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-simple-cart-conviction-items">
+                    Simple Cart Conviction
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-simple-cart-conviction-items">
+                
+                
+                
+                
     
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="detail-simple-cart-conviction.html" data-pjax>
+            <a class="Tree-entityLink" href="detail-simple-cart-conviction.html" data-role="tree-link" data-pjax data-handle="detail-simple-cart-conviction">
                 <span>Detail Simple Cart Conviction</span>
                 
 
@@ -1226,19 +1370,23 @@
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="heureka.html" data-pjax>
+            <a class="Tree-entityLink" href="heureka.html" data-role="tree-link" data-pjax data-handle="heureka">
                 <span>Heureka</span>
                 
 
@@ -1261,8 +1409,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="item.html" data-pjax>
+            <a class="Tree-entityLink" href="item.html" data-role="tree-link" data-pjax data-handle="item">
                 <span>Item</span>
                 
 
@@ -1285,8 +1435,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="item-add.html" data-pjax>
+            <a class="Tree-entityLink" href="item-add.html" data-role="tree-link" data-pjax data-handle="item-add">
                 <span>Item Add</span>
                 
 
@@ -1309,8 +1461,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="item-button.html" data-pjax>
+            <a class="Tree-entityLink" href="item-button.html" data-role="tree-link" data-pjax data-handle="item-button">
                 <span>Item Button</span>
                 
 
@@ -1333,8 +1487,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="item-cart.html" data-pjax>
+            <a class="Tree-entityLink" href="item-cart.html" data-role="tree-link" data-pjax data-handle="item-cart">
                 <span>Item Cart</span>
                 
 
@@ -1357,8 +1513,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="links.html" data-pjax>
+            <a class="Tree-entityLink" href="links.html" data-role="tree-link" data-pjax data-handle="links">
                 <span>Links</span>
                 
 
@@ -1381,8 +1539,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="ribbon.html" data-pjax>
+            <a class="Tree-entityLink" href="ribbon.html" data-role="tree-link" data-pjax data-handle="ribbon">
                 <span>Ribbon</span>
                 
 
@@ -1404,20 +1564,25 @@
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-search">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Search</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
+        
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-search">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-search-items">
+                    Search
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-search-items">
+                
+                
+                
+                
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="big_search.html" data-pjax>
+            <a class="Tree-entityLink" href="big_search.html" data-role="tree-link" data-pjax data-handle="big_search">
                 <span>Big Search</span>
                 
 
@@ -1440,8 +1605,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="big_search-simple.html" data-pjax>
+            <a class="Tree-entityLink" href="big_search-simple.html" data-role="tree-link" data-pjax data-handle="big_search-simple">
                 <span>Big Search Simple</span>
                 
 
@@ -1464,8 +1631,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="search.html" data-pjax>
+            <a class="Tree-entityLink" href="search.html" data-role="tree-link" data-pjax data-handle="search">
                 <span>Search</span>
                 
 
@@ -1488,8 +1657,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="search-tt.html" data-pjax>
+            <a class="Tree-entityLink" href="search-tt.html" data-role="tree-link" data-pjax data-handle="search-tt">
                 <span>Search Tt</span>
                 
 
@@ -1511,14 +1682,17 @@
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="stars.html" data-pjax>
+            <a class="Tree-entityLink" href="stars.html" data-role="tree-link" data-pjax data-handle="stars">
                 <span>Stars</span>
                 
 
@@ -1540,25 +1714,31 @@
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-organisms">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Organisms</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
+        
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-organisms">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-organisms-items">
+                    Organisms
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-organisms-items">
+                
+                
+                
+                
     
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="benefits-bag.html" data-pjax>
+            <a class="Tree-entityLink" href="benefits-bag.html" data-role="tree-link" data-pjax data-handle="benefits-bag">
                 <span>Benefits Bag</span>
                 
 
@@ -1580,20 +1760,25 @@
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-benefits-detail-simple">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Benefits Detail Simple</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
+        
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-benefits-detail-simple">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-benefits-detail-simple-items">
+                    Benefits Detail Simple
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-benefits-detail-simple-items">
+                
+                
+                
+                
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="benefits-detail-simple-xl.html" data-pjax>
+            <a class="Tree-entityLink" href="benefits-detail-simple-xl.html" data-role="tree-link" data-pjax data-handle="benefits-detail-simple-xl">
                 <span>XL</span>
                 
 
@@ -1616,8 +1801,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="benefits-detail-simple-l.html" data-pjax>
+            <a class="Tree-entityLink" href="benefits-detail-simple-l.html" data-role="tree-link" data-pjax data-handle="benefits-detail-simple-l">
                 <span>L</span>
                 
 
@@ -1640,8 +1827,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="benefits-detail-simple-m.html" data-pjax>
+            <a class="Tree-entityLink" href="benefits-detail-simple-m.html" data-role="tree-link" data-pjax data-handle="benefits-detail-simple-m">
                 <span>M</span>
                 
 
@@ -1664,8 +1853,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="benefits-detail-simple-s.html" data-pjax>
+            <a class="Tree-entityLink" href="benefits-detail-simple-s.html" data-role="tree-link" data-pjax data-handle="benefits-detail-simple-s">
                 <span>S</span>
                 
 
@@ -1687,14 +1878,17 @@
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="benefits-home.html" data-pjax>
+            <a class="Tree-entityLink" href="benefits-home.html" data-role="tree-link" data-pjax data-handle="benefits-home">
                 <span>Benefits Home</span>
                 
 
@@ -1717,8 +1911,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="breadcrumb.html" data-pjax>
+            <a class="Tree-entityLink" href="breadcrumb.html" data-role="tree-link" data-pjax data-handle="breadcrumb">
                 <span>Breadcrumb</span>
                 
 
@@ -1741,8 +1937,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="expedition-in-xhh.html" data-pjax>
+            <a class="Tree-entityLink" href="expedition-in-xhh.html" data-role="tree-link" data-pjax data-handle="expedition-in-xhh">
                 <span>Expedition In Xhh</span>
                 
 
@@ -1765,8 +1963,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="footer.html" data-pjax>
+            <a class="Tree-entityLink" href="footer.html" data-role="tree-link" data-pjax data-handle="footer">
                 <span>Footer</span>
                 
 
@@ -1789,8 +1989,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="gallery.html" data-pjax>
+            <a class="Tree-entityLink" href="gallery.html" data-role="tree-link" data-pjax data-handle="gallery">
                 <span>Gallery</span>
                 
 
@@ -1813,8 +2015,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="gallery-hepa.html" data-pjax>
+            <a class="Tree-entityLink" href="gallery-hepa.html" data-role="tree-link" data-pjax data-handle="gallery-hepa">
                 <span>Gallery Hepa</span>
                 
 
@@ -1837,8 +2041,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="list-brands.html" data-pjax>
+            <a class="Tree-entityLink" href="list-brands.html" data-role="tree-link" data-pjax data-handle="list-brands">
                 <span>List Brands</span>
                 
 
@@ -1861,8 +2067,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a class="Tree-entityLink" href="" data-pjax>
+            <a class="Tree-entityLink" href="" data-role="tree-link" data-pjax data-handle="list-cards">
                 <span>List Cards</span>
                 
 
@@ -1885,8 +2093,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="list-items.html" data-pjax>
+            <a class="Tree-entityLink" href="list-items.html" data-role="tree-link" data-pjax data-handle="list-items">
                 <span>List Items</span>
                 
 
@@ -1909,8 +2119,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="list-items-button.html" data-pjax>
+            <a class="Tree-entityLink" href="list-items-button.html" data-role="tree-link" data-pjax data-handle="list-items-button">
                 <span>List Items Button</span>
                 
 
@@ -1933,8 +2145,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="navigation.html" data-pjax>
+            <a class="Tree-entityLink" href="navigation.html" data-role="tree-link" data-pjax data-handle="navigation">
                 <span>Navigation</span>
                 
 
@@ -1957,8 +2171,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="pills.html" data-pjax>
+            <a class="Tree-entityLink" href="pills.html" data-role="tree-link" data-pjax data-handle="pills">
                 <span>Pills</span>
                 
 
@@ -1980,20 +2196,25 @@
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-selection-hepa">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Selection Hepa</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
+        
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-selection-hepa">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-selection-hepa-items">
+                    Selection Hepa
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-selection-hepa-items">
+                
+                
+                
+                
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="selection-hepa-01.html" data-pjax>
+            <a class="Tree-entityLink" href="selection-hepa-01.html" data-role="tree-link" data-pjax data-handle="selection-hepa-01">
                 <span>1</span>
                 
 
@@ -2016,8 +2237,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="selection-hepa-02.html" data-pjax>
+            <a class="Tree-entityLink" href="selection-hepa-02.html" data-role="tree-link" data-pjax data-handle="selection-hepa-02">
                 <span>2</span>
                 
 
@@ -2040,8 +2263,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="selection-hepa-03.html" data-pjax>
+            <a class="Tree-entityLink" href="selection-hepa-03.html" data-role="tree-link" data-pjax data-handle="selection-hepa-03">
                 <span>3</span>
                 
 
@@ -2063,25 +2288,31 @@
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-slider">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Slider</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
+        
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-slider">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-slider-items">
+                    Slider
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-slider-items">
+                
+                
+                
+                
     
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="slider-benefits.html" data-pjax>
+            <a class="Tree-entityLink" href="slider-benefits.html" data-role="tree-link" data-pjax data-handle="slider-benefits">
                 <span>Slider Benefits</span>
                 
 
@@ -2104,8 +2335,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="slider-info.html" data-pjax>
+            <a class="Tree-entityLink" href="slider-info.html" data-role="tree-link" data-pjax data-handle="slider-info">
                 <span>Slider Info</span>
                 
 
@@ -2128,8 +2361,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="slider-main.html" data-pjax>
+            <a class="Tree-entityLink" href="slider-main.html" data-role="tree-link" data-pjax data-handle="slider-main">
                 <span>Slider Main</span>
                 
 
@@ -2152,8 +2387,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="slider-stepper.html" data-pjax>
+            <a class="Tree-entityLink" href="slider-stepper.html" data-role="tree-link" data-pjax data-handle="slider-stepper">
                 <span>Slider Stepper</span>
                 
 
@@ -2176,8 +2413,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="slider-summary.html" data-pjax>
+            <a class="Tree-entityLink" href="slider-summary.html" data-role="tree-link" data-pjax data-handle="slider-summary">
                 <span>Slider Summary</span>
                 
 
@@ -2199,30 +2438,37 @@
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-templates">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Templates</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
+        
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-templates">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-templates-items">
+                    Templates
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-templates-items">
+                
+                
+                
+                
     
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="benefits-detail-simple.html" data-pjax>
+            <a class="Tree-entityLink" href="benefits-detail-simple.html" data-role="tree-link" data-pjax data-handle="benefits-detail-simple">
                 <span>Benefits Detail Simple</span>
                 
 
@@ -2245,8 +2491,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="detail-plus_notes.html" data-pjax>
+            <a class="Tree-entityLink" href="detail-plus_notes.html" data-role="tree-link" data-pjax data-handle="detail-plus_notes">
                 <span>Detail Plus Notes</span>
                 
 
@@ -2269,8 +2517,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="modal.html" data-pjax>
+            <a class="Tree-entityLink" href="modal.html" data-role="tree-link" data-pjax data-handle="modal">
                 <span>Modal</span>
                 
 
@@ -2293,8 +2543,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="selection-hepa.html" data-pjax>
+            <a class="Tree-entityLink" href="selection-hepa.html" data-role="tree-link" data-pjax data-handle="selection-hepa">
                 <span>Selection Hepa</span>
                 
 
@@ -2317,8 +2569,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="slider.html" data-pjax>
+            <a class="Tree-entityLink" href="slider.html" data-role="tree-link" data-pjax data-handle="slider">
                 <span>Slider</span>
                 
 
@@ -2341,8 +2595,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="stripe-ask.html" data-pjax>
+            <a class="Tree-entityLink" href="stripe-ask.html" data-role="tree-link" data-pjax data-handle="stripe-ask">
                 <span>Stripe Ask</span>
                 
 
@@ -2365,8 +2621,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="stripe-bag.html" data-pjax>
+            <a class="Tree-entityLink" href="stripe-bag.html" data-role="tree-link" data-pjax data-handle="stripe-bag">
                 <span>Stripe Bag</span>
                 
 
@@ -2389,8 +2647,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="stripe-brands.html" data-pjax>
+            <a class="Tree-entityLink" href="stripe-brands.html" data-role="tree-link" data-pjax data-handle="stripe-brands">
                 <span>Stripe Brands</span>
                 
 
@@ -2413,8 +2673,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="stripe-guarantee.html" data-pjax>
+            <a class="Tree-entityLink" href="stripe-guarantee.html" data-role="tree-link" data-pjax data-handle="stripe-guarantee">
                 <span>Stripe Guarantee</span>
                 
 
@@ -2437,8 +2699,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="stripe-order.html" data-pjax>
+            <a class="Tree-entityLink" href="stripe-order.html" data-role="tree-link" data-pjax data-handle="stripe-order">
                 <span>Stripe Order</span>
                 
 
@@ -2461,8 +2725,36 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="stripe-search.html" data-pjax>
+            <a class="Tree-entityLink" href="stripe-products.html" data-role="tree-link" data-pjax data-handle="stripe-products">
+                <span>Stripe Products</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="stripe-search.html" data-role="tree-link" data-pjax data-handle="stripe-search">
                 <span>Stripe Search</span>
                 
 
@@ -2485,8 +2777,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="stripe-testimonials.html" data-pjax>
+            <a class="Tree-entityLink" href="stripe-testimonials.html" data-role="tree-link" data-pjax data-handle="stripe-testimonials">
                 <span>Stripe Testimonials</span>
                 
 
@@ -2508,25 +2802,31 @@
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-pages">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Pages</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
+        
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-pages">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-pages-items">
+                    Pages
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-pages-items">
+                
+                
+                
+                
     
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="homepage.html" data-pjax>
+            <a class="Tree-entityLink" href="homepage.html" data-role="tree-link" data-pjax data-handle="homepage">
                 <span>Homepage</span>
                 
 
@@ -2549,8 +2849,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="znacky.html" data-pjax>
+            <a class="Tree-entityLink" href="znacky.html" data-role="tree-link" data-pjax data-handle="znacky">
                 <span>Značky</span>
                 
 
@@ -2573,8 +2875,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="doplnkove-produkty.html" data-pjax>
+            <a class="Tree-entityLink" href="doplnkove-produkty.html" data-role="tree-link" data-pjax data-handle="doplnkove-produkty">
                 <span>Doplňkové produkty</span>
                 
 
@@ -2597,8 +2901,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="hepa-filtr.html" data-pjax>
+            <a class="Tree-entityLink" href="hepa-filtr.html" data-role="tree-link" data-pjax data-handle="hepa-filtr">
                 <span>HEPA filtr</span>
                 
 
@@ -2621,8 +2927,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="motorove-filtry.html" data-pjax>
+            <a class="Tree-entityLink" href="motorove-filtry.html" data-role="tree-link" data-pjax data-handle="motorove-filtry">
                 <span>Motorové filtry</span>
                 
 
@@ -2644,20 +2952,25 @@
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-detail">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Detail</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
+        
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-detail">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-detail-items">
+                    Detail
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-detail-items">
+                
+                
+                
+                
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="detail-simple.html" data-pjax>
+            <a class="Tree-entityLink" href="detail-simple.html" data-role="tree-link" data-pjax data-handle="detail-simple">
                 <span>Detail Simple</span>
                 
 
@@ -2680,8 +2993,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="detail-slider.html" data-pjax>
+            <a class="Tree-entityLink" href="detail-slider.html" data-role="tree-link" data-pjax data-handle="detail-slider">
                 <span>Detail Slider</span>
                 
 
@@ -2703,14 +3018,17 @@
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="kosik.html" data-pjax>
+            <a class="Tree-entityLink" href="kosik.html" data-role="tree-link" data-pjax data-handle="kosik">
                 <span>Košík</span>
                 
 
@@ -2733,8 +3051,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="souhrn.html" data-pjax>
+            <a class="Tree-entityLink" href="souhrn.html" data-role="tree-link" data-pjax data-handle="souhrn">
                 <span>Souhrn</span>
                 
 
@@ -2757,8 +3077,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="o-nas.html" data-pjax>
+            <a class="Tree-entityLink" href="o-nas.html" data-role="tree-link" data-pjax data-handle="o-nas">
                 <span>O nás</span>
                 
 
@@ -2781,8 +3103,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="poradna.html" data-pjax>
+            <a class="Tree-entityLink" href="poradna.html" data-role="tree-link" data-pjax data-handle="poradna">
                 <span>Poradna</span>
                 
 
@@ -2805,8 +3129,10 @@
     
         
         
+        
+        
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="poradna-detail.html" data-pjax>
+            <a class="Tree-entityLink" href="poradna-detail.html" data-role="tree-link" data-pjax data-handle="poradna-detail">
                 <span>Poradna — Detail</span>
                 
 
@@ -2828,25 +3154,31 @@
         
     
 
-            </ul>
-        </li>
+                </ul>
+            </li>
+            
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-xx-aux">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Xx Aux</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
+        
             
             
-            
-            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-xx-aux">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-xx-aux-items">
+                    Xx Aux
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-xx-aux-items">
+                
+                
+                
+                
     
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="script-gallery.html" data-pjax>
+            <a class="Tree-entityLink" href="script-gallery.html" data-role="tree-link" data-pjax data-handle="script-gallery">
                 <span>Script Gallery</span>
                 
 
@@ -2868,7 +3200,832 @@
         
     
 
-            </ul>
+                </ul>
+            </li>
+            
+        
+    
+
+    </ul>
+</div>
+
+    </div>
+    
+
+
+    
+    </div>
+
+    <div class="Navigation-panel Navigation-panel--variants" data-role="variant-panel">
+        <div class="Navigation-backButtonWrapper">
+            <button class="Navigation-backButton" data-role="back" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 4.29289C13.0976 4.68342 13.0976 5.31658 12.7071 5.70711L6.41421 12L12.7071 18.2929C13.0976 18.6834 13.0976 19.3166 12.7071 19.7071C12.3166 20.0976 11.6834 20.0976 11.2929 19.7071L4.29289 12.7071C3.90237 12.3166 3.90237 11.6834 4.29289 11.2929L11.2929 4.29289C11.6834 3.90237 12.3166 3.90237 12.7071 4.29289Z"/>
+</svg>
+
+                Back
+            </button>
+        </div>
+        
+    
+        
+    
+        
+    
+        
+            
+            <div class="Navigation-group" data-role="variant-group" data-component="icon">
+                
+<div class="Tree" data-behaviour="tree" id="tree-icon-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Icon Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--badge.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Badge</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--search.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Search</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--bags.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Bags</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--bomb.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Bomb</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--cart.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Cart</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--check.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Check</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--check2.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Check 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--check4.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Check 4</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--checked.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Checked</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--clock.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Clock</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--euro.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Euro</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--form-checked.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Form Checked</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--form-empty.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Form Empty</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--gift.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Gift</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--heart.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Heart</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--microfilter.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Microfilter</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--pic-clock.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Pic Clock</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--pic-closing.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Pic Closing</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--pic-filter.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Pic Filter</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--pic-join.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Pic Join</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--pic-magnify.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Pic Magnify</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--pic-space.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Pic Space</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--piggy.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Piggy</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--plus.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Plus</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--save-hand.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Save Hand</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--star.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Star</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--stopwatch-48h.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Stopwatch 48 H</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--thumbs_up.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Thumbs Up</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--transport.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>Transport</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon--user.html" data-role="tree-link" data-pjax data-handle="icon">
+                <span>User</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
         </li>
         
     
@@ -2876,10 +4033,1209 @@
     </ul>
 </div>
 
+            </div>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+            <div class="Navigation-group" data-role="variant-group" data-component="button">
+                
+<div class="Tree" data-behaviour="tree" id="tree-button-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Button Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button--primary.html" data-role="tree-link" data-pjax data-handle="button">
+                <span>Primary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
 </div>
 
 
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button--secondary.html" data-role="tree-link" data-pjax data-handle="button">
+                <span>Secondary</span>
+                
 
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button--link.html" data-role="tree-link" data-pjax data-handle="button">
+                <span>Link</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+            </div>
+        
+    
+        
+            
+            <div class="Navigation-group" data-role="variant-group" data-component="button-block">
+                
+<div class="Tree" data-behaviour="tree" id="tree-button-block-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Button Block Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-block--primary.html" data-role="tree-link" data-pjax data-handle="button-block">
+                <span>Primary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-block--primary-medium.html" data-role="tree-link" data-pjax data-handle="button-block">
+                <span>Primary Medium</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-block--secondary.html" data-role="tree-link" data-pjax data-handle="button-block">
+                <span>Secondary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-block--secondary-medium.html" data-role="tree-link" data-pjax data-handle="button-block">
+                <span>Secondary Medium</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-block--primary-outline.html" data-role="tree-link" data-pjax data-handle="button-block">
+                <span>Primary Outline</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-block--primary-medium-outline.html" data-role="tree-link" data-pjax data-handle="button-block">
+                <span>Primary Medium Outline</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-block--secondary-outline.html" data-role="tree-link" data-pjax data-handle="button-block">
+                <span>Secondary Outline</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-block--secondary-medium-outline.html" data-role="tree-link" data-pjax data-handle="button-block">
+                <span>Secondary Medium Outline</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+            </div>
+        
+    
+        
+            
+            <div class="Navigation-group" data-role="variant-group" data-component="button-outline">
+                
+<div class="Tree" data-behaviour="tree" id="tree-button-outline-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Button Outline Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-outline--primary.html" data-role="tree-link" data-pjax data-handle="button-outline">
+                <span>Primary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-outline--secondary.html" data-role="tree-link" data-pjax data-handle="button-outline">
+                <span>Secondary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+            </div>
+        
+    
+        
+    
+        
+            
+            <div class="Navigation-group" data-role="variant-group" data-component="button-size">
+                
+<div class="Tree" data-behaviour="tree" id="tree-button-size-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Button Size Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-size--large.html" data-role="tree-link" data-pjax data-handle="button-size">
+                <span>Large</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-size--normal.html" data-role="tree-link" data-pjax data-handle="button-size">
+                <span>Normal</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-size--small.html" data-role="tree-link" data-pjax data-handle="button-size">
+                <span>Small</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-size--large-block.html" data-role="tree-link" data-pjax data-handle="button-size">
+                <span>Large Block</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+            </div>
+        
+    
+        
+            
+            <div class="Navigation-group" data-role="variant-group" data-component="button-with-icon">
+                
+<div class="Tree" data-behaviour="tree" id="tree-button-with-icon-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Button With Icon Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-with-icon--primary.html" data-role="tree-link" data-pjax data-handle="button-with-icon">
+                <span>Primary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-with-icon--primary-large.html" data-role="tree-link" data-pjax data-handle="button-with-icon">
+                <span>Primary Large</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-with-icon--primary-small.html" data-role="tree-link" data-pjax data-handle="button-with-icon">
+                <span>Primary Small</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+            </div>
+        
+    
+        
+            
+            <div class="Navigation-group" data-role="variant-group" data-component="button-with-icon-right">
+                
+<div class="Tree" data-behaviour="tree" id="tree-button-with-icon-right-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Button With Icon Right Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-with-icon-right--primary.html" data-role="tree-link" data-pjax data-handle="button-with-icon-right">
+                <span>Primary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-with-icon-right--primary-large.html" data-role="tree-link" data-pjax data-handle="button-with-icon-right">
+                <span>Primary Large</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-with-icon-right--primary-small.html" data-role="tree-link" data-pjax data-handle="button-with-icon-right">
+                <span>Primary Small</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+            </div>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+            <div class="Navigation-group" data-role="variant-group" data-component="benefit">
+                
+<div class="Tree" data-behaviour="tree" id="tree-benefit-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Benefit Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="benefit--piggy.html" data-role="tree-link" data-pjax data-handle="benefit">
+                <span>Piggy</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="benefit--bags.html" data-role="tree-link" data-pjax data-handle="benefit">
+                <span>Bags</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="benefit--transport.html" data-role="tree-link" data-pjax data-handle="benefit">
+                <span>Transport</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="benefit--gift.html" data-role="tree-link" data-pjax data-handle="benefit">
+                <span>Gift</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="benefit--badge.html" data-role="tree-link" data-pjax data-handle="benefit">
+                <span>Badge</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="benefit--bag-magnify.html" data-role="tree-link" data-pjax data-handle="benefit">
+                <span>Bag Magnify</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="benefit--bag-space.html" data-role="tree-link" data-pjax data-handle="benefit">
+                <span>Bag Space</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="benefit--bag-clock.html" data-role="tree-link" data-pjax data-handle="benefit">
+                <span>Bag Clock</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="benefit--bag-filter.html" data-role="tree-link" data-pjax data-handle="benefit">
+                <span>Bag Filter</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="benefit--bag-join.html" data-role="tree-link" data-pjax data-handle="benefit">
+                <span>Bag Join</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="benefit--bag-closing.html" data-role="tree-link" data-pjax data-handle="benefit">
+                <span>Bag Closing</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+            </div>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    </div>
 </nav>
 
         </div>
@@ -2889,7 +5245,7 @@
 
 
 
-<script src="../../fractal/js/mandelbrot.js?cachebust=1.2.1"></script>
+<script src="../../fractal/js/mandelbrot.js?cachebust=1.8.1"></script>
 
 
 
