@@ -14,9 +14,6 @@ $buttonStepperRadius: 5px;
 		display: flex;
 		flex-direction: column;
 		// opacity: 0.4;
-		&:nth-child(4) {
-			// opacity: 1.0;
-		}
 
 		.benefit {
 			width: 150px;
@@ -89,8 +86,6 @@ $buttonStepperRadius: 5px;
 						}
 					}
 				}
-
-				.text {}
 			}
 		}
 
@@ -307,26 +302,26 @@ $buttonStepperRadius: 5px;
 			padding-bottom: 0;
 		}
 
-		#stepperMinus,
-		#stepperPlus {
-			// background: $gray-lighter;
-			// color: $gray;
+		// #stepperMinus,
+		// #stepperPlus {
+		// 	background: $gray-lighter;
+		// 	color: $gray;
 
-			&:hover {
-				// background: darken($gray, 10);
-			}
-		}
+		// 	&:hover {
+		// 		background: darken($gray, 10);
+		// 	}
+		// }
 
-		#sliderInput {
-			// width: $sliderButtSize;
-			// height: $sliderButtSize;
-			// border: 1px solid $gray;
-			// font-size: 20px;
+		// #sliderInput {
+		// 	width: $sliderButtSize;
+		// 	height: $sliderButtSize;
+		// 	border: 1px solid $gray;
+		// 	font-size: 20px;
 
-			&:hover {
-				// border-color: darken($gray, 10);
-			}
-		}
+		// 	&:hover {
+		// 		border-color: darken($gray, 10);
+		// 	}
+		// }
 
 		.stepperLabel {
 			position: static;
