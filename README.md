@@ -18,6 +18,9 @@ $ gh repo clone soulwasted/bags
 ```
 
 ### Install
+Having M1 processor?
+goto: [https://stackoverflow.com/questions/68935932/install-python2-on-mac-with-m1-chip](https://stackoverflow.com/questions/68935932/install-python2-on-mac-with-m1-chip)
+
 ```
 $ npm i
 $ npm i gulp@3
@@ -33,8 +36,19 @@ $ npm i -g @frctl/fractal
 ## Run
 ```
 $ gulp
+```
+or locally
+```
+./node_modules/gulp/bin/gulp.js
+```
+
+For fractal use:
+```
 $ fractal start --sync
 ```
+
+## Notes
+If looks messy in fractal (BAGS — Design system), change some scss and let recompile.
 
 
 ## Production

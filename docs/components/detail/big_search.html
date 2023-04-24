@@ -173,7 +173,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-d3a88bff6f3c7e9a2411af46ae9360c3-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control form-control-lg big_search__input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;search-input&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Napište značku a/nebo typ vysavače&quot;</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control form-control-lg big_search__input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;search-input&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Napište značku a/nebo typ vysavače&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-placeholder big_search__icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-search&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary btn-lg big_search__btn&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;sendsearch&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-placeholder &quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-search&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
@@ -187,7 +187,7 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-d3a88bff6f3c7e9a2411af46ae9360c3-panel-view">
     <code class="Code Code--lang-django hljs">
         <pre><span class="hljs-comment">{# &lt;form class=&quot;big_search&quot;&gt; #}</span><span class="xml">
-	</span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="input.html">@input</a>&#x27;, {class:&#x27;form-control-lg big_search__input&#x27;, id:&#x27;search-input&#x27;, placeholder:&#x27;Napište značku a/nebo typ vysavače&#x27;} %}</span><span class="xml">
+	</span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="input.html">@input</a>&#x27;, {class:&#x27;form-control-lg big_search__input&#x27;, id:&#x27;search-input&#x27;, placeholder:&#x27;Napište značku a/nebo typ vysavače&#x27;, value:&#x27;&#x27;} %}</span><span class="xml">
 	</span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="icon.html">@icon</a>&#x27;, {image:&#x27;search&#x27;, class:&#x27;big_search__icon&#x27;} %}</span><span class="xml">
 	</span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="button-search.html">@button-search</a>&#x27; %}</span><span class="xml">
 </span><span class="hljs-comment">{# &lt;/form&gt; #}</span></pre>
@@ -2519,6 +2519,32 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="vysledky-hledani.html" data-role="tree-link" data-pjax data-handle="vysledky-hledani">
+                <span>Výsledky hledání</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="znacky.html" data-role="tree-link" data-pjax data-handle="znacky">
                 <span>Značky</span>
                 
@@ -4760,6 +4786,8 @@
 </div>
 
             </div>
+        
+    
         
     
         

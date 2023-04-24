@@ -1,0 +1,44 @@
+title:           Výsledky hledání
+label:           Výsledky hledání
+status:          WIP
+
+context:
+  breadcrumb:    
+    links:
+    - link:      'homepage'
+      text:      Domů
+    active:      Výsledky hledání
+  pills:
+    active_link: bags_tab
+    active_text: Sáčky
+    items:
+    - link:      hepa_tab
+      text:      HEPA filtry
+  bags:
+    brands:
+    - link:      acec
+      img:       https://chci-vysavat.cz/images/firms/acec.jpg
+      alt:       logo firmy ACEC
+      brand:     ACEC
+    - link:      adix
+      img:       https://chci-vysavat.cz/images/firms/adix.jpg
+      alt:       logo firmy ADIX
+      brand:     ADIX
+  hepa:
+    brands:
+    - link:      /acec
+      img:       https://chci-vysavat.cz/images/firms/acec.jpg
+      alt:       logo firmy ACEC
+      brand:     ACEC
+    - link:      /adix
+      img:       https://chci-vysavat.cz/images/firms/adix.jpg
+      alt:       logo firmy ADIX
+      brand:     ADIX
+    - link:      /aeg
+      img:       https://chci-vysavat.cz/images/firms/aeg.jpg
+      alt:       logo firmy AEG
+      brand:     AEG
+    - link:      /afk
+      img:       https://chci-vysavat.cz/images/firms/afk.jpg
+      alt:       logo firmy AFK
+      brand:     AFK

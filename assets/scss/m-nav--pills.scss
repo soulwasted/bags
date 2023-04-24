@@ -4,3 +4,33 @@
         font-size: $font-size-lg;
 	}
 }
+
+.nav-pills--big {
+    .nav-item  {
+        width: 50%;
+        text-align: center;
+        &:first-child .nav-link {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        &:last-child .nav-link  {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .nav-link {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            
+            &:not(.active) {
+                background: lighten($brand-secondary, 60);
+            }
+        }
+    }
+}
+.nav-pills--bigger {
+    .nav-link {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+    }
+}

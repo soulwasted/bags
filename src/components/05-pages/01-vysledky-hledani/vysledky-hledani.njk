@@ -1,0 +1,295 @@
+{% render '@breadcrumb', breadcrumb %}
+
+<div class="container mb-4">
+
+	<h1>Výsledky hledání</h1>
+
+	<div id="content">
+		<div class="row">
+			<div id="search-fulltext" class="col-xxl-8 col-xl">
+				<form id="frm-goodsSearchForm" action="/" method="post">				
+					<input type="text" class="form-control form-control-lg big_search__input" id="search-input" placeholder="Napište značku a/nebo typ vysavače" value="manoa">
+					<span class="icon-placeholder big_search__icon"><i class="icon-search"></i></span>
+					<button type="submit" class="btn btn-primary btn-lg big_search__btn" id="sendsearch">
+						<span class="icon-placeholder "><i class="icon-search"></i></span>
+						<span>Hledat</span>
+					</button>
+				</form>
+				{# {% render '@search-tt' %} #}
+			</div>
+			<div class="col-xxl-4 col-xl">
+				Model vysavače zjistíte na spodním štítku
+			</div>
+		</div>
+
+		<div class="row mt-4 mb-4">
+            <div class="col-xxl-8 col-xl">
+                <ul class="nav nav-pills nav-pills--big" role="tablist">
+                    <li class="nav-item">
+                        <a href="#bags_tab" class="nav-link active" id="bags_tab-tab" data-toggle="tab" role="tab" aria-controls="bags_tab" aria-selected="true">Sáčky</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#hepa_tab" class="nav-link" id="hepa_tab-tab" data-toggle="tab" href="#hepa_tab" role="tab" aria-controls="hepa_tab" aria-selected="false">HEPA filtry</a>
+                    </li>
+                </ul>
+			</div>
+			<div class="col-xxl-4 col-xl"></div>
+		</div>
+
+		<div class="row">
+			<div class="col">
+                <div id="SearchTabContent" class="tab-content">
+
+                    <div class="tab-pane fade show active" id="bags_tab" role="tabpanel" aria-labelledby="bags_tab">
+                        <h3 class="mt-1 mb-2">Nalezené sáčky</h3>
+
+						<div class="row">
+							<div class="col-lg-3 col-md-12">
+								<ul class="nav nav-pills nav-pills--bigger mt-2 mb-2 flex-lg-column" role="tablist">
+									<li class="nav-item">
+										<a href="#bags_tab_all" class="nav-link active" id="bags_tab_all-tab" data-toggle="tab" role="tab" aria-controls="bags_tab_all" aria-selected="true">Všechny značky (6)</a>
+									</li>
+									<li class="nav-item">
+										<a href="#bags_tab_eta" class="nav-link" id="bags_tab_eta-tab" data-toggle="tab" href="#bags_tab_eta" role="tab" aria-controls="bags_tab_eta" aria-selected="false">ETA (2)</a>
+									</li>
+									<li class="nav-item">
+										<a href="#bags_tab_neco" class="nav-link" id="bags_tab_neco-tab" data-toggle="tab" href="#bags_tab_neco" role="tab" aria-controls="bags_tab_neco" aria-selected="false">Něco (4)</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-9 col-md-12">
+								<div id="firmsTabContent" class="tab-content list--items--full">
+									<div class="tab-pane fade show active" id="bags_tab_all" role="tabpanel" aria-labelledby="bags_tab_all">
+										<a href="/motorove-filtry/kuzelovy-filtr-eta-mf0303/kuzelovy-filtr-eta" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0303.jpg' | path }}">
+											<div class="item__name">Kuželový filtr ETA</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+
+										<a href="/motorove-filtry/motorovy-filtr-mf0105/baleni-motorovych-filtru-mf0105" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0105.jpg' | path }}">
+											<div class="item__name">Motorový filtr MF0105</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+
+										<a href="/motorove-filtry/motorovy-filtr-mf0205/baleni-motorovych-filtru-mf0205" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0205.jpg' | path }}">
+											<div class="item__name">Motorový filtr MF0205</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+										<a href="/motorove-filtry/kuzelovy-filtr-eta-mf0303/kuzelovy-filtr-eta" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0303.jpg' | path }}">
+											<div class="item__name">Kuželový filtr ETA</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+
+										<a href="/motorove-filtry/motorovy-filtr-mf0105/baleni-motorovych-filtru-mf0105" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0105.jpg' | path }}">
+											<div class="item__name">Motorový filtr MF0105</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+
+										<a href="/motorove-filtry/motorovy-filtr-mf0205/baleni-motorovych-filtru-mf0205" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0205.jpg' | path }}">
+											<div class="item__name">Motorový filtr MF0205</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+									</div>
+									
+									<div class="tab-pane fade" id="bags_tab_eta" role="tabpanel" aria-labelledby="bags_tab_eta">
+										<a href="/motorove-filtry/kuzelovy-filtr-eta-mf0303/kuzelovy-filtr-eta" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0303.jpg' | path }}">
+											<div class="item__name">Kuželový filtr ETA</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+										<a href="/motorove-filtry/motorovy-filtr-mf0105/baleni-motorovych-filtru-mf0105" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0105.jpg' | path }}">
+											<div class="item__name">Motorový filtr MF0105</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+									</div>
+
+									<div class="tab-pane fade" id="bags_tab_neco" role="tabpanel" aria-labelledby="bags_tab_neco">
+										<a href="/motorove-filtry/motorovy-filtr-mf0205/baleni-motorovych-filtru-mf0205" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0205.jpg' | path }}">
+											<div class="item__name">Motorový filtr MF0205</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+										<a href="/motorove-filtry/kuzelovy-filtr-eta-mf0303/kuzelovy-filtr-eta" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0303.jpg' | path }}">
+											<div class="item__name">Kuželový filtr ETA</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+
+										<a href="/motorove-filtry/motorovy-filtr-mf0105/baleni-motorovych-filtru-mf0105" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0105.jpg' | path }}">
+											<div class="item__name">Motorový filtr MF0105</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+
+										<a href="/motorove-filtry/motorovy-filtr-mf0205/baleni-motorovych-filtru-mf0205" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0205.jpg' | path }}">
+											<div class="item__name">Motorový filtr MF0205</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="hepa_tab" role="tabpanel" aria-labelledby="hepa_tab">
+                        <h3>Nalezené HEPA filtry</h3>
+                        
+						<div class="row">
+							<div class="col-lg-3 col-md-12">
+								<ul class="nav nav-pills nav-pills--bigger mt-2 mb-2 flex-lg-column" role="tablist">
+									<li class="nav-item">
+										<a href="#hepa_tab_all" class="nav-link active" id="hepa_tab_all-tab" data-toggle="tab" role="tab" aria-controls="hepa_tab_all" aria-selected="true">Všechny značky (6)</a>
+									</li>
+									<li class="nav-item">
+										<a href="#hepa_tab_neco" class="nav-link" id="hepa_tab_neco-tab" data-toggle="tab" href="#hepa_tab_neco" role="tab" aria-controls="hepa_tab_neco" aria-selected="false">Něco (4)</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-9 col-md-12">
+								<div id="firmsTabContent" class="tab-content list--items--full">
+									<div class="tab-pane fade show active" id="hepa_tab_all" role="tabpanel" aria-labelledby="hepa_tab_all">
+										<a href="/motorove-filtry/kuzelovy-filtr-eta-mf0303/kuzelovy-filtr-eta" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0303.jpg' | path }}">
+											<div class="item__name">Kuželový filtr ETA</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+
+										<a href="/motorove-filtry/motorovy-filtr-mf0105/baleni-motorovych-filtru-mf0105" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0105.jpg' | path }}">
+											<div class="item__name">Motorový filtr MF0105</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+
+										<a href="/motorove-filtry/motorovy-filtr-mf0205/baleni-motorovych-filtru-mf0205" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0205.jpg' | path }}">
+											<div class="item__name">Motorový filtr MF0205</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+										<a href="/motorove-filtry/kuzelovy-filtr-eta-mf0303/kuzelovy-filtr-eta" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0303.jpg' | path }}">
+											<div class="item__name">Kuželový filtr ETA</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+
+										<a href="/motorove-filtry/motorovy-filtr-mf0105/baleni-motorovych-filtru-mf0105" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0105.jpg' | path }}">
+											<div class="item__name">Motorový filtr MF0105</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+
+										<a href="/motorove-filtry/motorovy-filtr-mf0205/baleni-motorovych-filtru-mf0205" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0205.jpg' | path }}">
+											<div class="item__name">Motorový filtr MF0205</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+									</div>
+
+									<div class="tab-pane fade" id="hepa_tab_neco" role="tabpanel" aria-labelledby="hepa_tab_neco">
+										<a href="/motorove-filtry/motorovy-filtr-mf0205/baleni-motorovych-filtru-mf0205" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0205.jpg' | path }}">
+											<div class="item__name">Motorový filtr MF0205</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+										<a href="/motorove-filtry/kuzelovy-filtr-eta-mf0303/kuzelovy-filtr-eta" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0303.jpg' | path }}">
+											<div class="item__name">Kuželový filtr ETA</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+
+										<a href="/motorove-filtry/motorovy-filtr-mf0105/baleni-motorovych-filtru-mf0105" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0105.jpg' | path }}">
+											<div class="item__name">Motorový filtr MF0105</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+
+										<a href="/motorove-filtry/motorovy-filtr-mf0205/baleni-motorovych-filtru-mf0205" class="item">
+											<img class="item__image" alt="Fotka sáčku" src="{{ '/img/items/MF0205.jpg' | path }}">
+											<div class="item__name">Motorový filtr MF0205</div>
+											<div class="item__info">
+												<span>SKLADEM</span>
+												Expedujeme do 24 h
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% render '@stripe-guarantee' %}
